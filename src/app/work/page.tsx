@@ -11,7 +11,7 @@ export default function WorkPage() {
   return (
     <Container className="py-16">
       <SectionHeading
-        eyebrow="Case studies"
+        eyebrow="ls ./work"
         title="Work"
         description="Cuatro proyectos, cuatro contextos distintos. El foco aquí no son los números — es el razonamiento: qué problema había, cómo lo entendí, qué decidí descartar y por qué."
       />
@@ -21,20 +21,18 @@ export default function WorkPage() {
           <Link
             key={cs.slug}
             href={`/work/${cs.slug}`}
-            className="group flex flex-col rounded-2xl border border-border bg-bg-surface p-6 transition-colors hover:border-border-md"
+            className="group flex flex-col rounded-lg border border-border bg-bg-surface p-6 transition-colors hover:border-border-md"
           >
-            <p className="mb-2 font-mono text-[11px] uppercase tracking-wide text-purple-600">
-              {cs.company}
-            </p>
-            <h2 className="font-display text-xl text-text">{cs.title}</h2>
+            <p className="mb-2 font-mono text-[11px] text-amber-600">./{cs.slug}.md</p>
+            <h2 className="font-mono text-lg font-semibold text-text">{cs.title}</h2>
             <p className="mt-2 text-sm leading-relaxed text-text-muted">{cs.summary}</p>
             <div className="mt-4 flex flex-wrap gap-2">
               {cs.tags.map((t) => (
                 <Tag key={t}>{t}</Tag>
               ))}
             </div>
-            <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-text">
-              Read case study →
+            <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-amber-600">
+              cat ./{cs.slug}.md →
             </span>
           </Link>
         ))}

@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  { href: "/work", label: "Work" },
-  { href: "/community", label: "Community" },
-  { href: "/side-projects", label: "Side Projects" },
-  { href: "/ask", label: "Ask Me Anything" },
-  { href: "/about", label: "About" },
+  { href: "/work", label: "work" },
+  { href: "/community", label: "community" },
+  { href: "/side-projects", label: "side-projects" },
+  { href: "/ask", label: "ask" },
+  { href: "/about", label: "about" },
 ];
 
 export default function Nav() {
@@ -17,9 +17,18 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-bg/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border bg-bg/95 backdrop-blur">
+      <div className="flex items-center gap-2 border-b border-border px-5 py-2.5 font-mono text-[11px] text-text-faint">
+        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+        <span className="ml-2">
+          carlos@portfolio ~ {pathname === "/" ? "/home" : pathname}
+        </span>
+      </div>
+
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
-        <Link href="/" className="font-display text-lg tracking-tight text-text">
+        <Link href="/" className="font-mono text-sm font-medium tracking-tight text-text">
           Carlos Miguel Corada
         </Link>
 
@@ -30,20 +39,20 @@ export default function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wide transition-colors ${
+                className={`rounded px-3 py-1.5 font-mono text-[12px] transition-colors ${
                   active
-                    ? "bg-purple-100 text-purple-800"
+                    ? "bg-amber-50 text-amber-600"
                     : "text-text-muted hover:bg-bg-surface hover:text-text"
                 }`}
               >
-                {link.label}
+                ./{link.label}
               </Link>
             );
           })}
         </nav>
 
         <button
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-border-md md:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded border border-border-md md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Abrir menú"
         >
@@ -58,9 +67,9 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-2 font-mono text-xs uppercase tracking-wide text-text-muted hover:bg-bg-surface"
+              className="rounded px-3 py-2 font-mono text-xs text-text-muted hover:bg-bg-surface"
             >
-              {link.label}
+              ./{link.label}
             </Link>
           ))}
         </nav>

@@ -21,6 +21,7 @@ export default function AskChat() {
   const boxRef = useRef<HTMLDivElement>(null);
 
   const isMom = mode === "mom";
+  const accent = isMom ? "coral" : "amber";
 
   useEffect(() => {
     boxRef.current?.scrollTo({ top: boxRef.current.scrollHeight, behavior: "smooth" });
@@ -71,159 +72,117 @@ export default function AskChat() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-2xl">
-      <div className="mb-5 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div
-            className={`flex h-11 w-11 items-center justify-center rounded-full text-sm font-medium transition-colors ${
-              isMom ? "bg-coral-100 text-coral-800" : "bg-purple-100 text-purple-800"
-            }`}
-          >
-            {isMom ? "M" : "CM"}
-          </div>
-          <div>
-            <p className="text-[15px] font-medium text-text">
-              {isMom ? "La madre de Carlos" : "Carlos Miguel Corada"}
-            </p>
-            <p className="font-mono text-[11px] text-text-faint">
-              {isMom ? "Su mayor fan (y crítica)" : "Senior PM · Marketplaces & SaaS"}
-            </p>
-          </div>
+    <div className="mx-auto w-full max-w-2xl overflow-hidden rounded-lg border border-border-md">
+      <div className="flex items-center justify-between border-b border-border bg-bg-surface px-4 py-2.5">
+        <div className="flex items-center gap-2 font-mono text-[11px] text-text-faint">
+          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+          <span className="ml-2">{isMom ? "carlos@ask ~ mom" : "carlos@ask ~ me"}</span>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="font-mono text-[11px] text-text-faint">modo mamá</span>
+          <span className="font-mono text-[10.5px] text-text-faint">modo mamá</span>
           <button
             onClick={switchMode}
             aria-label="Activar modo mamá"
-            className={`relative h-[22px] w-10 rounded-full transition-colors ${
-              isMom ? "bg-coral-100" : "bg-purple-100"
+            className={`relative h-[20px] w-9 rounded-full border transition-colors ${
+              isMom ? "border-coral-600/50 bg-coral-50" : "border-border-md bg-bg"
             }`}
           >
             <span
-              className={`absolute top-1 h-3.5 w-3.5 rounded-full transition-transform ${
-                isMom ? "translate-x-[18px] bg-coral-600" : "translate-x-1 bg-purple-600"
+              className={`absolute top-[3px] h-3 w-3 rounded-full transition-transform ${
+                isMom ? "translate-x-4 bg-coral-600" : "translate-x-1 bg-text-faint"
               }`}
             />
           </button>
         </div>
       </div>
 
-      <div
-        ref={boxRef}
-        className="mb-2.5 flex max-h-[420px] min-h-[320px] flex-col gap-3 overflow-y-auto rounded-2xl border border-border bg-bg-surface p-4"
-      >
-        <Bubble role="assistant" mode={mode} text={WELCOME[mode]} />
+      <div ref={boxRef} className="flex max-h-[420px] min-h-[320px] flex-col gap-1 overflow-y-auto bg-bg p-4">
+        <Line role="assistant" mode={mode} text={WELCOME[mode]} />
         {messages.map((m, i) => (
-          <Bubble key={i} role={m.role} mode={mode} text={m.content} />
+          <Line key={i} role={m.role} mode={mode} text={m.content} />
         ))}
-        {loading && <TypingDots mode={mode} />}
+        {loading && <TypingLine mode={mode} />}
         {errorMsg && (
-          <p className="rounded-xl border border-dashed border-border-md bg-white px-3 py-2 font-mono text-xs text-coral-600">
+          <p className="mt-2 rounded border border-dashed border-coral-600/40 bg-coral-50 px-3 py-2 font-mono text-xs text-coral-600">
             {errorMsg}
           </p>
         )}
       </div>
 
-      <div className="mb-2.5 flex flex-wrap gap-1.5">
-        {SUGGESTED_QUESTIONS.map((q) => (
-          <button
-            key={q}
-            onClick={() => sendMessage(q)}
+      <div className="border-t border-border bg-bg-surface p-3">
+        <div className="mb-2.5 flex flex-wrap gap-1.5">
+          {SUGGESTED_QUESTIONS.map((q) => (
+            <button
+              key={q}
+              onClick={() => sendMessage(q)}
+              disabled={loading}
+              className="rounded border border-border-md bg-bg px-2.5 py-1 font-mono text-[11px] text-text-muted transition-colors hover:border-amber-600/50 hover:text-text disabled:opacity-50"
+            >
+              {q}
+            </button>
+          ))}
+        </div>
+
+        <form onSubmit={handleSubmit} className="flex items-center gap-2 font-mono text-sm">
+          <span className={accent === "coral" ? "text-coral-600" : "text-amber-600"}>❯</span>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder={isMom ? "pregúntale a su madre..." : "ask carlos anything..."}
             disabled={loading}
-            className="rounded-full border border-border-md bg-white px-2.5 py-1 text-[11.5px] text-text-muted transition-colors hover:bg-bg-surface disabled:opacity-50"
+            className="min-w-0 flex-1 bg-transparent text-text outline-none placeholder:text-text-faint"
+          />
+          <button
+            type="submit"
+            disabled={loading || !input.trim()}
+            className={`rounded px-3 py-1.5 font-mono text-xs font-medium text-bg transition-opacity hover:opacity-85 disabled:opacity-30 ${
+              accent === "coral" ? "bg-coral-600" : "bg-amber-600"
+            }`}
           >
-            {q}
+            send
           </button>
-        ))}
+        </form>
       </div>
 
-      <form onSubmit={handleSubmit} className="flex gap-2">
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder={isMom ? "Pregúntale a su madre..." : "Ask Carlos anything..."}
-          disabled={loading}
-          className={`h-10 flex-1 rounded-[10px] border border-border-md bg-white px-3.5 text-[13px] text-text outline-none transition-colors ${
-            isMom ? "focus:border-coral-200" : "focus:border-purple-200"
-          }`}
-        />
-        <button
-          type="submit"
-          disabled={loading || !input.trim()}
-          className={`h-10 rounded-[10px] px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-85 disabled:opacity-40 ${
-            isMom ? "bg-coral-600" : "bg-purple-600"
-          }`}
-        >
-          Send
-        </button>
-      </form>
-
-      <p className="mt-2.5 text-center font-mono text-[11px] text-text-faint">
+      <p className="border-t border-border px-4 py-2 text-center font-mono text-[10.5px] text-text-faint">
         {isMom
-          ? "Modo mamá activado · puede que no entienda todos los términos de producto"
-          : "Powered by Claude · Responde como Carlos, no como un chatbot genérico"}
+          ? "modo mamá activado · puede que no entienda todos los términos de producto"
+          : "powered by claude · responde como carlos, no como un chatbot genérico"}
       </p>
     </div>
   );
 }
 
-function Bubble({ role, mode, text }: { role: "user" | "assistant"; mode: Mode; text: string }) {
+function Line({ role, mode, text }: { role: "user" | "assistant"; mode: Mode; text: string }) {
   const isUser = role === "user";
   const isMom = mode === "mom";
-
-  const avatarClass = isUser
-    ? "bg-gray-100 text-gray-800"
-    : isMom
-      ? "bg-coral-100 text-coral-800"
-      : "bg-purple-100 text-purple-800";
-
-  const bubbleClass = isUser
-    ? "bg-white border-border-md text-text"
-    : isMom
-      ? "bg-coral-50 border-coral-200 text-coral-800"
-      : "bg-purple-50 border-purple-200 text-purple-800";
+  const promptColor = isMom ? "text-coral-600" : "text-amber-600";
 
   return (
-    <div className={`flex items-start gap-2.5 ${isUser ? "flex-row-reverse" : ""}`}>
-      <div className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-medium ${avatarClass}`}>
-        {isUser ? "U" : isMom ? "M" : "CM"}
-      </div>
-      <div
-        className={`max-w-[80%] rounded-2xl border px-3.5 py-2 text-[13.5px] leading-relaxed ${bubbleClass} ${
-          isUser ? "rounded-br-[4px]" : "rounded-bl-[4px]"
-        }`}
-      >
-        {text}
-      </div>
+    <div className="flex gap-2 py-1.5 font-mono text-[13px] leading-relaxed">
+      <span className={isUser ? "text-text-faint" : promptColor}>{isUser ? ">" : "❯"}</span>
+      <span className={isUser ? "text-text" : "text-text-muted"}>{text}</span>
     </div>
   );
 }
 
-function TypingDots({ mode }: { mode: Mode }) {
+function TypingLine({ mode }: { mode: Mode }) {
   const isMom = mode === "mom";
   return (
-    <div className="flex items-start gap-2.5">
-      <div
-        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-medium ${
-          isMom ? "bg-coral-100 text-coral-800" : "bg-purple-100 text-purple-800"
-        }`}
-      >
-        {isMom ? "M" : "CM"}
-      </div>
-      <div
-        className={`flex items-center gap-1 rounded-2xl rounded-bl-[4px] border px-3.5 py-3 ${
-          isMom ? "border-coral-200 bg-coral-50" : "border-purple-200 bg-purple-50"
-        }`}
-      >
+    <div className="flex gap-2 py-1.5 font-mono text-[13px]">
+      <span className={isMom ? "text-coral-600" : "text-amber-600"}>❯</span>
+      <span className="flex items-center gap-1 text-text-faint">
         {[0, 1, 2].map((i) => (
           <span
             key={i}
             style={{ animationDelay: `${i * 0.2}s` }}
-            className={`h-1.5 w-1.5 animate-pulse rounded-full ${isMom ? "bg-coral-200" : "bg-purple-200"}`}
+            className={`h-1.5 w-1.5 animate-pulse rounded-full ${isMom ? "bg-coral-600" : "bg-amber-600"}`}
           />
         ))}
-      </div>
+      </span>
     </div>
   );
 }

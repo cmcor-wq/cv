@@ -7,7 +7,7 @@ export function Container({ children, className = "" }: { children: ReactNode; c
 
 export function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-block rounded-full border border-border-md bg-white px-2.5 py-1 font-mono text-[10.5px] uppercase tracking-wide text-text-muted">
+    <span className="inline-block rounded border border-border-md bg-bg-surface px-2.5 py-1 font-mono text-[10.5px] text-text-muted">
       {children}
     </span>
   );
@@ -24,12 +24,11 @@ export function ButtonLink({
   variant?: "primary" | "secondary";
   external?: boolean;
 }) {
-  const base =
-    "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-opacity hover:opacity-85";
+  const base = "inline-flex items-center gap-2 rounded px-5 py-2.5 font-mono text-sm transition-opacity hover:opacity-85";
   const styles =
     variant === "primary"
-      ? "bg-purple-600 text-white"
-      : "border border-border-md bg-white text-text";
+      ? "bg-amber-600 text-bg font-medium"
+      : "border border-border-md bg-transparent text-text";
 
   const props = external ? { target: "_blank", rel: "noreferrer" } : {};
 
@@ -51,10 +50,8 @@ export function SectionHeading({
 }) {
   return (
     <div className="mb-10 max-w-2xl">
-      {eyebrow && (
-        <p className="mb-3 font-mono text-[11px] uppercase tracking-wider text-purple-600">{eyebrow}</p>
-      )}
-      <h1 className="font-display text-3xl leading-tight text-text sm:text-4xl">{title}</h1>
+      {eyebrow && <p className="mb-3 font-mono text-[12px] text-amber-600">{`// ${eyebrow}`}</p>}
+      <h1 className="font-mono text-2xl font-bold leading-tight text-text sm:text-3xl">{title}</h1>
       {description && <p className="mt-4 text-base leading-relaxed text-text-muted">{description}</p>}
     </div>
   );
@@ -62,7 +59,8 @@ export function SectionHeading({
 
 export function PendingNote({ children }: { children: ReactNode }) {
   return (
-    <p className="rounded-xl border border-dashed border-border-md bg-bg-surface px-4 py-3 font-mono text-xs text-text-muted">
+    <p className="rounded border border-dashed border-border-md bg-bg-surface px-4 py-3 font-mono text-xs text-text-faint">
+      <span className="text-amber-600">{"// TODO "}</span>
       {children}
     </p>
   );

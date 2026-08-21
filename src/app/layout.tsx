@@ -1,25 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, DM_Mono, Sora } from "next/font/google";
+import { JetBrains_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const dmSerif = DM_Serif_Display({
-  variable: "--font-dm-serif",
-  weight: ["400"],
-  style: ["normal", "italic"],
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
 
-const dmMono = DM_Mono({
-  variable: "--font-dm-mono",
-  weight: ["400", "500"],
-  subsets: ["latin"],
-});
-
-const sora = Sora({
-  variable: "--font-sora",
-  weight: ["300", "400", "500", "600"],
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-plex-sans",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
 });
 
@@ -33,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${dmSerif.variable} ${dmMono.variable} ${sora.variable} h-full antialiased`}
+      className={`${jetbrainsMono.variable} ${plexSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-text">
         <Nav />
