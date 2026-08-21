@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FAFAF8;
+  --bg-surface: #F1EFE8;
+  --text: #1A1A18;
+  --text-muted: #5F5E5A;
+  --text-faint: #B4B2A9;
+  --border: rgba(0, 0, 0, 0.10);
+  --border-md: rgba(0, 0, 0, 0.18);
+
+  --purple-50: #EEEDFE;
+  --purple-100: #CECBF6;
+  --purple-200: #AFA9EC;
+  --purple-600: #534AB7;
+  --purple-800: #3C3489;
+
+  --green-50: #EEF3E7;
+  --green-100: #CBDBB5;
+  --green-200: #A8C382;
+  --green-600: #3B6D11;
+  --green-800: #2A4E0C;
+
+  --coral-50: #FAECE7;
+  --coral-100: #F5C4B3;
+  --coral-200: #F0997B;
+  --coral-600: #993C1D;
+  --coral-800: #712B13;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-surface: var(--bg-surface);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-border: var(--border);
+  --color-border-md: var(--border-md);
+
+  --color-purple-50: var(--purple-50);
+  --color-purple-100: var(--purple-100);
+  --color-purple-200: var(--purple-200);
+  --color-purple-600: var(--purple-600);
+  --color-purple-800: var(--purple-800);
+
+  --color-green-50: var(--green-50);
+  --color-green-100: var(--green-100);
+  --color-green-200: var(--green-200);
+  --color-green-600: var(--green-600);
+  --color-green-800: var(--green-800);
+
+  --color-coral-50: var(--coral-50);
+  --color-coral-100: var(--coral-100);
+  --color-coral-200: var(--coral-200);
+  --color-coral-600: var(--coral-600);
+  --color-coral-800: var(--coral-800);
+
+  --font-display: var(--font-dm-serif), serif;
+  --font-sans: var(--font-sora), sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sora), sans-serif;
+}
+
+::selection {
+  background: var(--purple-100);
+  color: var(--purple-800);
+}
