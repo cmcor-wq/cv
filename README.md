@@ -27,7 +27,7 @@ El chat llama a la API de Google Gemini desde un route handler del servidor (`sr
 1. Consigue una API key gratis en [Google AI Studio](https://aistudio.google.com/apikey)
 2. Copia `.env.example` a `.env.local`
 3. Añade tu `GEMINI_API_KEY`
-4. (Opcional) `GEMINI_MODEL` para sobrescribir el modelo por defecto (`gemini-flash-latest`)
+4. (Opcional) `GEMINI_MODEL` para sobrescribir el modelo por defecto (`gemini-3.6-flash`)
 
 Sin la key configurada, `/ask` sigue siendo funcional visualmente pero responde con un error controlado.
 

@@ -2,7 +2,7 @@ import { GoogleGenAI, ApiError } from "@google/genai";
 import { NextResponse } from "next/server";
 import { CARLOS_PROMPT, MOM_PROMPT } from "@/lib/prompts";
 
-const MODEL = process.env.GEMINI_MODEL || "gemini-flash-latest";
+const MODEL = process.env.GEMINI_MODEL || "gemini-3.6-flash";
 const MAX_HISTORY_MESSAGES = 20;
 const MAX_MESSAGE_LENGTH = 2000;
 
@@ -53,22 +53,37 @@ export async function POST(request: Request) {
   }));
 
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  const generate = () => ai.models.generateContent({ model: MODEL, contents, config: { systemInstruction } });
 
   try {
-    const response = await ai.models.generateContent({
-      model: MODEL,
-      contents,
-      config: { systemInstruction },
-    });
+    let response;
+    try {
+      response = await generate();
+    } catch (error) {
+      // The Gemini flash alias occasionally returns a transient 503 under load — one retry clears most of these.
+      if (error instanceof ApiError && error.status === 503) {
+        await new Promise((resolve) => setTimeout(resolve, 800));
+        response = await generate();
+      } else {
+        throw error;
+      }
+    }
 
     return NextResponse.json({ reply: response.text ?? "" });
   } catch (error) {
+    console.error("Gemini chat error:", error);
     if (error instanceof ApiError) {
       if (error.status === 401 || error.status === 403) {
         return NextResponse.json({ error: "API key inválida." }, { status: 500 });
       }
       if (error.status === 429) {
         return NextResponse.json({ error: "Demasiadas peticiones, inténtalo en unos segundos." }, { status: 429 });
+      }
+      if (error.status === 503) {
+        return NextResponse.json(
+          { error: "El modelo está saturado ahora mismo. Inténtalo de nuevo en unos segundos." },
+          { status: 503 },
+        );
       }
       return NextResponse.json({ error: "Error al contactar con la API." }, { status: 502 });
     }
