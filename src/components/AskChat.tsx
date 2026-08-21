@@ -1,18 +1,15 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { SUGGESTED_QUESTIONS } from "@/lib/prompts";
+import { useTranslations } from "next-intl";
 
 type Mode = "carlos" | "mom";
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
-const WELCOME: Record<Mode, string> = {
-  carlos:
-    "Hey. Ask me anything — about product, marketplaces, the community, my failures, or whatever you're curious about. I'll be straight with you.",
-  mom: "Hola cariño! Bueno, hola a ti que estás preguntando cosas de mi hijo. Pregunta lo que quieras, que de Carlos sé mucho, aunque a veces no entiendo muy bien todo lo que hace...",
-};
-
 export default function AskChat() {
+  const t = useTranslations("Chat");
+  const suggestedQuestions = t.raw("suggestedQuestions") as string[];
+
   const [mode, setMode] = useState<Mode>("carlos");
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
@@ -52,14 +49,14 @@ export default function AskChat() {
       const data = await resp.json();
 
       if (!resp.ok) {
-        setErrorMsg(data.error || "Algo salió mal. Inténtalo de nuevo.");
+        setErrorMsg(data.error || t("genericError"));
         setLoading(false);
         return;
       }
 
       setMessages((prev) => [...prev, { role: "assistant", content: data.reply }]);
     } catch {
-      setErrorMsg("No se pudo conectar. Comprueba tu conexión e inténtalo de nuevo.");
+      setErrorMsg(t("connectionError"));
     }
 
     setLoading(false);
@@ -81,10 +78,10 @@ export default function AskChat() {
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="font-mono text-[10.5px] text-text-faint">modo mamá</span>
+          <span className="font-mono text-[10.5px] text-text-faint">{t("modoMamaLabel")}</span>
           <button
             onClick={switchMode}
-            aria-label="Activar modo mamá"
+            aria-label={t("toggleAria")}
             className={`relative h-[20px] w-9 rounded-full border transition-colors ${
               isMom ? "border-coral-600/50 bg-coral-50" : "border-border-md bg-bg"
             }`}
@@ -99,7 +96,7 @@ export default function AskChat() {
       </div>
 
       <div ref={boxRef} className="flex max-h-[420px] min-h-[320px] flex-col gap-1 overflow-y-auto bg-bg p-4">
-        <Line role="assistant" mode={mode} text={WELCOME[mode]} />
+        <Line role="assistant" mode={mode} text={isMom ? t("welcomeMom") : t("welcomeCarlos")} />
         {messages.map((m, i) => (
           <Line key={i} role={m.role} mode={mode} text={m.content} />
         ))}
@@ -113,7 +110,7 @@ export default function AskChat() {
 
       <div className="border-t border-border bg-bg-surface p-3">
         <div className="mb-2.5 flex flex-wrap gap-1.5">
-          {SUGGESTED_QUESTIONS.map((q) => (
+          {suggestedQuestions.map((q) => (
             <button
               key={q}
               onClick={() => sendMessage(q)}
@@ -130,7 +127,7 @@ export default function AskChat() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={isMom ? "pregúntale a su madre..." : "ask carlos anything..."}
+            placeholder={isMom ? t("placeholderMom") : t("placeholderCarlos")}
             disabled={loading}
             className="min-w-0 flex-1 bg-transparent text-text outline-none placeholder:text-text-faint"
           />
@@ -141,15 +138,13 @@ export default function AskChat() {
               isMom ? "bg-coral-600" : "bg-accent-600"
             }`}
           >
-            send
+            {t("send")}
           </button>
         </form>
       </div>
 
       <p className="border-t border-border px-4 py-2 text-center font-mono text-[10.5px] text-text-faint">
-        {isMom
-          ? "modo mamá activado · puede que no entienda todos los términos de producto"
-          : "powered by gemini · responde como carlos, no como un chatbot genérico"}
+        {isMom ? t("footerMom") : t("footerCarlos")}
       </p>
     </div>
   );

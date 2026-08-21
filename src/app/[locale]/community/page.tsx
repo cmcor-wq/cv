@@ -1,38 +1,38 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { Container, SectionHeading, PendingNote } from "@/components/ui";
 import { community } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Community — Valencia Product Beers",
-};
+export async function generateMetadata(props: PageProps<"/[locale]/community">): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "Community" });
+  return { title: t("metaTitle") };
+}
 
-export default function CommunityPage() {
+export default async function CommunityPage() {
+  const t = await getTranslations("Community");
   const { stats, links, testimonials, gallery } = community;
 
   return (
     <Container className="py-16">
-      <SectionHeading
-        eyebrow="community · the strongest differentiator"
-        title={community.name}
-        description={community.framing}
-      />
+      <SectionHeading eyebrow={t("eyebrow")} title={community.name} description={t("framing")} />
 
       <div className="mb-14 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat label="miembros" value={stats.members} />
-        <Stat label="eventos" value={stats.events} />
-        <Stat label="asistentes/evento" value={stats.avgAttendance} />
-        <Stat label="desde" value={community.founded} />
+        <Stat label={t("statMembers")} value={stats.members} />
+        <Stat label={t("statEvents")} value={stats.events} />
+        <Stat label={t("statAvgAttendance")} value={stats.avgAttendance} />
+        <Stat label={t("statFounded")} value={community.founded} />
       </div>
 
       <section className="mb-14 max-w-2xl">
-        <p className="mb-3 font-mono text-[11px] text-green-600">{"// story"}</p>
-        <p className="text-[15px] leading-relaxed text-text-muted">{community.story}</p>
+        <p className="mb-3 font-mono text-[11px] text-green-600">{t("storyLabel")}</p>
+        <p className="text-[15px] leading-relaxed text-text-muted">{t("story")}</p>
       </section>
 
       <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-green-600">{"// gallery"}</p>
+        <p className="mb-4 font-mono text-[11px] text-green-600">{t("galleryLabel")}</p>
         {gallery.length === 0 ? (
-          <PendingNote>5–8 fotos de eventos de Valencia Product Beers.</PendingNote>
+          <PendingNote>{t("galleryPending")}</PendingNote>
         ) : (
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {gallery.map((img) => (
@@ -44,16 +44,16 @@ export default function CommunityPage() {
       </section>
 
       <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-green-600">{"// testimonials"}</p>
+        <p className="mb-4 font-mono text-[11px] text-green-600">{t("testimonialsLabel")}</p>
         {testimonials.length === 0 ? (
-          <PendingNote>2–3 quotes de miembros de la comunidad.</PendingNote>
+          <PendingNote>{t("testimonialsPending")}</PendingNote>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2">
-            {testimonials.map((t) => (
-              <blockquote key={t.author} className="rounded-lg border border-border bg-bg-surface p-5">
-                <p className="text-[15px] italic leading-relaxed text-text">&ldquo;{t.quote}&rdquo;</p>
+            {testimonials.map((tm) => (
+              <blockquote key={tm.author} className="rounded-lg border border-border bg-bg-surface p-5">
+                <p className="text-[15px] italic leading-relaxed text-text">&ldquo;{tm.quote}&rdquo;</p>
                 <footer className="mt-3 font-mono text-xs text-text-faint">
-                  {t.author} — {t.role}
+                  {tm.author} — {tm.role}
                 </footer>
               </blockquote>
             ))}
@@ -62,14 +62,14 @@ export default function CommunityPage() {
       </section>
 
       <section>
-        <p className="mb-4 font-mono text-[11px] text-green-600">{"// links"}</p>
+        <p className="mb-4 font-mono text-[11px] text-green-600">{t("linksLabel")}</p>
         {!links.meetup && !links.linkedin && !links.instagram ? (
-          <PendingNote>enlaces públicos (Meetup / LinkedIn group / Instagram).</PendingNote>
+          <PendingNote>{t("linksPending")}</PendingNote>
         ) : (
           <div className="flex flex-wrap gap-3">
-            {links.meetup && <ExternalLink href={links.meetup} label="meetup" />}
-            {links.linkedin && <ExternalLink href={links.linkedin} label="linkedin" />}
-            {links.instagram && <ExternalLink href={links.instagram} label="instagram" />}
+            {links.meetup && <ExternalLink href={links.meetup} label={t("linkMeetup")} />}
+            {links.linkedin && <ExternalLink href={links.linkedin} label={t("linkLinkedin")} />}
+            {links.instagram && <ExternalLink href={links.instagram} label={t("linkInstagram")} />}
           </div>
         )}
       </section>

@@ -39,12 +39,3 @@ Your take:
 Tone: warm, funny, a little dramatic in the way Spanish mothers are. Genuinely proud even when confused. Sometimes you accidentally misuse product terms in an endearing way.
 
 Respond in the same language the user writes in (Spanish or English). Keep it short: 2–4 sentences. Be charming and human.`;
-
-export const SUGGESTED_QUESTIONS = [
-  "What is your PM superpower?",
-  "Tell me about your biggest failure",
-  "Why Valencia Product Beers?",
-  "Hot take on marketplaces",
-  "What kind of PM are you?",
-  "What tools do you use daily?",
-];

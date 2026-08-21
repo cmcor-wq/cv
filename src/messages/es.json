@@ -1,0 +1,183 @@
+{
+  "Metadata": {
+    "title": "Carlos Miguel Corada — Senior Technical PM",
+    "description": "Senior Technical Product Manager especializado en integraciones y SaaS partner-facing. Builder de productos digitales y comunidades. Valencia."
+  },
+  "Nav": {
+    "work": "work",
+    "community": "community",
+    "sideProjects": "side-projects",
+    "ask": "ask",
+    "about": "about",
+    "openMenu": "Abrir menú"
+  },
+  "Footer": {
+    "echo": "echo \"© {year} Carlos Miguel Corada · Valencia\"",
+    "email": "./email",
+    "linkedin": "./linkedin",
+    "ask": "./ask"
+  },
+  "Home": {
+    "metaTitle": "Carlos Miguel Corada — Senior Technical PM",
+    "whoamiPrompt": "whoami --role=senior-technical-pm --based=valencia",
+    "headline": "Senior Technical PM construyendo SaaS con integraciones <amp>&</amp> partners",
+    "subheadline": "Integraciones API, plataformas de partners y productos de datos · 5+ años · Valencia",
+    "exploreWork": "./ver-mi-trabajo",
+    "askMeAnything": "./pregúntame-lo-que-sea",
+    "whereBuilt": "// dónde he construido",
+    "cardWorkEyebrow": "case studies",
+    "cardWorkTitle": "Cómo construyo producto de verdad",
+    "cardWorkDescription": "Discovery, trade-offs, decisiones — no solo resultados.",
+    "cardCommunityEyebrow": "community",
+    "cardCommunityTitle": "Valencia Product Beers",
+    "cardCommunityDescription": "La comunidad de producto más activa de Valencia. Construida desde cero.",
+    "cardAskEyebrow": "⭐ la parte divertida",
+    "cardAskTitle": "Pregúntame lo que sea",
+    "cardAskDescription": "Un chat que soy yo de verdad. Incluye 'modo mamá'."
+  },
+  "Work": {
+    "metaTitle": "Work — Carlos Miguel Corada",
+    "eyebrow": "ls ./work",
+    "title": "Work",
+    "description": "Cuatro proyectos, cuatro contextos distintos. El foco aquí no son los números — es el razonamiento: qué problema había, cómo lo entendí, qué decidí descartar y por qué.",
+    "readCaseStudy": "Leer case study →",
+    "catCommand": "cat ./{slug}.md →"
+  },
+  "WorkDetail": {
+    "back": "cd ../work",
+    "artifactsLabel": "// 07 Artifacts",
+    "artifactsPending": "capturas, embeds de Figma/Miro u otros artefactos visuales de este proyecto.",
+    "askCta": "./ask \"¿Tienes preguntas sobre este proyecto?\" →",
+    "sections": {
+      "context": "Context & problem",
+      "role": "Mi rol",
+      "discovery": "Proceso de discovery",
+      "decisionFramework": "Framework de decisión",
+      "whatIBuilt": "Qué construí",
+      "outcomes": "Resultados y aprendizajes"
+    }
+  },
+  "CaseStudies": {
+    "fourvenues": {
+      "title": "Lanzando un nuevo producto SaaS vertical desde cero",
+      "summary": "Liderando el 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta la entrega en producción.",
+      "context": "Fourvenues detectó una oportunidad dentro de su vertical que ningún producto existente cubría bien. No había un producto todavía, solo una hipótesis de negocio y un mercado que se movía rápido. El reto no era construir rápido, era construir lo correcto sin un histórico de datos internos en el que apoyarse.",
+      "role": "Product Manager al frente del 0→1: desde la definición del problema hasta la priorización del roadmap y la coordinación día a día con diseño, ingeniería y el equipo comercial.",
+      "discovery": "Entrevistas con clientes actuales y prospects, sombra en llamadas comerciales para entender objeciones reales, y análisis de cómo los usuarios resolvían el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). El objetivo era encontrar el trabajo que la gente ya intentaba hacer, no inventar uno nuevo.",
+      "decisionFramework": "Prioricé por dos ejes: frecuencia del dolor y coste de no resolverlo. Descarté features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que responder a una pregunta: ¿qué decisión de negocio permite tomar esto que hoy no se puede tomar?",
+      "whatIBuilt": "El roadmap inicial del producto, los flujos core de la primera versión, y el sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción.",
+      "outcomes": "Sin métricas exactas que compartir todavía — el producto sigue en fase temprana. El aprendizaje principal: en 0→1 el roadmap más valioso es el que se atreve a no incluir cosas. Decir que no pronto ahorra meses después."
+    },
+    "nailted": {
+      "title": "Rediseño de onboarding y mejora del engagement semanal",
+      "summary": "Rediseño del flujo de onboarding y del ciclo de engagement semanal para que los equipos adoptaran el producto más allá de la primera semana.",
+      "context": "El producto se vendía bien pero la adopción real dentro de cada equipo (el uso semanal, no solo el login inicial) era desigual. Algunos equipos lo convertían en hábito, otros lo abandonaban tras la novedad inicial.",
+      "role": "Responsable de onboarding y engagement: research, diseño del flujo, y coordinación con diseño e ingeniería para el rediseño.",
+      "discovery": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales) — porque en B2B2C el que compra y el que usa no siempre quieren lo mismo.",
+      "decisionFramework": "Prioricé cambios que redujeran la distancia entre 'me registro' y 'entiendo por qué esto importa cada semana', por encima de añadir funcionalidad nueva. Descarté rediseños visuales que no atacaban la causa real de abandono.",
+      "whatIBuilt": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera como parte del ritmo del equipo, no como una tarea más.",
+      "outcomes": "Mejora observable en la adopción semanal, sin cifra exacta que pueda compartir. Aprendizaje clave: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez, no asumir que resolver para una resuelve para la otra."
+    },
+    "cuatroochenta": {
+      "title": "Gestión de múltiples líneas de producto en un entorno de consultoría",
+      "summary": "Liderazgo de varias líneas de producto a medida para distintos clientes, cada uno con su propio contexto y restricciones.",
+      "context": "Entorno de consultoría: cada cliente traía su propio problema, su propio stakeholder y su propia definición de éxito. No había un único producto que optimizar, sino varios en paralelo, cada uno compitiendo por el mismo equipo.",
+      "role": "Full lifecycle de producto para varias cuentas a la vez.",
+      "discovery": "Discovery adaptado a cada cliente — en consultoría no hay un proceso único que valga para todos. Se trataba de entender rápido qué información era señal y qué era ruido en cada contexto nuevo.",
+      "decisionFramework": "Prioricé entre líneas de producto usando el mismo criterio siempre: impacto real en el negocio del cliente frente a coste de oportunidad del equipo compartido. Descarté peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera.",
+      "whatIBuilt": "Sistemas y procesos de priorización que permitían al mismo squad servir a varios clientes sin perder foco, y roadmaps a medida ajustados a cada contrato.",
+      "outcomes": "Sin métricas exactas por cliente. Aprendizaje principal: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog — el trade-off no es solo qué construir, es a quién decir que no esta semana."
+    },
+    "playjoy": {
+      "title": "App de juegos tradicionales multijugador con comunidad",
+      "summary": "Producto B2C de juegos tradicionales pensado para jugarse en grupo, con la comunidad como motor de crecimiento.",
+      "context": "Los juegos tradicionales (cartas, mesa, patio) tienen una ventaja que muchos juegos digitales no: ya existe una comunidad que los juega offline. El reto era llevar esa dinámica social a un producto digital sin perder lo que la hacía divertida.",
+      "role": "Product Manager del producto B2C, con foco en las dinámicas multijugador y de comunidad.",
+      "discovery": "Observación directa de cómo la gente juega estos juegos offline — quién invita, quién organiza, qué hace que un grupo vuelva a jugar la semana siguiente.",
+      "decisionFramework": "Prioricé features que reforzaran el efecto de red (invitar, volver a jugar con el mismo grupo) por encima de añadir más juegos al catálogo. Descarté funcionalidad que optimizaba para el jugador individual en vez de para el grupo.",
+      "whatIBuilt": "Flujos multiplataforma para crear y unirse a partidas en grupo, pensados para que organizar una partida fuera tan fácil como proponerla en un chat.",
+      "outcomes": "Sin cifras exactas para compartir. Aprendizaje: en producto con efecto de red, el usuario que importa de verdad no es el que juega, es el que organiza — diseñar para el organizador multiplica el alcance."
+    }
+  },
+  "Community": {
+    "metaTitle": "Community — Valencia Product Beers",
+    "eyebrow": "community · el diferenciador más potente",
+    "framing": "Construí la comunidad de producto más activa de Valencia desde cero — porque creía que la comunidad ya existía, solo necesitaba un lugar real donde encontrarse.",
+    "storyLabel": "// story",
+    "story": "Carlos fundó Valencia Product Beers para validar una hipótesis simple: que existía una comunidad de producto en Valencia que quería juntarse y compartir de verdad — harta de eventos donde siempre hay alguien vendiendo algo. El objetivo era traspasar las conexiones de LinkedIn y volverlas reales. La cerveza es solo el icebreaker.",
+    "statMembers": "miembros",
+    "statEvents": "eventos",
+    "statAvgAttendance": "asistentes/evento",
+    "statFounded": "desde",
+    "galleryLabel": "// gallery",
+    "galleryPending": "5–8 fotos de eventos de Valencia Product Beers.",
+    "testimonialsLabel": "// testimonials",
+    "testimonialsPending": "2–3 quotes de miembros de la comunidad.",
+    "linksLabel": "// links",
+    "linksPending": "enlaces públicos (Meetup / LinkedIn group / Instagram).",
+    "linkMeetup": "meetup",
+    "linkLinkedin": "linkedin",
+    "linkInstagram": "instagram"
+  },
+  "SideProjects": {
+    "metaTitle": "Side Projects — Carlos Miguel Corada",
+    "eyebrow": "ls ./side-projects",
+    "title": "Fuera del día a día",
+    "description": "Experiencia como founder, artículos publicados, y experimentos con herramientas nuevas.",
+    "founderExperienceLabel": "// founder experience",
+    "remsoulStatus": "Founder experience — detalles próximamente",
+    "remsoulDescription": "Carlos fue founder de Remsoul. Es también la historia detrás de su mayor aprendizaje: la lección de saber cuándo matar una idea. Los detalles completos de qué era, qué pasó y por qué, están todavía por escribir.",
+    "articlesLabel": "// articles",
+    "articlesPending": "títulos y enlaces de los artículos publicados en {publication}.",
+    "experimentsLabel": "// experiments",
+    "experimentAiName": "Prototipado rápido con IA",
+    "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con sus propias manos — no solo para escribir specs."
+  },
+  "About": {
+    "metaTitle": "About — Carlos Miguel Corada",
+    "eyebrow": "cat ./about.md",
+    "bio1": "Senior Technical Product Manager con 5+ años construyendo y escalando productos SaaS B2B y B2C en entornos con muchas integraciones y de cara a partners. Lidero integraciones basadas en API de principio a fin — traduciendo requisitos técnicos y de negocio en specs claras, y orquestando ingeniería, datos, operaciones y partners externos para lanzarlas.",
+    "bio2": "Uso herramientas de IA a diario — Claude, Cursor, GitHub Copilot — para prototipar, debuggear y lanzar automatizaciones con mis propias manos, no solo para escribir specs y pasarlas a otro equipo. El discovery no es una fase, es un hábito, y el mejor roadmap es el que mata las malas ideas antes.",
+    "bio3": "Fuera del trabajo, dirijo Valencia Product Beers — una comunidad que construí porque estaba harto de los eventos de networking falsos. Nos juntamos, hablamos de producto, bebemos cerveza. Así de simple.",
+    "experienceLabel": "// experience",
+    "skillsLabel": "// skills",
+    "toolsLabel": "// tools",
+    "educationLabel": "// education",
+    "languagesLabel": "// languages",
+    "contactLabel": "// contact",
+    "linkedinLabel": "linkedin",
+    "linkedinPending": "URL de LinkedIn.",
+    "cvLabel": "download-cv.pdf",
+    "cvPending": "CV descargable en PDF."
+  },
+  "Ask": {
+    "metaTitle": "Ask Me Anything — Carlos Miguel Corada",
+    "eyebrow": "// ⭐ ask me anything",
+    "title": "Chatea conmigo — literalmente",
+    "description": "Este chat responde como yo: honesto, directo, sin corporate speak. Si activas \"modo mamá\", responde mi madre — con todo el cariño y la confusión encantadora que eso implica."
+  },
+  "Chat": {
+    "welcomeCarlos": "Hey. Pregúntame lo que sea — sobre producto, marketplaces, la comunidad, mis fracasos, o lo que te dé curiosidad. Te lo diré tal cual.",
+    "welcomeMom": "Hola cariño! Bueno, hola a ti que estás preguntando cosas de mi hijo. Pregunta lo que quieras, que de Carlos sé mucho, aunque a veces no entiendo muy bien todo lo que hace...",
+    "modoMamaLabel": "modo mamá",
+    "toggleAria": "Activar modo mamá",
+    "placeholderCarlos": "pregúntale a Carlos...",
+    "placeholderMom": "pregúntale a su madre...",
+    "send": "enviar",
+    "footerCarlos": "powered by gemini · responde como carlos, no como un chatbot genérico",
+    "footerMom": "modo mamá activado · puede que no entienda todos los términos de producto",
+    "genericError": "Algo salió mal. Inténtalo de nuevo.",
+    "connectionError": "No se pudo conectar. Comprueba tu conexión e inténtalo de nuevo.",
+    "suggestedQuestions": [
+      "¿Cuál es tu superpoder como PM?",
+      "Cuéntame tu mayor fracaso",
+      "¿Por qué Valencia Product Beers?",
+      "Hot take sobre marketplaces",
+      "¿Qué tipo de PM eres?",
+      "¿Qué herramientas usas a diario?"
+    ]
+  },
+  "LanguageSwitch": {
+    "label": "idioma"
+  }
+}

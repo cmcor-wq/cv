@@ -1,28 +1,31 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { Container, SectionHeading, Tag, PendingNote } from "@/components/ui";
 import { about } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "About — Carlos Miguel Corada",
-};
+export async function generateMetadata(props: PageProps<"/[locale]/about">): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "About" });
+  return { title: t("metaTitle") };
+}
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations("About");
+
   return (
     <Container className="py-16">
-      <SectionHeading eyebrow="cat ./about.md" title="Carlos Miguel Corada" />
+      <SectionHeading eyebrow={t("eyebrow")} title="Carlos Miguel Corada" />
 
       <div className="grid gap-14 lg:grid-cols-[1fr_320px]">
         <div>
           <section className="mb-12 flex max-w-2xl flex-col gap-4">
-            {about.bio.map((p, i) => (
-              <p key={i} className="text-[15px] leading-relaxed text-text-muted">
-                {p}
-              </p>
-            ))}
+            <p className="text-[15px] leading-relaxed text-text-muted">{t("bio1")}</p>
+            <p className="text-[15px] leading-relaxed text-text-muted">{t("bio2")}</p>
+            <p className="text-[15px] leading-relaxed text-text-muted">{t("bio3")}</p>
           </section>
 
           <section className="mb-12">
-            <p className="mb-4 font-mono text-[11px] text-accent-600">{"// experience"}</p>
+            <p className="mb-4 font-mono text-[11px] text-accent-600">{t("experienceLabel")}</p>
             <div className="flex flex-col divide-y divide-border rounded-lg border border-border bg-bg-surface">
               {about.experience.map((e) => (
                 <div key={e.company} className="flex items-center justify-between gap-4 px-5 py-3.5">
@@ -31,8 +34,7 @@ export default function AboutPage() {
                     <p className="text-xs text-text-muted">{e.role}</p>
                   </div>
                   <p className="font-mono text-[11px] text-text-faint">
-                    {e.location}
-                    {e.period ? ` · ${e.period}` : ""}
+                    {e.location} · {e.period}
                   </p>
                 </div>
               ))}
@@ -40,7 +42,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <p className="mb-4 font-mono text-[11px] text-accent-600">{"// skills"}</p>
+            <p className="mb-4 font-mono text-[11px] text-accent-600">{t("skillsLabel")}</p>
             <div className="flex flex-wrap gap-2">
               {about.skills.map((s) => (
                 <Tag key={s}>{s}</Tag>
@@ -51,16 +53,16 @@ export default function AboutPage() {
 
         <aside className="flex flex-col gap-8">
           <div>
-            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// tools"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{t("toolsLabel")}</p>
             <div className="flex flex-wrap gap-2">
-              {about.tools.map((t) => (
-                <Tag key={t}>{t}</Tag>
+              {about.tools.map((tool) => (
+                <Tag key={tool}>{tool}</Tag>
               ))}
             </div>
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// education"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{t("educationLabel")}</p>
             <div className="flex flex-col gap-3">
               {about.education.map((ed) => (
                 <div key={ed.program}>
@@ -75,12 +77,12 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// languages"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{t("languagesLabel")}</p>
             <p className="text-sm text-text-muted">{about.languages.join(" · ")}</p>
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// contact"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{t("contactLabel")}</p>
             <div className="flex flex-col gap-2">
               <a href={`mailto:${about.contact.email}`} className="font-mono text-sm text-text hover:text-accent-600">
                 {about.contact.email}
@@ -95,17 +97,17 @@ export default function AboutPage() {
                   rel="noreferrer"
                   className="font-mono text-sm text-text hover:text-accent-600"
                 >
-                  linkedin
+                  {t("linkedinLabel")}
                 </a>
               ) : (
-                <PendingNote>URL de LinkedIn.</PendingNote>
+                <PendingNote>{t("linkedinPending")}</PendingNote>
               )}
               {about.contact.cvUrl ? (
                 <a href={about.contact.cvUrl} className="font-mono text-sm text-text hover:text-accent-600">
-                  download-cv.pdf
+                  {t("cvLabel")}
                 </a>
               ) : (
-                <PendingNote>CV descargable en PDF.</PendingNote>
+                <PendingNote>{t("cvPending")}</PendingNote>
               )}
             </div>
           </div>

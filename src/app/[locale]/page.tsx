@@ -1,26 +1,31 @@
+import { getTranslations } from "next-intl/server";
 import { Container, ButtonLink } from "@/components/ui";
+import { Link } from "@/i18n/navigation";
 import { credibility } from "@/lib/content";
 
-export default function Home() {
+export default async function Home() {
+  const t = await getTranslations("Home");
+
   return (
     <>
       <section className="border-b border-border">
         <Container className="py-20 sm:py-28">
           <p className="mb-6 font-mono text-[12.5px] text-accent-600">
-            <span className="text-text-faint">❯</span> whoami --role=senior-technical-pm --based=valencia
+            <span className="text-text-faint">❯</span> {t("whoamiPrompt")}
           </p>
           <h1 className="max-w-3xl font-mono text-4xl font-bold leading-tight text-text sm:text-5xl">
-            Senior Technical PM building integration-heavy <span className="text-accent-600">&amp;</span>{" "}
-            partner-facing SaaS
+            {t.rich("headline", {
+              amp: (chunks) => <span className="text-accent-600">{chunks}</span>,
+            })}
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-muted">
-            API integrations, partner platforms & data products · 5+ years · Valencia
+            {t("subheadline")}
             <span className="caret" />
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <ButtonLink href="/work">./explore-my-work</ButtonLink>
+            <ButtonLink href="/work">{t("exploreWork")}</ButtonLink>
             <ButtonLink href="/ask" variant="secondary">
-              ./ask-me-anything
+              {t("askMeAnything")}
             </ButtonLink>
           </div>
         </Container>
@@ -28,7 +33,7 @@ export default function Home() {
 
       <section className="py-10">
         <Container>
-          <p className="mb-5 font-mono text-[11px] text-text-faint">{"// where I've built"}</p>
+          <p className="mb-5 font-mono text-[11px] text-text-faint">{t("whereBuilt")}</p>
           <div className="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm text-text-muted">
             {credibility.map((name) => (
               <span key={name}>{name}</span>
@@ -42,22 +47,22 @@ export default function Home() {
           <div className="grid gap-6 sm:grid-cols-3">
             <HomeCard
               href="/work"
-              eyebrow="case-studies"
-              title="How I actually build product"
-              description="Discovery, trade-offs, decisions — not just outcomes."
+              eyebrow={t("cardWorkEyebrow")}
+              title={t("cardWorkTitle")}
+              description={t("cardWorkDescription")}
             />
             <HomeCard
               href="/community"
-              eyebrow="community"
-              title="Valencia Product Beers"
-              description="The most active product community in Valencia. Built from zero."
+              eyebrow={t("cardCommunityEyebrow")}
+              title={t("cardCommunityTitle")}
+              description={t("cardCommunityDescription")}
               accent="green"
             />
             <HomeCard
               href="/ask"
-              eyebrow="⭐ the fun part"
-              title="Ask me anything"
-              description="A chat that's actually me. Includes 'modo mamá'."
+              eyebrow={t("cardAskEyebrow")}
+              title={t("cardAskTitle")}
+              description={t("cardAskDescription")}
               accent="coral"
             />
           </div>
@@ -84,7 +89,7 @@ function HomeCard({
     accent === "green" ? "text-green-600" : accent === "coral" ? "text-coral-600" : "text-accent-600";
 
   return (
-    <a
+    <Link
       href={href}
       className="group flex flex-col rounded-lg border border-border bg-bg-surface p-6 transition-colors hover:border-border-md"
     >
@@ -94,6 +99,6 @@ function HomeCard({
       <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-accent-600">
         →
       </span>
-    </a>
+    </Link>
   );
 }
