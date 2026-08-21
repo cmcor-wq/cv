@@ -29,13 +29,15 @@ export const caseStudies: CaseStudy[] = [
 
 export const community = {
   name: "Valencia Product Beers",
-  founded: null as string | null,
+  founded: "2023" as string | null,
   stats: {
-    members: null as number | null,
-    events: null as number | null,
-    avgAttendance: null as number | null,
+    telegramMembers: 425 as number | null,
+    linkedinMembers: 1500 as number | null,
+    events: 10 as number | null,
+    avgAttendance: 340 as number | null,
   },
   links: {
+    website: "https://productbeers.es" as string | null,
     meetup: null as string | null,
     linkedin: null as string | null,
     instagram: null as string | null,
@@ -96,7 +98,7 @@ export const about = {
   contact: {
     email: "cmiguelcorada@gmail.com",
     phone: "+34 660 926 268",
-    linkedin: null as string | null,
+    linkedin: "https://www.linkedin.com/in/cmiguelcorada/" as string | null,
     cvUrl: null as string | null,
   },
 };

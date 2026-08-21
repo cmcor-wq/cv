@@ -17,8 +17,9 @@ export default async function CommunityPage() {
     <Container className="py-16">
       <SectionHeading eyebrow={t("eyebrow")} title={community.name} description={t("framing")} />
 
-      <div className="mb-14 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat label={t("statMembers")} value={stats.members} />
+      <div className="mb-14 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <Stat label={t("statTelegram")} value={stats.telegramMembers} />
+        <Stat label={t("statLinkedin")} value={stats.linkedinMembers ? `${stats.linkedinMembers}+` : null} />
         <Stat label={t("statEvents")} value={stats.events} />
         <Stat label={t("statAvgAttendance")} value={stats.avgAttendance} />
         <Stat label={t("statFounded")} value={community.founded} />
@@ -63,10 +64,11 @@ export default async function CommunityPage() {
 
       <section>
         <p className="mb-4 font-mono text-[11px] text-green-600">{t("linksLabel")}</p>
-        {!links.meetup && !links.linkedin && !links.instagram ? (
+        {!links.website && !links.meetup && !links.linkedin && !links.instagram ? (
           <PendingNote>{t("linksPending")}</PendingNote>
         ) : (
           <div className="flex flex-wrap gap-3">
+            {links.website && <ExternalLink href={links.website} label={t("linkWebsite")} />}
             {links.meetup && <ExternalLink href={links.meetup} label={t("linkMeetup")} />}
             {links.linkedin && <ExternalLink href={links.linkedin} label={t("linkLinkedin")} />}
             {links.instagram && <ExternalLink href={links.instagram} label={t("linkInstagram")} />}
