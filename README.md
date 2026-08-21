@@ -22,11 +22,12 @@ npm run dev
 
 ## Configurar el chat (`/ask`)
 
-El chat llama a la API de Anthropic desde un route handler del servidor (`src/app/api/chat/route.ts`), nunca desde el cliente — la API key nunca se expone al navegador.
+El chat llama a la API de Google Gemini desde un route handler del servidor (`src/app/api/chat/route.ts`), nunca desde el cliente — la API key nunca se expone al navegador.
 
-1. Copia `.env.example` a `.env.local`
-2. Añade tu `ANTHROPIC_API_KEY`
-3. (Opcional) `ANTHROPIC_MODEL` para sobrescribir el modelo por defecto (`claude-sonnet-4-6`)
+1. Consigue una API key gratis en [Google AI Studio](https://aistudio.google.com/apikey)
+2. Copia `.env.example` a `.env.local`
+3. Añade tu `GEMINI_API_KEY`
+4. (Opcional) `GEMINI_MODEL` para sobrescribir el modelo por defecto (`gemini-flash-latest`)
 
 Sin la key configurada, `/ask` sigue siendo funcional visualmente pero responde con un error controlado.
 

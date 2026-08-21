@@ -149,7 +149,7 @@ export default function AskChat() {
       <p className="border-t border-border px-4 py-2 text-center font-mono text-[10.5px] text-text-faint">
         {isMom
           ? "modo mamá activado · puede que no entienda todos los términos de producto"
-          : "powered by claude · responde como carlos, no como un chatbot genérico"}
+          : "powered by gemini · responde como carlos, no como un chatbot genérico"}
       </p>
     </div>
   );
