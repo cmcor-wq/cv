@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function SideProjectsPage() {
-  const { remsoul, articles, experiments } = sideProjects;
+  const { remsoul, articles, articlesPublication, experiments } = sideProjects;
 
   return (
     <Container className="py-16">
@@ -27,7 +27,7 @@ export default function SideProjectsPage() {
       <section className="mb-14">
         <p className="mb-4 font-mono text-[11px] text-accent-600">{"// articles"}</p>
         {articles.length === 0 ? (
-          <PendingNote>títulos y enlaces de los 2 artículos publicados en revista de producto.</PendingNote>
+          <PendingNote>títulos y enlaces de los artículos publicados en {articlesPublication}.</PendingNote>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2">
             {articles.map((a) => (

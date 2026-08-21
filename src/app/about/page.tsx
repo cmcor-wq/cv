@@ -61,7 +61,17 @@ export default function AboutPage() {
 
           <div>
             <p className="mb-3 font-mono text-[11px] text-accent-600">{"// education"}</p>
-            <p className="text-sm text-text-muted">{about.education}</p>
+            <div className="flex flex-col gap-3">
+              {about.education.map((ed) => (
+                <div key={ed.program}>
+                  <p className="text-sm text-text">{ed.program}</p>
+                  <p className="font-mono text-[11px] text-text-faint">
+                    {ed.school && `${ed.school} · `}
+                    {ed.location} · {ed.period}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div>
@@ -74,6 +84,9 @@ export default function AboutPage() {
             <div className="flex flex-col gap-2">
               <a href={`mailto:${about.contact.email}`} className="font-mono text-sm text-text hover:text-accent-600">
                 {about.contact.email}
+              </a>
+              <a href={`tel:${about.contact.phone.replace(/\s/g, "")}`} className="font-mono text-sm text-text hover:text-accent-600">
+                {about.contact.phone}
               </a>
               {about.contact.linkedin ? (
                 <a

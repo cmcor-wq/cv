@@ -7,14 +7,14 @@ export default function Home() {
       <section className="border-b border-border">
         <Container className="py-20 sm:py-28">
           <p className="mb-6 font-mono text-[12.5px] text-accent-600">
-            <span className="text-text-faint">❯</span> whoami --role=senior-pm --based=valencia
+            <span className="text-text-faint">❯</span> whoami --role=senior-technical-pm --based=valencia
           </p>
           <h1 className="max-w-3xl font-mono text-4xl font-bold leading-tight text-text sm:text-5xl">
-            Senior PM specializing in marketplaces <span className="text-accent-600">&amp;</span> SaaS
-            products
+            Senior Technical PM building integration-heavy <span className="text-accent-600">&amp;</span>{" "}
+            partner-facing SaaS
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-muted">
-            Builder of digital products and communities · 5 years · Valencia
+            API integrations, partner platforms & data products · 5+ years · Valencia
             <span className="caret" />
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
