@@ -6,11 +6,11 @@ export default function Home() {
     <>
       <section className="border-b border-border">
         <Container className="py-20 sm:py-28">
-          <p className="mb-6 font-mono text-[12.5px] text-amber-600">
+          <p className="mb-6 font-mono text-[12.5px] text-accent-600">
             <span className="text-text-faint">❯</span> whoami --role=senior-pm --based=valencia
           </p>
           <h1 className="max-w-3xl font-mono text-4xl font-bold leading-tight text-text sm:text-5xl">
-            Senior PM specializing in marketplaces <span className="text-amber-600">&amp;</span> SaaS
+            Senior PM specializing in marketplaces <span className="text-accent-600">&amp;</span> SaaS
             products
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-muted">
@@ -72,16 +72,16 @@ function HomeCard({
   eyebrow,
   title,
   description,
-  accent = "amber",
+  accent = "accent",
 }: {
   href: string;
   eyebrow: string;
   title: string;
   description: string;
-  accent?: "amber" | "green" | "coral";
+  accent?: "accent" | "green" | "coral";
 }) {
   const accentColor =
-    accent === "green" ? "text-green-600" : accent === "coral" ? "text-coral-600" : "text-amber-600";
+    accent === "green" ? "text-green-600" : accent === "coral" ? "text-coral-600" : "text-accent-600";
 
   return (
     <a
@@ -91,7 +91,7 @@ function HomeCard({
       <p className={`mb-3 font-mono text-[11px] ${accentColor}`}>{`// ${eyebrow}`}</p>
       <h3 className="font-mono text-lg font-semibold text-text">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-text-muted">{description}</p>
-      <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-amber-600">
+      <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-accent-600">
         →
       </span>
     </a>

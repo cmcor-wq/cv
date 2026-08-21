@@ -21,7 +21,6 @@ export default function AskChat() {
   const boxRef = useRef<HTMLDivElement>(null);
 
   const isMom = mode === "mom";
-  const accent = isMom ? "coral" : "amber";
 
   useEffect(() => {
     boxRef.current?.scrollTo({ top: boxRef.current.scrollHeight, behavior: "smooth" });
@@ -75,9 +74,9 @@ export default function AskChat() {
     <div className="mx-auto w-full max-w-2xl overflow-hidden rounded-lg border border-border-md">
       <div className="flex items-center justify-between border-b border-border bg-bg-surface px-4 py-2.5">
         <div className="flex items-center gap-2 font-mono text-[11px] text-text-faint">
-          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
-          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
-          <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+          <span className="h-2 w-2 rounded-full bg-border-md" />
+          <span className="h-2 w-2 rounded-full bg-border-md" />
+          <span className="h-2 w-2 rounded-full bg-border-md" />
           <span className="ml-2">{isMom ? "carlos@ask ~ mom" : "carlos@ask ~ me"}</span>
         </div>
 
@@ -119,7 +118,7 @@ export default function AskChat() {
               key={q}
               onClick={() => sendMessage(q)}
               disabled={loading}
-              className="rounded border border-border-md bg-bg px-2.5 py-1 font-mono text-[11px] text-text-muted transition-colors hover:border-amber-600/50 hover:text-text disabled:opacity-50"
+              className="rounded border border-border-md bg-bg px-2.5 py-1 font-mono text-[11px] text-text-muted transition-colors hover:border-accent-600/50 hover:text-text disabled:opacity-50"
             >
               {q}
             </button>
@@ -127,7 +126,7 @@ export default function AskChat() {
         </div>
 
         <form onSubmit={handleSubmit} className="flex items-center gap-2 font-mono text-sm">
-          <span className={accent === "coral" ? "text-coral-600" : "text-amber-600"}>❯</span>
+          <span className={isMom ? "text-coral-600" : "text-accent-600"}>❯</span>
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -139,7 +138,7 @@ export default function AskChat() {
             type="submit"
             disabled={loading || !input.trim()}
             className={`rounded px-3 py-1.5 font-mono text-xs font-medium text-bg transition-opacity hover:opacity-85 disabled:opacity-30 ${
-              accent === "coral" ? "bg-coral-600" : "bg-amber-600"
+              isMom ? "bg-coral-600" : "bg-accent-600"
             }`}
           >
             send
@@ -159,7 +158,7 @@ export default function AskChat() {
 function Line({ role, mode, text }: { role: "user" | "assistant"; mode: Mode; text: string }) {
   const isUser = role === "user";
   const isMom = mode === "mom";
-  const promptColor = isMom ? "text-coral-600" : "text-amber-600";
+  const promptColor = isMom ? "text-coral-600" : "text-accent-600";
 
   return (
     <div className="flex gap-2 py-1.5 font-mono text-[13px] leading-relaxed">
@@ -173,13 +172,13 @@ function TypingLine({ mode }: { mode: Mode }) {
   const isMom = mode === "mom";
   return (
     <div className="flex gap-2 py-1.5 font-mono text-[13px]">
-      <span className={isMom ? "text-coral-600" : "text-amber-600"}>❯</span>
+      <span className={isMom ? "text-coral-600" : "text-accent-600"}>❯</span>
       <span className="flex items-center gap-1 text-text-faint">
         {[0, 1, 2].map((i) => (
           <span
             key={i}
             style={{ animationDelay: `${i * 0.2}s` }}
-            className={`h-1.5 w-1.5 animate-pulse rounded-full ${isMom ? "bg-coral-600" : "bg-amber-600"}`}
+            className={`h-1.5 w-1.5 animate-pulse rounded-full ${isMom ? "bg-coral-600" : "bg-accent-600"}`}
           />
         ))}
       </span>

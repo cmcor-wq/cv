@@ -23,7 +23,7 @@ export default function WorkPage() {
             href={`/work/${cs.slug}`}
             className="group flex flex-col rounded-lg border border-border bg-bg-surface p-6 transition-colors hover:border-border-md"
           >
-            <p className="mb-2 font-mono text-[11px] text-amber-600">./{cs.slug}.md</p>
+            <p className="mb-2 font-mono text-[11px] text-accent-600">./{cs.slug}.md</p>
             <h2 className="font-mono text-lg font-semibold text-text">{cs.title}</h2>
             <p className="mt-2 text-sm leading-relaxed text-text-muted">{cs.summary}</p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -31,7 +31,7 @@ export default function WorkPage() {
                 <Tag key={t}>{t}</Tag>
               ))}
             </div>
-            <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-amber-600">
+            <span className="mt-5 font-mono text-xs text-text-faint transition-colors group-hover:text-accent-600">
               cat ./{cs.slug}.md →
             </span>
           </Link>

@@ -21,11 +21,11 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
 
   return (
     <Container className="py-16">
-      <Link href="/work" className="mb-8 inline-block font-mono text-xs text-text-faint hover:text-amber-600">
+      <Link href="/work" className="mb-8 inline-block font-mono text-xs text-text-faint hover:text-accent-600">
         cd ../work
       </Link>
 
-      <p className="mb-3 font-mono text-[12px] text-amber-600">./{cs.slug}.md</p>
+      <p className="mb-3 font-mono text-[12px] text-accent-600">./{cs.slug}.md</p>
       <h1 className="max-w-3xl font-mono text-3xl font-bold leading-tight text-text sm:text-4xl">
         {cs.title}
       </h1>
@@ -53,7 +53,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
       </div>
 
       <div className="mt-16 border-t border-border pt-8">
-        <Link href="/ask" className="font-mono text-xs text-amber-600 hover:underline">
+        <Link href="/ask" className="font-mono text-xs text-accent-600 hover:underline">
           ./ask &quot;¿Tienes preguntas sobre este proyecto?&quot; →
         </Link>
       </div>

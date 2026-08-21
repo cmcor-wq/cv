@@ -19,9 +19,9 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-bg/95 backdrop-blur">
       <div className="flex items-center gap-2 border-b border-border px-5 py-2.5 font-mono text-[11px] text-text-faint">
-        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
-        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
-        <span className="h-2 w-2 rounded-full bg-[#3A362E]" />
+        <span className="h-2 w-2 rounded-full bg-border-md" />
+        <span className="h-2 w-2 rounded-full bg-border-md" />
+        <span className="h-2 w-2 rounded-full bg-border-md" />
         <span className="ml-2">
           carlos@portfolio ~ {pathname === "/" ? "/home" : pathname}
         </span>
@@ -41,7 +41,7 @@ export default function Nav() {
                 href={link.href}
                 className={`rounded px-3 py-1.5 font-mono text-[12px] transition-colors ${
                   active
-                    ? "bg-amber-50 text-amber-600"
+                    ? "bg-accent-50 text-accent-600"
                     : "text-text-muted hover:bg-bg-surface hover:text-text"
                 }`}
               >

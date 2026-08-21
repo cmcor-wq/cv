@@ -27,7 +27,7 @@ export function ButtonLink({
   const base = "inline-flex items-center gap-2 rounded px-5 py-2.5 font-mono text-sm transition-opacity hover:opacity-85";
   const styles =
     variant === "primary"
-      ? "bg-amber-600 text-bg font-medium"
+      ? "bg-accent-600 text-bg font-medium"
       : "border border-border-md bg-transparent text-text";
 
   const props = external ? { target: "_blank", rel: "noreferrer" } : {};
@@ -50,7 +50,7 @@ export function SectionHeading({
 }) {
   return (
     <div className="mb-10 max-w-2xl">
-      {eyebrow && <p className="mb-3 font-mono text-[12px] text-amber-600">{`// ${eyebrow}`}</p>}
+      {eyebrow && <p className="mb-3 font-mono text-[12px] text-accent-600">{`// ${eyebrow}`}</p>}
       <h1 className="font-mono text-2xl font-bold leading-tight text-text sm:text-3xl">{title}</h1>
       {description && <p className="mt-4 text-base leading-relaxed text-text-muted">{description}</p>}
     </div>
@@ -60,7 +60,7 @@ export function SectionHeading({
 export function PendingNote({ children }: { children: ReactNode }) {
   return (
     <p className="rounded border border-dashed border-border-md bg-bg-surface px-4 py-3 font-mono text-xs text-text-faint">
-      <span className="text-amber-600">{"// TODO "}</span>
+      <span className="text-accent-600">{"// TODO "}</span>
       {children}
     </p>
   );

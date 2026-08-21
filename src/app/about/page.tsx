@@ -22,7 +22,7 @@ export default function AboutPage() {
           </section>
 
           <section className="mb-12">
-            <p className="mb-4 font-mono text-[11px] text-amber-600">{"// experience"}</p>
+            <p className="mb-4 font-mono text-[11px] text-accent-600">{"// experience"}</p>
             <div className="flex flex-col divide-y divide-border rounded-lg border border-border bg-bg-surface">
               {about.experience.map((e) => (
                 <div key={e.company} className="flex items-center justify-between gap-4 px-5 py-3.5">
@@ -40,7 +40,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <p className="mb-4 font-mono text-[11px] text-amber-600">{"// skills"}</p>
+            <p className="mb-4 font-mono text-[11px] text-accent-600">{"// skills"}</p>
             <div className="flex flex-wrap gap-2">
               {about.skills.map((s) => (
                 <Tag key={s}>{s}</Tag>
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
         <aside className="flex flex-col gap-8">
           <div>
-            <p className="mb-3 font-mono text-[11px] text-amber-600">{"// tools"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// tools"}</p>
             <div className="flex flex-wrap gap-2">
               {about.tools.map((t) => (
                 <Tag key={t}>{t}</Tag>
@@ -60,19 +60,19 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-amber-600">{"// education"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// education"}</p>
             <p className="text-sm text-text-muted">{about.education}</p>
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-amber-600">{"// languages"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// languages"}</p>
             <p className="text-sm text-text-muted">{about.languages.join(" · ")}</p>
           </div>
 
           <div>
-            <p className="mb-3 font-mono text-[11px] text-amber-600">{"// contact"}</p>
+            <p className="mb-3 font-mono text-[11px] text-accent-600">{"// contact"}</p>
             <div className="flex flex-col gap-2">
-              <a href={`mailto:${about.contact.email}`} className="font-mono text-sm text-text hover:text-amber-600">
+              <a href={`mailto:${about.contact.email}`} className="font-mono text-sm text-text hover:text-accent-600">
                 {about.contact.email}
               </a>
               {about.contact.linkedin ? (
@@ -80,7 +80,7 @@ export default function AboutPage() {
                   href={about.contact.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono text-sm text-text hover:text-amber-600"
+                  className="font-mono text-sm text-text hover:text-accent-600"
                 >
                   linkedin
                 </a>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <PendingNote>URL de LinkedIn.</PendingNote>
               )}
               {about.contact.cvUrl ? (
-                <a href={about.contact.cvUrl} className="font-mono text-sm text-text hover:text-amber-600">
+                <a href={about.contact.cvUrl} className="font-mono text-sm text-text hover:text-accent-600">
                   download-cv.pdf
                 </a>
               ) : (

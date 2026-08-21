@@ -18,14 +18,14 @@ export default function SideProjectsPage() {
       />
 
       <section className="mb-14 max-w-2xl">
-        <p className="mb-3 font-mono text-[11px] text-amber-600">{"// founder experience"}</p>
+        <p className="mb-3 font-mono text-[11px] text-accent-600">{"// founder experience"}</p>
         <h2 className="font-mono text-xl font-semibold text-text">{remsoul.name}</h2>
         <p className="mt-2 font-mono text-xs text-text-faint">{remsoul.status}</p>
         <p className="mt-4 text-[15px] leading-relaxed text-text-muted">{remsoul.description}</p>
       </section>
 
       <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-amber-600">{"// articles"}</p>
+        <p className="mb-4 font-mono text-[11px] text-accent-600">{"// articles"}</p>
         {articles.length === 0 ? (
           <PendingNote>títulos y enlaces de los 2 artículos publicados en revista de producto.</PendingNote>
         ) : (
@@ -47,7 +47,7 @@ export default function SideProjectsPage() {
       </section>
 
       <section>
-        <p className="mb-4 font-mono text-[11px] text-amber-600">{"// experiments"}</p>
+        <p className="mb-4 font-mono text-[11px] text-accent-600">{"// experiments"}</p>
         <div className="grid gap-4 sm:grid-cols-2">
           {experiments.map((e) => (
             <div key={e.name} className="rounded-lg border border-border bg-bg-surface p-5">
