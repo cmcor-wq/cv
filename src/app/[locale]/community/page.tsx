@@ -11,7 +11,7 @@ export async function generateMetadata(props: PageProps<"/[locale]/community">):
 
 export default async function CommunityPage() {
   const t = await getTranslations("Community");
-  const { stats, links, testimonials, gallery } = community;
+  const { stats, links, gallery } = community;
 
   return (
     <Container className="py-16">
@@ -39,24 +39,6 @@ export default async function CommunityPage() {
             {gallery.map((img) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img key={img.src} src={img.src} alt={img.alt} className="aspect-square rounded-lg object-cover" />
-            ))}
-          </div>
-        )}
-      </section>
-
-      <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-green-600">{t("testimonialsLabel")}</p>
-        {testimonials.length === 0 ? (
-          <PendingNote>{t("testimonialsPending")}</PendingNote>
-        ) : (
-          <div className="grid gap-4 sm:grid-cols-2">
-            {testimonials.map((tm) => (
-              <blockquote key={tm.author} className="rounded-lg border border-border bg-bg-surface p-5">
-                <p className="text-[15px] italic leading-relaxed text-text">&ldquo;{tm.quote}&rdquo;</p>
-                <footer className="mt-3 font-mono text-xs text-text-faint">
-                  {tm.author} — {tm.role}
-                </footer>
-              </blockquote>
             ))}
           </div>
         )}

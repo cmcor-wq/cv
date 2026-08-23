@@ -52,7 +52,6 @@ export const community = {
     linkedin: null as string | null,
     instagram: null as string | null,
   },
-  testimonials: [] as { quote: string; author: string; role: string }[],
   gallery: [] as { src: string; alt: string }[],
 };
 
