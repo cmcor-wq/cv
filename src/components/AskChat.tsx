@@ -75,21 +75,24 @@ export default function AskChat() {
           <span className="h-2 w-2 rounded-full bg-border-md" />
           <span className="h-2 w-2 rounded-full bg-border-md" />
           <span className="h-2 w-2 rounded-full bg-border-md" />
-          <span className="ml-2">{isMom ? "carlos@ask ~ mom" : "carlos@ask ~ me"}</span>
+          <span className="ml-2">{isMom ? "carlos@ask ~ mom 🤱" : "carlos@ask ~ me"}</span>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="font-mono text-[10.5px] text-text-faint">{t("modoMamaLabel")}</span>
+          <span className="font-mono text-[10.5px] text-text-faint">
+            {isMom ? "🤱 " : ""}
+            {t("modoMamaLabel")}
+          </span>
           <button
             onClick={switchMode}
             aria-label={t("toggleAria")}
-            className={`relative h-[20px] w-9 rounded-full border transition-colors ${
+            className={`relative h-[20px] w-9 shrink-0 rounded-full border transition-colors ${
               isMom ? "border-coral-600/50 bg-coral-50" : "border-border-md bg-bg"
             }`}
           >
             <span
               className={`absolute top-[3px] h-3 w-3 rounded-full transition-transform ${
-                isMom ? "translate-x-4 bg-coral-600" : "translate-x-1 bg-text-faint"
+                isMom ? "translate-x-5 bg-coral-600" : "translate-x-1 bg-text-faint"
               }`}
             />
           </button>
