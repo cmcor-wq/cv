@@ -49,7 +49,10 @@ export const community = {
 export const sideProjects = {
   remsoul: { name: "Remsoul" },
   compruebaHipoteca: { name: "CompruebaHipoteca.es", url: "https://www.compruebahipoteca.es" },
-  articles: [] as { title: string; publication: string; url: string | null }[],
+  articles: [
+    { title: "Síndrome del carril central", publication: "Brassa", url: "https://brassaproduct.com/c/vGutjEf" },
+    { title: "BTB: Return to Fundamentals", publication: "Brassa", url: "https://brassaproduct.com/c/NrLMwME" },
+  ] as { title: string; publication: string; url: string | null }[],
   articlesPublication: "Brassa",
 };
 
