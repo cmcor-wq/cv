@@ -69,8 +69,16 @@ export default function AskChat() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-2xl overflow-hidden rounded-lg border border-border-md">
-      <div className="flex items-center justify-between border-b border-border bg-bg-surface px-4 py-2.5">
+    <div
+      className={`mx-auto w-full max-w-2xl overflow-hidden rounded-lg border transition-colors ${
+        isMom ? "border-coral-200" : "border-border-md"
+      }`}
+    >
+      <div
+        className={`flex items-center justify-between border-b px-4 py-2.5 transition-colors ${
+          isMom ? "border-coral-200 bg-coral-100/40" : "border-border bg-bg-surface"
+        }`}
+      >
         <div className="flex items-center gap-2 font-mono text-[11px] text-text-faint">
           <span className="h-2 w-2 rounded-full bg-border-md" />
           <span className="h-2 w-2 rounded-full bg-border-md" />
@@ -99,7 +107,12 @@ export default function AskChat() {
         </div>
       </div>
 
-      <div ref={boxRef} className="flex max-h-[420px] min-h-[320px] flex-col gap-1 overflow-y-auto bg-bg p-4">
+      <div
+        ref={boxRef}
+        className={`flex max-h-[420px] min-h-[320px] flex-col gap-1 overflow-y-auto p-4 transition-colors ${
+          isMom ? "bg-coral-50" : "bg-bg"
+        }`}
+      >
         <Line role="assistant" mode={mode} text={isMom ? t("welcomeMom") : t("welcomeCarlos")} />
         {messages.map((m, i) => (
           <Line key={i} role={m.role} mode={mode} text={m.content} />
@@ -112,14 +125,22 @@ export default function AskChat() {
         )}
       </div>
 
-      <div className="border-t border-border bg-bg-surface p-3">
+      <div
+        className={`border-t p-3 transition-colors ${
+          isMom ? "border-coral-200 bg-coral-100/40" : "border-border bg-bg-surface"
+        }`}
+      >
         <div className="mb-2.5 flex flex-wrap gap-1.5">
           {suggestedQuestions.map((q) => (
             <button
               key={q}
               onClick={() => sendMessage(q)}
               disabled={loading}
-              className="rounded border border-border-md bg-bg px-2.5 py-1 font-mono text-[11px] text-text-muted transition-colors hover:border-accent-600/50 hover:text-text disabled:opacity-50"
+              className={`rounded border px-2.5 py-1 font-mono text-[11px] transition-colors disabled:opacity-50 ${
+                isMom
+                  ? "border-coral-200 bg-coral-50 text-text-muted hover:border-coral-600/50 hover:text-text"
+                  : "border-border-md bg-bg text-text-muted hover:border-accent-600/50 hover:text-text"
+              }`}
             >
               {q}
             </button>
@@ -147,7 +168,11 @@ export default function AskChat() {
         </form>
       </div>
 
-      <p className="border-t border-border px-4 py-2 text-center font-mono text-[10.5px] text-text-faint">
+      <p
+        className={`border-t px-4 py-2 text-center font-mono text-[10.5px] text-text-faint transition-colors ${
+          isMom ? "border-coral-200 bg-coral-100/40" : "border-border"
+        }`}
+      >
         {isMom ? t("footerMom") : t("footerCarlos")}
       </p>
     </div>
