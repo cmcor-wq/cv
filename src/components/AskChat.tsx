@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 type Mode = "carlos" | "mom";
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
 export default function AskChat() {
   const t = useTranslations("Chat");
+  const locale = useLocale();
   const suggestedQuestions = t.raw("suggestedQuestions") as string[];
 
   const [mode, setMode] = useState<Mode>("carlos");
@@ -43,7 +44,7 @@ export default function AskChat() {
       const resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode, messages: nextMessages }),
+        body: JSON.stringify({ mode, messages: nextMessages, locale }),
       });
 
       const data = await resp.json();

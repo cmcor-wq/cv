@@ -54,6 +54,7 @@ export const sideProjects = {
     { title: "BTB: Return to Fundamentals", publication: "Brassa", url: "https://brassaproduct.com/c/NrLMwME" },
   ] as { title: string; publication: string; url: string | null }[],
   articlesPublication: "Brassa",
+  articlesPublicationUrl: "https://www.linkedin.com/company/brassa-product",
 };
 
 export const about = {
@@ -103,7 +104,7 @@ export const about = {
     email: "cmiguelcorada@gmail.com",
     phone: "+34 660 926 268",
     linkedin: "https://www.linkedin.com/in/cmiguelcorada/" as string | null,
-    cvUrl: null as string | null,
+    cvUrl: "/cv/carlos-miguel-corada-cv.pdf" as string | null,
   },
 };
 

@@ -103,7 +103,11 @@ export default async function AboutPage() {
                 <PendingNote>{t("linkedinPending")}</PendingNote>
               )}
               {about.contact.cvUrl ? (
-                <a href={about.contact.cvUrl} className="font-mono text-sm text-text hover:text-accent-600">
+                <a
+                  href={about.contact.cvUrl}
+                  download
+                  className="font-mono text-sm text-text hover:text-accent-600"
+                >
                   {t("cvLabel")}
                 </a>
               ) : (

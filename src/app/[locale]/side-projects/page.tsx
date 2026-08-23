@@ -11,7 +11,7 @@ export async function generateMetadata(props: PageProps<"/[locale]/side-projects
 
 export default async function SideProjectsPage() {
   const t = await getTranslations("SideProjects");
-  const { remsoul, compruebaHipoteca, articles, articlesPublication } = sideProjects;
+  const { remsoul, compruebaHipoteca, articles, articlesPublication, articlesPublicationUrl } = sideProjects;
 
   return (
     <Container className="py-16">
@@ -39,7 +39,17 @@ export default async function SideProjectsPage() {
       </section>
 
       <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-accent-600">{t("articlesLabel")}</p>
+        <div className="mb-4 flex items-center gap-3">
+          <p className="font-mono text-[11px] text-accent-600">{t("articlesLabel")}</p>
+          <a
+            href={articlesPublicationUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono text-[11px] text-text-faint hover:text-accent-600"
+          >
+            {articlesPublication} ↗
+          </a>
+        </div>
         {articles.length === 0 ? (
           <PendingNote>{t("articlesPending", { publication: articlesPublication })}</PendingNote>
         ) : (
