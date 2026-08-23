@@ -47,7 +47,7 @@ export const community = {
 };
 
 export const sideProjects = {
-  remsoul: { name: "Remsoul" },
+  remsoul: { name: "Remsoul", period: "Mar 2016 – Jan 2018", location: "Castellón" },
   compruebaHipoteca: { name: "CompruebaHipoteca.es", url: "https://www.compruebahipoteca.es" },
   articles: [
     { title: "Síndrome del carril central", publication: "Brassa", url: "https://brassaproduct.com/c/vGutjEf" },
@@ -89,15 +89,19 @@ export const about = {
     { company: "Amadeus", role: "Senior Product Manager", period: "Feb 2026 – Present", location: "Valencia" },
     { company: "Fourvenues", role: "Senior Product Manager", period: "Feb 2024 – Feb 2026", location: "Valencia" },
     { company: "Nailted", role: "Product Manager", period: "May 2023 – Feb 2024", location: "Madrid" },
-    { company: "Soluciones Cuatroochenta", role: "Product Development Manager", period: "Oct 2020 – May 2023", location: "Castellón" },
-    { company: "Kokoro Kids", role: "Product Manager", period: "May 2019 – Sep 2020", location: "Valencia" },
-    { company: "PlayJoy", role: "Product Manager", period: "Apr 2019 – Oct 2020", location: "Valencia" },
+    { company: "Soluciones Cuatroochenta", role: "Product Development Manager", period: "Oct 2020 – Apr 2023", location: "Castellón" },
+    { company: "Kokoro Kids", role: "Product Manager", period: "Nov 2019 – Oct 2020", location: "Valencia" },
+    { company: "PlayJoy", role: "Business Developer", period: "Apr 2019 – Oct 2020", location: "Valencia" },
+    { company: "Utopic Estudios", role: "Product Manager", period: "Oct 2018 – Jan 2019", location: "Castellón" },
+    { company: "Remsoul", role: "Co-Founder", period: "Mar 2016 – Jan 2018", location: "Castellón" },
+    { company: "Glazurker International", role: "Design Engineer", period: "Sep 2015 – Dec 2015", location: "Paterna, Valencia" },
   ],
   education: [
-    { program: "Product Analytics", school: "Hero Camp", location: "Madrid", period: "Sep 2023 – Dec 2023" },
-    { program: "Digital Product Manager", school: "Hero Camp", location: "Madrid", period: "Sep 2021 – Dec 2021" },
-    { program: "Agile Project Manager", school: "", location: "Valencia", period: "Sep 2020 – Nov 2020" },
-    { program: "Industrial Design & Product Development Engineer", school: "Universidad Jaume I", location: "Castellón", period: "2005 – 2009" },
+    { program: "Product Analytics", school: "Hero Camp", location: "Madrid", period: "Feb 2023 – Jun 2023" },
+    { program: "Digital Product Manager", school: "Hero Camp", location: "Madrid", period: "Oct 2021 – Dec 2021" },
+    { program: "Agile Project Manager", school: "GeeksHubs Academy", location: "Valencia", period: "2020 – 2021" },
+    { program: "Business Expert", school: "ThePowerMBA", location: "", period: "2018 – 2019" },
+    { program: "Industrial Design & Product Development Engineer", school: "Universitat Jaume I", location: "Castellón", period: "2005 – 2010" },
   ],
   languages: ["Español (nativo)", "Català (natiu)", "English (fluent)"],
   contact: {
