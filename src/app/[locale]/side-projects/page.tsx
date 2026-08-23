@@ -11,7 +11,7 @@ export async function generateMetadata(props: PageProps<"/[locale]/side-projects
 
 export default async function SideProjectsPage() {
   const t = await getTranslations("SideProjects");
-  const { remsoul, articles, articlesPublication } = sideProjects;
+  const { remsoul, compruebaHipoteca, articles, articlesPublication } = sideProjects;
 
   return (
     <Container className="py-16">
@@ -22,6 +22,20 @@ export default async function SideProjectsPage() {
         <h2 className="font-mono text-xl font-semibold text-text">{remsoul.name}</h2>
         <p className="mt-2 font-mono text-xs text-text-faint">{t("remsoulStatus")}</p>
         <p className="mt-4 text-[15px] leading-relaxed text-text-muted">{t("remsoulDescription")}</p>
+      </section>
+
+      <section className="mb-14 max-w-2xl">
+        <p className="mb-3 font-mono text-[11px] text-accent-600">{t("toolsBuiltLabel")}</p>
+        <h2 className="font-mono text-xl font-semibold text-text">{compruebaHipoteca.name}</h2>
+        <p className="mt-4 text-[15px] leading-relaxed text-text-muted">{t("compruebaHipotecaDescription")}</p>
+        <a
+          href={compruebaHipoteca.url}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 inline-block font-mono text-xs text-accent-600 hover:underline"
+        >
+          ./visit-compruebahipoteca.es →
+        </a>
       </section>
 
       <section className="mb-14">

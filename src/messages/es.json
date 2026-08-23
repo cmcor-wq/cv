@@ -129,6 +129,8 @@
     "founderExperienceLabel": "// founder experience",
     "remsoulStatus": "Founder experience — detalles próximamente",
     "remsoulDescription": "Carlos fue founder de Remsoul. Es también la historia detrás de su mayor aprendizaje: la lección de saber cuándo matar una idea. Los detalles completos de qué era, qué pasó y por qué, están todavía por escribir.",
+    "toolsBuiltLabel": "// tools I've built",
+    "compruebaHipotecaDescription": "Una herramienta para saber si te puedes permitir una hipoteca en España — simula tus ingresos, deudas y el precio de la vivienda para ver los números que calcularía un banco, y controla tú mismo las variables.",
     "articlesLabel": "// articles",
     "articlesPending": "títulos y enlaces de los artículos publicados en {publication}.",
     "experimentsLabel": "// experiments",

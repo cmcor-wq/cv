@@ -48,6 +48,7 @@ export const community = {
 
 export const sideProjects = {
   remsoul: { name: "Remsoul" },
+  compruebaHipoteca: { name: "CompruebaHipoteca.es", url: "https://www.compruebahipoteca.es" },
   articles: [] as { title: string; publication: string; url: string | null }[],
   articlesPublication: "Brassa",
 };

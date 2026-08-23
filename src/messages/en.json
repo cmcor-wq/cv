@@ -129,6 +129,8 @@
     "founderExperienceLabel": "// founder experience",
     "remsoulStatus": "Founder experience — details coming soon",
     "remsoulDescription": "Carlos was a founder at Remsoul. It's also the story behind his biggest lesson: knowing when to kill an idea. The full story — what it was, what happened and why — is still being written.",
+    "toolsBuiltLabel": "// tools I've built",
+    "compruebaHipotecaDescription": "A tool to check whether you can realistically afford a mortgage in Spain — model your income, debts and the property price to see the numbers a bank would run, and play with the variables yourself.",
     "articlesLabel": "// articles",
     "articlesPending": "titles and links for the articles published in {publication}.",
     "experimentsLabel": "// experiments",
