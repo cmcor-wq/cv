@@ -86,12 +86,12 @@ export default function AskChat() {
           <button
             onClick={switchMode}
             aria-label={t("toggleAria")}
-            className={`relative h-[20px] w-9 shrink-0 rounded-full border transition-colors ${
+            className={`inline-flex h-[20px] w-9 shrink-0 items-center rounded-full border transition-colors ${
               isMom ? "border-coral-600/50 bg-coral-50" : "border-border-md bg-bg"
             }`}
           >
             <span
-              className={`absolute top-[3px] h-3 w-3 rounded-full transition-transform ${
+              className={`inline-block h-3 w-3 rounded-full transition-transform ${
                 isMom ? "translate-x-5 bg-coral-600" : "translate-x-1 bg-text-faint"
               }`}
             />
