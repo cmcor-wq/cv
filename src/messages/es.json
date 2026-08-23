@@ -39,7 +39,7 @@
     "metaTitle": "Work — Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
-    "description": "Cuatro proyectos, cuatro contextos distintos. El foco aquí no son los números — es el razonamiento: qué problema había, cómo lo entendí, qué decidí descartar y por qué.",
+    "description": "Seis proyectos, seis contextos distintos. El foco aquí no son los números — es el razonamiento: qué problema había, cómo lo entendí, qué decidí descartar y por qué.",
     "readCaseStudy": "Leer case study →",
     "catCommand": "cat ./{slug}.md →"
   },
@@ -58,6 +58,16 @@
     }
   },
   "CaseStudies": {
+    "amadeus": {
+      "title": "Unificando productos de datos con una nueva plataforma de transformación",
+      "summary": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de una estrategia de compañía para unificar los productos de datos de Amadeus.",
+      "context": "Amadeus tiene varios productos de datos que crecieron de forma independiente. La dirección decidió unificarlos bajo una estrategia común, así que este producto tiene que encajar desde el primer día en una imagen técnica y organizativa mucho más grande.",
+      "role": "Senior Product Manager al frente del nuevo producto de transformación y gestión de datasets, trabajando codo con codo con los equipos de partnerships para traducir las necesidades del cliente en requisitos concretos.",
+      "discovery": "Todavía son los primeros meses en este rol. El grueso del trabajo hasta ahora ha sido mapear cómo las necesidades de clientes y partners se traducen en lo que el producto realmente tiene que cubrir, y entender cómo encaja junto al resto de productos de datos dentro de la unificación.",
+      "decisionFramework": "Priorizar el input de los partners por encima de las suposiciones internas, y usar herramientas de IA a diario — Claude, Cursor — para prototipar y validar dirección rápido antes de comprometer tiempo de ingeniería.",
+      "whatIBuilt": "Prototipos tempranos y automatizaciones de flujo de trabajo, construidos a mano con Claude y Cursor, usados para validar ideas con partners antes de escribir specs formales.",
+      "outcomes": "Todavía es pronto para compartir resultados — es un rol activo y en marcha. Actualizaré este case study a medida que el producto madure."
+    },
     "fourvenues": {
       "title": "Lanzando un nuevo producto SaaS vertical desde cero",
       "summary": "Liderando el 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta la entrega en producción.",
@@ -87,6 +97,16 @@
       "decisionFramework": "Prioricé entre líneas de producto usando el mismo criterio siempre: impacto real en el negocio del cliente frente a coste de oportunidad del equipo compartido. Descarté peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera.",
       "whatIBuilt": "Sistemas y procesos de priorización que permitían al mismo squad servir a varios clientes sin perder foco, y roadmaps a medida ajustados a cada contrato.",
       "outcomes": "Sin métricas exactas por cliente. Aprendizaje principal: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog — el trade-off no es solo qué construir, es a quién decir que no esta semana."
+    },
+    "kokoro-kids": {
+      "title": "Llevando Scrum en un equipo pequeño de edtech en un mercado cambiante",
+      "summary": "Gestión de sprints y fases de roadmap para un equipo pequeño y muy competente, adaptando un producto edtech a un mercado exigente en fase temprana.",
+      "context": "Kokoro Kids operaba en un mercado edtech joven y de movimiento rápido, donde las necesidades de los usuarios y la presión competitiva cambiaban deprisa. El equipo era pequeño y muy bueno, pero necesitaba un ritmo de planificación claro para seguir lanzando sin perder el rumbo.",
+      "role": "Product Manager responsable de la planificación del proyecto: llevar Scrum, organizar sprints y tareas, y dar forma a las próximas fases del producto.",
+      "discovery": "El contacto constante y cercano con un equipo pequeño hacía que el discovery ocurriera sobre todo en conversaciones diarias e iteración rápida, más que en procesos de research formales — el equipo podía probar una idea y tener una lectura en pocos días.",
+      "decisionFramework": "Prioricé lo que mantenía el producto creíble en un mercado que podía cambiar rápido, por encima de pulir features que fuera del equipo todavía nadie estaba pidiendo.",
+      "whatIBuilt": "Una cadencia de sprints predecible y un plan vivo para las próximas fases, dando a un equipo pequeño la estructura suficiente para moverse rápido sin replanificar constantemente.",
+      "outcomes": "Sin métricas exactas de esa etapa. Aprendizaje principal: en un equipo pequeño y competente, el trabajo del PM es menos controlar el proceso y más proteger el foco."
     },
     "playjoy": {
       "title": "App de juegos tradicionales multijugador con comunidad",

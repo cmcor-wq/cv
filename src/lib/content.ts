@@ -6,6 +6,11 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "amadeus",
+    company: "Amadeus",
+    tags: ["B2B SaaS", "Data products", "Partnerships", "0→1"],
+  },
+  {
     slug: "fourvenues",
     company: "Fourvenues",
     tags: ["B2B SaaS", "0→1", "Discovery to delivery", "Roadmap", "Cross-functional"],
@@ -19,6 +24,11 @@ export const caseStudies: CaseStudy[] = [
     slug: "cuatroochenta",
     company: "Soluciones Cuatroochenta",
     tags: ["B2B", "Full lifecycle", "Product Development Manager", "Tailor-made solutions"],
+  },
+  {
+    slug: "kokoro-kids",
+    company: "Kokoro Kids",
+    tags: ["EdTech", "Scrum", "Small team", "Early-stage"],
   },
   {
     slug: "playjoy",

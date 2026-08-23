@@ -39,7 +39,7 @@
     "metaTitle": "Work — Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
-    "description": "Four projects, four different contexts. The focus here isn't the numbers — it's the reasoning: what the problem was, how I understood it, what I decided to drop and why.",
+    "description": "Six projects, six different contexts. The focus here isn't the numbers — it's the reasoning: what the problem was, how I understood it, what I decided to drop and why.",
     "readCaseStudy": "Read case study →",
     "catCommand": "cat ./{slug}.md →"
   },
@@ -58,6 +58,16 @@
     }
   },
   "CaseStudies": {
+    "amadeus": {
+      "title": "Unifying data products through a new transformation platform",
+      "summary": "Leading a new product for dataset transformation and management, part of a company-wide push to unify Amadeus's data-oriented products.",
+      "context": "Amadeus runs several data-oriented products that grew independently of each other. Leadership decided to unify them under a shared strategy, which means this product has to fit into a much larger technical and organizational picture from day one.",
+      "role": "Senior Product Manager owning the new dataset transformation and management product, working closely with partnership teams to turn client needs into concrete requirements.",
+      "discovery": "Still early days in this role. Most of the work so far has been mapping how client and partner needs translate into what the product actually needs to cover, and understanding how it fits alongside the other data products in the unification effort.",
+      "decisionFramework": "Prioritizing partner input over internal assumptions, and using AI tools daily — Claude, Cursor — to prototype and validate direction quickly before committing engineering time to it.",
+      "whatIBuilt": "Early prototypes and workflow automations, built hands-on with Claude and Cursor, used to test ideas with partners before writing formal specs.",
+      "outcomes": "Too early to share outcomes — this is an active, ongoing role. I'll update this case study as the product matures."
+    },
     "fourvenues": {
       "title": "Launching a new vertical SaaS product from scratch",
       "summary": "Leading the 0→1 of a vertical SaaS product, from the first discovery conversation to production.",
@@ -87,6 +97,16 @@
       "decisionFramework": "I prioritized across product lines with the same criterion every time: real impact on the client's business versus the opportunity cost of the shared team. I dropped requests that solved a one-off symptom for a client without fitting the rest of the portfolio.",
       "whatIBuilt": "Prioritization systems and processes that let the same squad serve several clients without losing focus, and tailor-made roadmaps fitted to each contract.",
       "outcomes": "No exact metrics per client. Main lesson: managing product in consultancy is as much about managing expectations as managing a backlog — the trade-off isn't just what to build, it's who to say no to this week."
+    },
+    "kokoro-kids": {
+      "title": "Running Scrum for a small edtech team in a fast-changing market",
+      "summary": "Managed sprint planning and roadmap phases for a small, highly competent team adapting an edtech product to a demanding early-stage market.",
+      "context": "Kokoro Kids operated in a young, fast-moving edtech market where user needs and competitive pressure shifted quickly. The team was small and skilled, but needed a clear planning rhythm to keep shipping without losing direction.",
+      "role": "Product Manager responsible for project planning: running Scrum, organizing sprints and tasks, and shaping upcoming product phases.",
+      "discovery": "Close, constant contact with a small team meant discovery happened mostly through daily conversations and fast iteration rather than formal research — the team could test an idea and get a read on it within days.",
+      "decisionFramework": "I prioritized whatever kept the product credible in a market that could shift under us quickly, over polishing features nobody outside the team was asking for yet.",
+      "whatIBuilt": "A predictable sprint cadence and a rolling plan for upcoming phases, giving a small team enough structure to move fast without constant re-planning.",
+      "outcomes": "No exact metrics from this period. Main lesson: in a small, capable team, the PM's job is less about controlling process and more about protecting focus."
     },
     "playjoy": {
       "title": "A multiplayer traditional-games app with community at its core",
