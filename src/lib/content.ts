@@ -94,7 +94,6 @@ export const about = {
     { company: "PlayJoy", role: "Business Developer", period: "Apr 2019 – Oct 2020", location: "Valencia" },
     { company: "Utopic Estudios", role: "Product Manager", period: "Oct 2018 – Jan 2019", location: "Castellón" },
     { company: "Remsoul", role: "Co-Founder", period: "Mar 2016 – Jan 2018", location: "Castellón" },
-    { company: "Glazurker International", role: "Design Engineer", period: "Sep 2015 – Dec 2015", location: "Paterna, Valencia" },
   ],
   education: [
     { program: "Product Analytics", school: "Hero Camp", location: "Madrid", period: "Feb 2023 – Jun 2023" },

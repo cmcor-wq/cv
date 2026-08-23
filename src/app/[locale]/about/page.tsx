@@ -27,17 +27,31 @@ export default async function AboutPage() {
           <section className="mb-12">
             <p className="mb-4 font-mono text-[11px] text-accent-600">{t("experienceLabel")}</p>
             <div className="flex flex-col divide-y divide-border rounded-lg border border-border bg-bg-surface">
-              {about.experience.map((e) => (
-                <div key={e.company} className="flex items-center justify-between gap-4 px-5 py-3.5">
-                  <div>
-                    <p className="font-mono text-sm font-medium text-text">{e.company}</p>
-                    <p className="text-xs text-text-muted">{e.role}</p>
+              {about.experience.map((e) => {
+                const description =
+                  e.company === "Amadeus"
+                    ? t("experienceAmadeusDescription")
+                    : e.company === "Kokoro Kids"
+                      ? t("experienceKokoroDescription")
+                      : null;
+
+                return (
+                  <div key={e.company} className="flex flex-col gap-2 px-5 py-3.5">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <p className="font-mono text-sm font-medium text-text">{e.company}</p>
+                        <p className="text-xs text-text-muted">{e.role}</p>
+                      </div>
+                      <p className="font-mono text-[11px] text-text-faint">
+                        {e.location} · {e.period}
+                      </p>
+                    </div>
+                    {description && (
+                      <p className="text-[13.5px] leading-relaxed text-text-muted">{description}</p>
+                    )}
                   </div>
-                  <p className="font-mono text-[11px] text-text-faint">
-                    {e.location} · {e.period}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 

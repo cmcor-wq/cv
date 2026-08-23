@@ -143,6 +143,8 @@
     "bio1": "Senior Technical Product Manager with 5+ years building and scaling B2B and B2C SaaS products in integration-heavy, partner-facing environments. I lead API-based integrations end to end — translating technical and business requirements into clear specs, then orchestrating engineering, data, operations and external partners to ship them.",
     "bio2": "I'm a daily user of AI tooling — Claude, Cursor, GitHub Copilot — to prototype, debug and ship automations myself, not just write specs and hand them off. Discovery is not a phase, it's a habit, and the best roadmap is the one that kills the most bad ideas early.",
     "bio3": "Outside work, I run Valencia Product Beers — a community I built because I was tired of fake networking events. We meet, we talk product, we drink beer. Simple.",
+    "experienceAmadeusDescription": "Leading a new product for dataset transformation and management, part of a company-wide strategy to unify data-oriented products. Managing partnerships to translate client needs into requirements, and using Claude and Cursor daily to prototype and automate workflows.",
+    "experienceKokoroDescription": "Managed project planning with Scrum — sprints, tasks and upcoming product phases — for a small, highly competent team adapting the product to a demanding early-stage market.",
     "experienceLabel": "// experience",
     "skillsLabel": "// skills",
     "toolsLabel": "// tools",
