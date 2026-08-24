@@ -44,7 +44,7 @@ export const community = {
     telegramMembers: 425 as number | null,
     linkedinMembers: 1500 as number | null,
     events: 10 as number | null,
-    avgAttendance: 340 as number | null,
+    seasonAttendance: 340 as number | null,
   },
   links: {
     website: "https://productbeers.es" as string | null,

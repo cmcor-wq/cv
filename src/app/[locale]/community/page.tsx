@@ -21,7 +21,7 @@ export default async function CommunityPage() {
         <Stat label={t("statTelegram")} value={stats.telegramMembers} />
         <Stat label={t("statLinkedin")} value={stats.linkedinMembers ? `${stats.linkedinMembers}+` : null} />
         <Stat label={t("statEvents")} value={stats.events} />
-        <Stat label={t("statAvgAttendance")} value={stats.avgAttendance} />
+        <Stat label={t("statAvgAttendance")} value={stats.seasonAttendance} />
         <Stat label={t("statFounded")} value={community.founded} />
       </div>
 
