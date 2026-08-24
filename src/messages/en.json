@@ -188,6 +188,7 @@
     "placeholderCarlos": "ask carlos anything...",
     "placeholderMom": "ask his mom...",
     "send": "send",
+    "suggestedLabel": "suggested questions",
     "footerCarlos": "powered by gemini · responds as carlos, not a generic chatbot",
     "footerMom": "mom mode on · she might not get all the product jargon",
     "genericError": "Something went wrong. Try again.",

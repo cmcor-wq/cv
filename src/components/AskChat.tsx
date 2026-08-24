@@ -16,6 +16,7 @@ export default function AskChat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
 
   const isMom = mode === "mom";
@@ -109,7 +110,7 @@ export default function AskChat() {
 
       <div
         ref={boxRef}
-        className={`flex max-h-[420px] min-h-[320px] flex-col gap-1 overflow-y-auto p-4 transition-colors ${
+        className={`flex max-h-[320px] min-h-[220px] flex-col gap-1 overflow-y-auto p-4 transition-colors ${
           isMom ? "bg-coral-50" : "bg-bg"
         }`}
       >
@@ -130,23 +131,6 @@ export default function AskChat() {
           isMom ? "border-coral-200 bg-coral-100/40" : "border-border bg-bg-surface"
         }`}
       >
-        <div className="mb-2.5 flex flex-wrap gap-1.5">
-          {suggestedQuestions.map((q) => (
-            <button
-              key={q}
-              onClick={() => sendMessage(q)}
-              disabled={loading}
-              className={`rounded border px-2.5 py-1 font-mono text-[11px] transition-colors disabled:opacity-50 ${
-                isMom
-                  ? "border-coral-200 bg-coral-50 text-text-muted hover:border-coral-600/50 hover:text-text"
-                  : "border-border-md bg-bg text-text-muted hover:border-accent-600/50 hover:text-text"
-              }`}
-            >
-              {q}
-            </button>
-          ))}
-        </div>
-
         <form onSubmit={handleSubmit} className="flex items-center gap-2 font-mono text-sm">
           <span className={isMom ? "text-coral-600" : "text-accent-600"}>❯</span>
           <input
@@ -166,6 +150,37 @@ export default function AskChat() {
             {t("send")}
           </button>
         </form>
+
+        <button
+          type="button"
+          onClick={() => setShowSuggestions((v) => !v)}
+          className="mt-2.5 flex items-center gap-1 font-mono text-[11px] text-text-faint hover:text-text"
+        >
+          <span className={`transition-transform ${showSuggestions ? "rotate-90" : ""}`}>▸</span>
+          {t("suggestedLabel")}
+        </button>
+
+        {showSuggestions && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {suggestedQuestions.map((q) => (
+              <button
+                key={q}
+                onClick={() => {
+                  sendMessage(q);
+                  setShowSuggestions(false);
+                }}
+                disabled={loading}
+                className={`rounded border px-2.5 py-1 font-mono text-[11px] transition-colors disabled:opacity-50 ${
+                  isMom
+                    ? "border-coral-200 bg-coral-50 text-text-muted hover:border-coral-600/50 hover:text-text"
+                    : "border-border-md bg-bg text-text-muted hover:border-accent-600/50 hover:text-text"
+                }`}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <p
