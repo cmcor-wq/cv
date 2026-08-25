@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Carlos Miguel Corada — Senior Technical PM",
-    "description": "Senior Technical Product Manager building integration-heavy, partner-facing SaaS. Builder of digital products and communities. Valencia."
+    "description": "Senior Technical Product Manager building integration-heavy, partner-facing SaaS. Also building digital products and communities on the side. Valencia."
   },
   "Nav": {
     "work": "work",
@@ -27,7 +27,7 @@
     "whereBuilt": "// where I've built",
     "cardWorkEyebrow": "case-studies",
     "cardWorkTitle": "How I actually build product",
-    "cardWorkDescription": "Discovery, trade-offs, decisions — not just outcomes.",
+    "cardWorkDescription": "Discovery, trade-offs and decisions. Not just outcomes.",
     "cardCommunityEyebrow": "community",
     "cardCommunityTitle": "Valencia Product Beers",
     "cardCommunityDescription": "The most active product community in Valencia. Built from zero.",
@@ -39,7 +39,7 @@
     "metaTitle": "Work — Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
-    "description": "Six projects, six different contexts. The focus here isn't the numbers — it's the reasoning: what the problem was, how I understood it, what I decided to drop and why.",
+    "description": "Six projects, six different contexts. What matters here isn't the numbers, it's the reasoning: what the problem was, how I read it, what I decided to leave out and why.",
     "readCaseStudy": "Read case study →",
     "catCommand": "cat ./{slug}.md →"
   },
@@ -60,23 +60,23 @@
   "CaseStudies": {
     "amadeus": {
       "title": "Unifying data products through a new transformation platform",
-      "summary": "Leading a new product for dataset transformation and management, part of a company-wide push to unify Amadeus's data-oriented products.",
-      "context": "Amadeus runs several data-oriented products that grew independently of each other. Leadership decided to unify them under a shared strategy, which means this product has to fit into a much larger technical and organizational picture from day one.",
+      "summary": "Leading a new product for dataset transformation and management, part of Amadeus's push to unify its data products.",
+      "context": "Amadeus runs several data products that grew up independently of each other. Leadership wants them under one strategy now, so this product has to fit into a much bigger technical and organizational picture from day one.",
       "role": "Senior Product Manager owning the new dataset transformation and management product, working closely with partnership teams to turn client needs into concrete requirements.",
-      "discovery": "Still early days in this role. Most of the work so far has been mapping how client and partner needs translate into what the product actually needs to cover, and understanding how it fits alongside the other data products in the unification effort.",
-      "decisionFramework": "Prioritizing partner input over internal assumptions, and using AI tools daily — Claude, Cursor — to prototype and validate direction quickly before committing engineering time to it.",
+      "discovery": "Still early days in this role. Most of the work so far has been mapping how client and partner needs translate into what the product actually needs to cover, and figuring out where it fits alongside the other data products in the unification effort.",
+      "decisionFramework": "I prioritize partner input over internal assumptions, and use AI daily (Claude, Cursor) to prototype and validate direction before committing engineering time.",
       "whatIBuilt": "Early prototypes and workflow automations, built hands-on with Claude and Cursor, used to test ideas with partners before writing formal specs.",
-      "outcomes": "Too early to share outcomes — this is an active, ongoing role. I'll update this case study as the product matures."
+      "outcomes": "Too early to share outcomes, this role is still very much in motion. I'll update this as the product matures."
     },
     "fourvenues": {
       "title": "Launching a new vertical SaaS product from scratch",
       "summary": "Leading the 0→1 of a vertical SaaS product, from the first discovery conversation to production.",
-      "context": "Fourvenues spotted an opportunity within its vertical that no existing product covered well. There was no product yet, just a business hypothesis and a fast-moving market. The challenge wasn't building fast — it was building the right thing without an internal data history to lean on.",
+      "context": "Fourvenues spotted a gap in its vertical that no existing product covered well. There was no product yet, just a business hypothesis and a market moving fast. The real challenge wasn't speed, it was building the right thing with no internal data history to lean on.",
       "role": "Product Manager leading the 0→1: from framing the problem to prioritizing the roadmap and coordinating day to day with design, engineering and the commercial team.",
-      "discovery": "Interviews with current clients and prospects, shadowing sales calls to understand real objections, and analyzing how users were solving the problem today with improvised tools (spreadsheets, manual processes). The goal was to find the job people were already trying to do, not invent a new one.",
-      "decisionFramework": "I prioritized on two axes: how often the pain showed up and the cost of not solving it. I dropped features that sounded good on a call but that no client asked for twice. Every line on the roadmap had to answer one question: what business decision does this unlock that can't be made today?",
+      "discovery": "Interviews with current clients and prospects, sitting in on sales calls to catch the real objections, and looking at how people were solving the problem today with improvised tools (spreadsheets, manual processes). The idea was to find the job people were already trying to do, not invent a new one.",
+      "decisionFramework": "I prioritized on two axes: how much it hurt and what not solving it cost. Out went the features that sounded good on a call but that no client asked for twice. Every line on the roadmap had to earn its place by answering one question: what business decision does this unlock that can't be made today?",
       "whatIBuilt": "The initial product roadmap, the core flows of the first version, and a continuous discovery system with the commercial team so customer feedback reached product without friction.",
-      "outcomes": "No exact metrics to share yet — the product is still early. Main lesson: in 0→1, the most valuable roadmap is the one that's brave enough to leave things out. Saying no early saves months later."
+      "outcomes": "No exact metrics to share yet, the product is still early. What I learned: in 0→1, the best roadmap is the one brave enough to leave things out. Saying no early saves you months later."
     },
     "nailted": {
       "title": "Redesigning onboarding and lifting weekly engagement",
@@ -116,7 +116,7 @@
       "discovery": "Direct observation of how people play these games offline — who invites, who organizes, what makes a group come back to play the following week.",
       "decisionFramework": "I prioritized features that reinforced the network effect (inviting, replaying with the same group) over adding more games to the catalog. I dropped functionality that optimized for the individual player instead of the group.",
       "whatIBuilt": "Cross-platform flows to create and join group games, designed so that organizing a match was as easy as proposing it in a chat.",
-      "outcomes": "No exact figures to share. Lesson: in a product with network effects, the user who really matters isn't the one playing — it's the one organizing. Designing for the organizer multiplies reach."
+      "outcomes": "No exact figures to share. Lesson: in a product with network effects, the user who really matters isn't the one playing — it's the one organizing. Design for the organizer and you multiply reach."
     }
   },
   "Community": {
@@ -158,8 +158,8 @@
   "About": {
     "metaTitle": "About — Carlos Miguel Corada",
     "eyebrow": "cat ./about.md",
-    "bio1": "Senior Technical Product Manager with 5+ years building and scaling B2B and B2C SaaS products in integration-heavy, partner-facing environments. I lead API-based integrations end to end — translating technical and business requirements into clear specs, then orchestrating engineering, data, operations and external partners to ship them.",
-    "bio2": "I'm a daily user of AI tooling — Claude, Cursor, GitHub Copilot — to prototype, debug and ship automations myself, not just write specs and hand them off. Discovery is not a phase, it's a habit, and the best roadmap is the one that kills the most bad ideas early.",
+    "bio1": "Senior Technical Product Manager with 5+ years building and scaling B2B and B2C SaaS products in integration-heavy, partner-facing environments. I lead API-based integrations end to end — translating technical and business requirements into clear specs, then coordinating engineering, data, operations and external partners to ship them.",
+    "bio2": "I'm a daily user of AI tooling — Claude, Cursor, GitHub Copilot — to prototype, debug and ship automations myself, not just write specs and hand them off. Discovery isn't a phase, it's a habit, and the best roadmap is the one that kills the most bad ideas early.",
     "bio3": "Outside work, I run Valencia Product Beers — a community I built because I was tired of fake networking events. We meet, we talk product, we drink beer. Simple.",
     "experienceAmadeusDescription": "Leading a new product for dataset transformation and management, part of a company-wide strategy to unify data-oriented products. Managing partnerships to translate client needs into requirements, and using Claude and Cursor daily to prototype and automate workflows.",
     "experienceKokoroDescription": "Managed project planning with Scrum — sprints, tasks and upcoming product phases — for a small, highly competent team adapting the product to a demanding early-stage market.",
