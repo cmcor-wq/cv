@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { Container, SectionHeading, Tag, PendingNote } from "@/components/ui";
+import { Container, SectionHeading, Tag } from "@/components/ui";
 import { about } from "@/lib/content";
 
 export async function generateMetadata(props: PageProps<"/[locale]/about">): Promise<Metadata> {
@@ -104,7 +104,7 @@ export default async function AboutPage() {
               <a href={`tel:${about.contact.phone.replace(/\s/g, "")}`} className="font-mono text-sm text-text hover:text-accent-600">
                 {about.contact.phone}
               </a>
-              {about.contact.linkedin ? (
+              {about.contact.linkedin && (
                 <a
                   href={about.contact.linkedin}
                   target="_blank"
@@ -113,10 +113,8 @@ export default async function AboutPage() {
                 >
                   {t("linkedinLabel")}
                 </a>
-              ) : (
-                <PendingNote>{t("linkedinPending")}</PendingNote>
               )}
-              {about.contact.cvUrl ? (
+              {about.contact.cvUrl && (
                 <a
                   href={about.contact.cvUrl}
                   download
@@ -124,8 +122,6 @@ export default async function AboutPage() {
                 >
                   {t("cvLabel")}
                 </a>
-              ) : (
-                <PendingNote>{t("cvPending")}</PendingNote>
               )}
             </div>
           </div>

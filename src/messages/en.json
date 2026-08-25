@@ -153,7 +153,10 @@
     "articlesPending": "titles and links for the articles published in {publication}.",
     "experimentsLabel": "// experiments",
     "experimentAiName": "Fast prototyping with AI",
-    "experimentAiDescription": "Daily use of Claude, Cursor, GitHub Copilot, Replit and Lovable to prototype, debug and ship automations hands-on. It's not a weekend hobby, it's the same toolkit I use in my PM work to validate direction before asking engineering for time."
+    "experimentAiDescription": "Daily use of Claude, Cursor, GitHub Copilot, Replit and Lovable to prototype, debug and ship automations hands-on. It's not a weekend hobby, it's the same toolkit I use in my PM work to validate direction before asking engineering for time.",
+    "experimentBrainstormName": "Brainstorming skill with 6 AI personalities",
+    "experimentBrainstormDescription": "A Claude skill that runs six different personalities (creative, analytical, the hater, the practical one, the futurist and my mom) through the same topic in three rounds: they pitch ideas, evolve them, then land on a synthesis. I use it when I want to pressure-test an idea from angles I wouldn't cover alone.",
+    "experimentBrainstormDownload": "./download-skill.md"
   },
   "About": {
     "metaTitle": "About — Carlos Miguel Corada",

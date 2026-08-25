@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { Container, SectionHeading, PendingNote } from "@/components/ui";
+import { Container, SectionHeading } from "@/components/ui";
 import { community } from "@/lib/content";
 
 export async function generateMetadata(props: PageProps<"/[locale]/community">): Promise<Metadata> {
@@ -30,33 +30,29 @@ export default async function CommunityPage() {
         <p className="text-[15px] leading-relaxed text-text-muted">{t("story")}</p>
       </section>
 
-      <section className="mb-14">
-        <p className="mb-4 font-mono text-[11px] text-green-600">{t("galleryLabel")}</p>
-        {gallery.length === 0 ? (
-          <PendingNote>{t("galleryPending")}</PendingNote>
-        ) : (
+      {gallery.length > 0 && (
+        <section className="mb-14">
+          <p className="mb-4 font-mono text-[11px] text-green-600">{t("galleryLabel")}</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {gallery.map((img) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img key={img.src} src={img.src} alt={img.alt} className="aspect-square rounded-lg object-cover" />
             ))}
           </div>
-        )}
-      </section>
+        </section>
+      )}
 
-      <section>
-        <p className="mb-4 font-mono text-[11px] text-green-600">{t("linksLabel")}</p>
-        {!links.website && !links.meetup && !links.linkedin && !links.instagram ? (
-          <PendingNote>{t("linksPending")}</PendingNote>
-        ) : (
+      {(links.website || links.meetup || links.linkedin || links.instagram) && (
+        <section>
+          <p className="mb-4 font-mono text-[11px] text-green-600">{t("linksLabel")}</p>
           <div className="flex flex-wrap gap-3">
             {links.website && <ExternalLink href={links.website} label={t("linkWebsite")} />}
             {links.meetup && <ExternalLink href={links.meetup} label={t("linkMeetup")} />}
             {links.linkedin && <ExternalLink href={links.linkedin} label={t("linkLinkedin")} />}
             {links.instagram && <ExternalLink href={links.instagram} label={t("linkInstagram")} />}
           </div>
-        )}
-      </section>
+        </section>
+      )}
     </Container>
   );
 }

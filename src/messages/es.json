@@ -153,7 +153,10 @@
     "articlesPending": "títulos y enlaces de los artículos publicados en {publication}.",
     "experimentsLabel": "// experiments",
     "experimentAiName": "Prototipado rápido con IA",
-    "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con mis propias manos. No es una afición de fin de semana: es la misma caja de herramientas que uso en mi trabajo de PM para validar dirección antes de pedirle tiempo a ingeniería."
+    "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con mis propias manos. No es una afición de fin de semana: es la misma caja de herramientas que uso en mi trabajo de PM para validar dirección antes de pedirle tiempo a ingeniería.",
+    "experimentBrainstormName": "Skill de brainstorming con 6 personalidades de IA",
+    "experimentBrainstormDescription": "Una skill de Claude que hace pensar a seis personalidades distintas (creativa, analítica, la hater, la práctica, la futurista y mi madre) sobre un mismo tema en tres rondas: proponen ideas, las evolucionan y cierran con una síntesis. La uso cuando quiero presionar una idea desde ángulos que yo solo no cubriría.",
+    "experimentBrainstormDownload": "./descargar-skill.md"
   },
   "About": {
     "metaTitle": "About — Carlos Miguel Corada",
