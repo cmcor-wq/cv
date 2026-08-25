@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export async function generateMetadata(props: PageProps<"/[locale]/work/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const cs = caseStudies.find((c) => c.slug === slug);
-  return { title: cs ? `${cs.company} — Carlos Miguel Corada` : "Work" };
+  return { title: cs ? `${cs.company}, Carlos Miguel Corada` : "Work" };
 }
 
 export default async function CaseStudyPage(props: PageProps<"/[locale]/work/[slug]">) {

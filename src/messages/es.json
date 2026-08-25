@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Carlos Miguel Corada — Senior Technical PM",
+    "title": "Carlos Miguel Corada, Senior Technical PM",
     "description": "Senior Technical Product Manager. Integraciones API, plataformas de partners, productos de datos. También construyo comunidades y escribo. Valencia."
   },
   "Nav": {
@@ -18,7 +18,7 @@
     "ask": "./ask"
   },
   "Home": {
-    "metaTitle": "Carlos Miguel Corada — Senior Technical PM",
+    "metaTitle": "Carlos Miguel Corada, Senior Technical PM",
     "whoamiPrompt": "whoami --role=senior-technical-pm --based=valencia",
     "headline": "Senior Technical PM <sep>|</sep> MVP Lover <sep>|</sep> Discovery to Delivery",
     "subheadline": "Integraciones API, plataformas de partners y productos de datos · 0→1 y escalado · 5+ años · Valencia",
@@ -36,10 +36,10 @@
     "cardAskDescription": "Un chat que soy yo de verdad. Incluye 'modo mamá'."
   },
   "Work": {
-    "metaTitle": "Work — Carlos Miguel Corada",
+    "metaTitle": "Work, Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
-    "description": "Seis proyectos, seis contextos: SaaS, B2B2C, edtech, consultoría, gaming, y mi propio startup. No van a impresionarte los números — no todos los tengo, y los que tengo no cuentan la historia completa. Lo que sí puedo enseñarte es el razonamiento: qué problema había, cómo lo entendí, qué decidí dejar fuera y por qué. Es lo que de verdad vas a ver trabajar si me contratas.",
+    "description": "Seis proyectos, seis contextos: SaaS, B2B2C, edtech, consultoría, gaming, y mi propio startup. No van a impresionarte los números, no todos los tengo, y los que tengo no cuentan la historia completa. Lo que sí puedo enseñarte es el razonamiento: qué problema había, cómo lo entendí, qué decidí dejar fuera y por qué. Es lo que de verdad vas a ver trabajar si me contratas.",
     "readCaseStudy": "Leer case study →",
     "catCommand": "cat ./{slug}.md →"
   },
@@ -76,7 +76,7 @@
       "discovery": "Entrevistas con clientes actuales y prospects, escuchando llamadas comerciales para pillar las objeciones reales, y viendo cómo la gente resolvía el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). La idea era encontrar el trabajo que la gente ya intentaba hacer, no inventarme uno nuevo.",
       "decisionFramework": "Prioricé por dos ejes: cuánto dolía y qué costaba no resolverlo. Fuera las features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que justificar una cosa: qué decisión de negocio permite tomar que hoy no se puede tomar.",
       "whatIBuilt": "El roadmap inicial del producto, los flujos core de la primera versión, y un sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción.",
-      "outcomes": "Todavía no tengo métricas exactas que compartir: el producto sigue en fase temprana de vida. Lo que sí tengo claro después de dos años ahí: en 0→1 el mejor roadmap es el que se atreve a dejar cosas fuera. Decir que no pronto —a features, a clientes, a tus propias ideas— te ahorra meses de trabajo después. Esa disciplina me la llevo a cualquier producto nuevo que empiece desde cero."
+      "outcomes": "Todavía no tengo métricas exactas que compartir: el producto sigue en fase temprana de vida. Lo que sí tengo claro después de dos años ahí: en 0→1 el mejor roadmap es el que se atreve a dejar cosas fuera. Decir que no pronto, a features, a clientes, a tus propias ideas, te ahorra meses de trabajo después. Esa disciplina me la llevo a cualquier producto nuevo que empiece desde cero."
     },
     "nailted": {
       "title": "Rediseño de onboarding y mejora del engagement semanal",
@@ -86,7 +86,7 @@
       "discovery": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales), porque en B2B2C el que compra y el que usa no siempre quieren lo mismo.",
       "decisionFramework": "Prioricé los cambios que acortaban la distancia entre 'me registro' y 'entiendo por qué esto me importa cada semana', antes que meter funcionalidad nueva. Dejé fuera los rediseños visuales que no atacaban la causa real del abandono.",
       "whatIBuilt": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera parte del ritmo del equipo, no una tarea más.",
-      "outcomes": "Mejora observable en la adopción semanal en varios equipos, sin una cifra exacta que pueda poner aquí sin acceso a los datos originales. El aprendizaje que sí me llevo: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez. Resolver para quien compra no significa que hayas resuelto para quien usa — y al revés."
+      "outcomes": "Mejora observable en la adopción semanal en varios equipos, sin una cifra exacta que pueda poner aquí sin acceso a los datos originales. El aprendizaje que sí me llevo: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez. Resolver para quien compra no significa que hayas resuelto para quien usa, y al revés."
     },
     "cuatroochenta": {
       "title": "Gestión de múltiples líneas de producto en un entorno de consultoría",
@@ -120,7 +120,7 @@
     }
   },
   "Community": {
-    "metaTitle": "Community — Valencia Product Beers",
+    "metaTitle": "Community, Valencia Product Beers",
     "eyebrow": "community · el diferenciador más potente",
     "framing": "Construí la comunidad de producto más activa de Valencia desde cero, porque creía que la comunidad ya existía y solo necesitaba un lugar real donde encontrarse.",
     "storyLabel": "// story",
@@ -140,10 +140,10 @@
     "linkInstagram": "instagram"
   },
   "SideProjects": {
-    "metaTitle": "Side Projects — Carlos Miguel Corada",
+    "metaTitle": "Side Projects, Carlos Miguel Corada",
     "eyebrow": "ls ./side-projects",
     "title": "Fuera del día a día",
-    "description": "Experiencia como founder (incluido el fracaso que más me ha enseñado), artículos publicados, y experimentos con herramientas nuevas — para ver qué se puede construir cuando nadie te lo está pidiendo.",
+    "description": "Experiencia como founder (incluido el fracaso que más me ha enseñado), artículos publicados, y experimentos con herramientas nuevas, para ver qué se puede construir cuando nadie te lo está pidiendo.",
     "founderExperienceLabel": "// founder experience",
     "remsoulRole": "Co-fundador",
     "remsoulDescription": "Remsoul construía tecnología para grandes eventos: ampliar el alcance de las campañas de marketing, entender el comportamiento de los asistentes, y detectar situaciones de riesgo a tiempo para reaccionar. Es también la historia detrás de mi mayor aprendizaje: nos enamoramos del producto y no supimos matarlo a tiempo.",
@@ -156,7 +156,7 @@
     "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con mis propias manos. No es una afición de fin de semana: es la misma caja de herramientas que uso en mi trabajo de PM para validar dirección antes de pedirle tiempo a ingeniería."
   },
   "About": {
-    "metaTitle": "About — Carlos Miguel Corada",
+    "metaTitle": "About, Carlos Miguel Corada",
     "eyebrow": "cat ./about.md",
     "bio1": "Senior Technical Product Manager con 5+ años construyendo y escalando productos SaaS B2B y B2C en entornos con muchas integraciones y de cara a partners. Lidero integraciones basadas en API de principio a fin: traduzco requisitos técnicos y de negocio en specs claras, y coordino ingeniería, datos, operaciones y partners externos para lanzarlas.",
     "bio2": "Uso herramientas de IA a diario (Claude, Cursor, GitHub Copilot) para prototipar, debuggear y lanzar automatizaciones con mis propias manos, no solo para escribir specs y pasarlas a otro equipo. El discovery no es una fase, es un hábito, y el mejor roadmap es el que mata las malas ideas antes de que cuesten tiempo de ingeniería.",
@@ -175,9 +175,9 @@
     "cvPending": "CV descargable en PDF."
   },
   "Ask": {
-    "metaTitle": "Ask Me Anything — Carlos Miguel Corada",
+    "metaTitle": "Ask Me Anything, Carlos Miguel Corada",
     "eyebrow": "// ⭐ ask me anything",
-    "title": "Chatea conmigo — literalmente",
+    "title": "Chatea conmigo, literalmente",
     "description": "Este chat responde como yo: honesto, directo, sin corporate speak. Si activas \"modo mamá\", responde mi madre, con todo el cariño y la confusión encantadora que eso implica."
   },
   "Chat": {

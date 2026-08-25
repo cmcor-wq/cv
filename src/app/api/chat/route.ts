@@ -12,8 +12,8 @@ const ERRORS = {
   en: {
     notConfigured: "The chat isn't set up yet (missing GEMINI_API_KEY).",
     invalidBody: "Invalid request.",
-    authFailed: "Auth error on my end — not your fault.",
-    rateLimited: "Whoa, slow down — even I need a breather between questions. Give it a few seconds and try again.",
+    authFailed: "Auth error on my end, not your fault.",
+    rateLimited: "Whoa, slow down, even I need a breather between questions. Give it a few seconds and try again.",
     overloaded: "The model's a bit overwhelmed right now. Give it a few seconds and try again.",
     apiError: "Couldn't reach the model just now. Try again in a bit.",
     unknown: "Something broke on my end. Try again.",
@@ -21,8 +21,8 @@ const ERRORS = {
   es: {
     notConfigured: "El chat no está configurado todavía (falta GEMINI_API_KEY).",
     invalidBody: "Petición inválida.",
-    authFailed: "Error de autenticación por mi parte — no es cosa tuya.",
-    rateLimited: "Eh, más despacio — hasta yo necesito respirar entre pregunta y pregunta. Dame unos segundos y prueba otra vez.",
+    authFailed: "Error de autenticación por mi parte, no es cosa tuya.",
+    rateLimited: "Eh, más despacio, hasta yo necesito respirar entre pregunta y pregunta. Dame unos segundos y prueba otra vez.",
     overloaded: "El modelo está un poco saturado ahora mismo. Dale unos segundos e inténtalo de nuevo.",
     apiError: "No he podido contactar con el modelo. Inténtalo de nuevo en un momento.",
     unknown: "Algo se ha roto por mi parte. Inténtalo de nuevo.",
@@ -82,7 +82,7 @@ export async function POST(request: Request) {
     try {
       response = await generate();
     } catch (error) {
-      // The Gemini flash alias occasionally returns a transient 503 under load — one retry clears most of these.
+      // The Gemini flash alias occasionally returns a transient 503 under load, one retry clears most of these.
       if (error instanceof ApiError && error.status === 503) {
         await new Promise((resolve) => setTimeout(resolve, 800));
         response = await generate();
