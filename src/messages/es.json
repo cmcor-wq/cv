@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Carlos Miguel Corada — Senior Technical PM",
-    "description": "Senior Technical Product Manager especializado en integraciones y SaaS partner-facing. Builder de productos digitales y comunidades. Valencia."
+    "description": "Senior Technical Product Manager. Integraciones API, plataformas de partners, productos de datos. También construyo comunidades y escribo. Valencia."
   },
   "Nav": {
     "work": "work",
@@ -21,16 +21,16 @@
     "metaTitle": "Carlos Miguel Corada — Senior Technical PM",
     "whoamiPrompt": "whoami --role=senior-technical-pm --based=valencia",
     "headline": "Senior Technical PM <sep>|</sep> MVP Lover <sep>|</sep> Discovery to Delivery",
-    "subheadline": "Integraciones API, plataformas de partners y productos de datos · 5+ años · Valencia",
+    "subheadline": "Integraciones API, plataformas de partners y productos de datos · 0→1 y escalado · 5+ años · Valencia",
     "exploreWork": "./ver-mi-trabajo",
     "askMeAnything": "./pregúntame-lo-que-sea",
     "whereBuilt": "// dónde he construido",
     "cardWorkEyebrow": "case studies",
     "cardWorkTitle": "Cómo construyo producto de verdad",
-    "cardWorkDescription": "Discovery, trade-offs, decisiones — no solo resultados.",
+    "cardWorkDescription": "Discovery, trade-offs y las decisiones que no salen en ningún dashboard. No solo resultados.",
     "cardCommunityEyebrow": "community",
     "cardCommunityTitle": "Valencia Product Beers",
-    "cardCommunityDescription": "La comunidad de producto más activa de Valencia. Construida desde cero.",
+    "cardCommunityDescription": "La comunidad de producto más activa de Valencia. Construida desde cero, sin nadie intentando venderte nada.",
     "cardAskEyebrow": "⭐ la parte divertida",
     "cardAskTitle": "Pregúntame lo que sea",
     "cardAskDescription": "Un chat que soy yo de verdad. Incluye 'modo mamá'."
@@ -39,7 +39,7 @@
     "metaTitle": "Work — Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
-    "description": "Seis proyectos, seis contextos distintos. El foco aquí no son los números — es el razonamiento: qué problema había, cómo lo entendí, qué decidí descartar y por qué.",
+    "description": "Seis proyectos, seis contextos: SaaS, B2B2C, edtech, consultoría, gaming, y mi propio startup. No van a impresionarte los números, no todos los tengo, y los que tengo no cuentan la historia completa. Lo que sí puedo enseñarte es el razonamiento: qué problema había, cómo lo entendí, qué decidí dejar fuera y por qué. Es lo que de verdad vas a ver trabajar si me contratas.",
     "readCaseStudy": "Leer case study →",
     "catCommand": "cat ./{slug}.md →"
   },
@@ -60,71 +60,71 @@
   "CaseStudies": {
     "amadeus": {
       "title": "Unificando productos de datos con una nueva plataforma de transformación",
-      "summary": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de una estrategia de compañía para unificar los productos de datos de Amadeus.",
-      "context": "Amadeus tiene varios productos de datos que crecieron de forma independiente. La dirección decidió unificarlos bajo una estrategia común, así que este producto tiene que encajar desde el primer día en una imagen técnica y organizativa mucho más grande.",
-      "role": "Senior Product Manager al frente del nuevo producto de transformación y gestión de datasets, trabajando codo con codo con los equipos de partnerships para traducir las necesidades del cliente en requisitos concretos.",
-      "discovery": "Todavía son los primeros meses en este rol. El grueso del trabajo hasta ahora ha sido mapear cómo las necesidades de clientes y partners se traducen en lo que el producto realmente tiene que cubrir, y entender cómo encaja junto al resto de productos de datos dentro de la unificación.",
-      "decisionFramework": "Priorizar el input de los partners por encima de las suposiciones internas, y usar herramientas de IA a diario — Claude, Cursor — para prototipar y validar dirección rápido antes de comprometer tiempo de ingeniería.",
-      "whatIBuilt": "Prototipos tempranos y automatizaciones de flujo de trabajo, construidos a mano con Claude y Cursor, usados para validar ideas con partners antes de escribir specs formales.",
-      "outcomes": "Todavía es pronto para compartir resultados — es un rol activo y en marcha. Actualizaré este case study a medida que el producto madure."
+      "summary": "Al frente de un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de Amadeus para unificar sus productos de datos.",
+      "context": "Amadeus tiene varios productos de datos que crecieron cada uno por su lado, con su propia lógica y su propia deuda técnica. Ahora la dirección quiere unificarlos bajo una sola estrategia, así que este producto tiene que encajar desde el día uno en un contexto técnico y organizativo mucho más grande que él.",
+      "role": "Senior Product Manager al frente del nuevo producto de transformación y gestión de datasets: estrategia, roadmap y ejecución día a día. Trabajo codo con codo con partnerships para traducir necesidades de cliente en requisitos concretos, y con los equipos de datos e ingeniería para que esos requisitos se conviertan en algo construible.",
+      "discovery": "Estoy en los primeros meses del rol, así que el grueso ha sido discovery puro: mapear cómo las necesidades reales de clientes y partners se traducen en lo que el producto tiene que cubrir, y entender dónde encaja frente al resto de productos de datos dentro de la unificación.",
+      "decisionFramework": "Priorizo el input directo de partners por encima de lo que se asume puertas adentro, y uso IA a diario (Claude, Cursor) para prototipar y validar dirección de producto antes de comprometer tiempo de ingeniería. Es poco habitual en un entorno corporate de este tamaño, y es exactamente por eso que lo hago.",
+      "whatIBuilt": "Prototipos tempranos y automatizaciones de workflow, hechos a mano con Claude y Cursor, para validar ideas con partners antes de escribir una sola spec formal.",
+      "outcomes": "Es pronto para hablar de resultados: el rol empezó en febrero de 2026 y sigue en marcha. Lo que sí puedo decir ya: en una organización de este tamaño, la primera victoria no es lanzar rápido, es conseguir que partnerships, datos e ingeniería miren en la misma dirección. Iré actualizando esto a medida que el producto madure."
     },
     "fourvenues": {
       "title": "Lanzando un nuevo producto SaaS vertical desde cero",
-      "summary": "Liderando el 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta la entrega en producción.",
-      "context": "Fourvenues detectó una oportunidad dentro de su vertical que ningún producto existente cubría bien. No había un producto todavía, solo una hipótesis de negocio y un mercado que se movía rápido. El reto no era construir rápido, era construir lo correcto sin un histórico de datos internos en el que apoyarse.",
-      "role": "Product Manager al frente del 0→1: desde la definición del problema hasta la priorización del roadmap y la coordinación día a día con diseño, ingeniería y el equipo comercial.",
-      "discovery": "Entrevistas con clientes actuales y prospects, sombra en llamadas comerciales para entender objeciones reales, y análisis de cómo los usuarios resolvían el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). El objetivo era encontrar el trabajo que la gente ya intentaba hacer, no inventar uno nuevo.",
-      "decisionFramework": "Prioricé por dos ejes: frecuencia del dolor y coste de no resolverlo. Descarté features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que responder a una pregunta: ¿qué decisión de negocio permite tomar esto que hoy no se puede tomar?",
-      "whatIBuilt": "El roadmap inicial del producto, los flujos core de la primera versión, y el sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción.",
-      "outcomes": "Sin métricas exactas que compartir todavía — el producto sigue en fase temprana. El aprendizaje principal: en 0→1 el roadmap más valioso es el que se atreve a no incluir cosas. Decir que no pronto ahorra meses después."
+      "summary": "Al frente del 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta que llegó a producción.",
+      "context": "Fourvenues vio un hueco en su vertical que ningún producto cubría bien. No había producto todavía, solo una hipótesis de negocio y un mercado que se movía rápido. El reto de verdad no era ir rápido, era acertar con qué construir sin un histórico de datos internos en el que apoyarse.",
+      "role": "Product Manager al frente del 0→1: desde la definición del problema hasta la priorización del roadmap, coordinando día a día con diseño, ingeniería y el equipo comercial.",
+      "discovery": "Entrevistas con clientes actuales y prospects, escuchando llamadas comerciales para pillar las objeciones reales, y viendo cómo la gente resolvía el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). La idea era encontrar el trabajo que la gente ya intentaba hacer, no inventarme uno nuevo.",
+      "decisionFramework": "Prioricé por dos ejes: cuánto dolía y qué costaba no resolverlo. Fuera las features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que justificar una cosa: qué decisión de negocio permite tomar que hoy no se puede tomar.",
+      "whatIBuilt": "El roadmap inicial del producto, los flujos core de la primera versión, y un sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción.",
+      "outcomes": "Todavía no tengo métricas exactas que compartir: el producto sigue en fase temprana de vida. Lo que sí tengo claro después de dos años ahí: en 0→1 el mejor roadmap es el que se atreve a dejar cosas fuera. Decir que no pronto, a features, a clientes, a tus propias ideas, te ahorra meses de trabajo después. Esa disciplina me la llevo a cualquier producto nuevo que empiece desde cero."
     },
     "nailted": {
       "title": "Rediseño de onboarding y mejora del engagement semanal",
       "summary": "Rediseño del flujo de onboarding y del ciclo de engagement semanal para que los equipos adoptaran el producto más allá de la primera semana.",
-      "context": "El producto se vendía bien pero la adopción real dentro de cada equipo (el uso semanal, no solo el login inicial) era desigual. Algunos equipos lo convertían en hábito, otros lo abandonaban tras la novedad inicial.",
+      "context": "El producto se vendía bien, pero la adopción real dentro de cada equipo (el uso semanal, no solo el login inicial) era desigual. Algunos equipos lo convertían en hábito; otros lo dejaban en cuanto pasaba la novedad.",
       "role": "Responsable de onboarding y engagement: research, diseño del flujo, y coordinación con diseño e ingeniería para el rediseño.",
-      "discovery": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales) — porque en B2B2C el que compra y el que usa no siempre quieren lo mismo.",
-      "decisionFramework": "Prioricé cambios que redujeran la distancia entre 'me registro' y 'entiendo por qué esto importa cada semana', por encima de añadir funcionalidad nueva. Descarté rediseños visuales que no atacaban la causa real de abandono.",
-      "whatIBuilt": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera como parte del ritmo del equipo, no como una tarea más.",
-      "outcomes": "Mejora observable en la adopción semanal, sin cifra exacta que pueda compartir. Aprendizaje clave: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez, no asumir que resolver para una resuelve para la otra."
+      "discovery": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales), porque en B2B2C el que compra y el que usa no siempre quieren lo mismo.",
+      "decisionFramework": "Prioricé los cambios que acortaban la distancia entre 'me registro' y 'entiendo por qué esto me importa cada semana', antes que meter funcionalidad nueva. Dejé fuera los rediseños visuales que no atacaban la causa real del abandono.",
+      "whatIBuilt": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera parte del ritmo del equipo, no una tarea más.",
+      "outcomes": "Mejora observable en la adopción semanal en varios equipos, sin una cifra exacta que pueda poner aquí sin acceso a los datos originales. El aprendizaje que sí me llevo: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez. Resolver para quien compra no significa que hayas resuelto para quien usa, y al revés."
     },
     "cuatroochenta": {
       "title": "Gestión de múltiples líneas de producto en un entorno de consultoría",
       "summary": "Liderazgo de varias líneas de producto a medida para distintos clientes, cada uno con su propio contexto y restricciones.",
-      "context": "Entorno de consultoría: cada cliente traía su propio problema, su propio stakeholder y su propia definición de éxito. No había un único producto que optimizar, sino varios en paralelo, cada uno compitiendo por el mismo equipo.",
+      "context": "Entorno de consultoría: cada cliente traía su propio problema, su propio stakeholder y su propia definición de éxito. No había un único producto que optimizar: había varios en paralelo, todos compitiendo por el mismo equipo.",
       "role": "Full lifecycle de producto para varias cuentas a la vez.",
-      "discovery": "Discovery adaptado a cada cliente — en consultoría no hay un proceso único que valga para todos. Se trataba de entender rápido qué información era señal y qué era ruido en cada contexto nuevo.",
-      "decisionFramework": "Prioricé entre líneas de producto usando el mismo criterio siempre: impacto real en el negocio del cliente frente a coste de oportunidad del equipo compartido. Descarté peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera.",
+      "discovery": "Discovery adaptado a cada cliente: en consultoría no hay un proceso único que valga para todos. Se trataba de pillar rápido qué información era señal y qué era ruido en cada contexto nuevo.",
+      "decisionFramework": "Usé siempre el mismo criterio para priorizar entre líneas de producto: impacto real en el negocio del cliente frente al coste de oportunidad del equipo compartido. Fuera las peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera.",
       "whatIBuilt": "Sistemas y procesos de priorización que permitían al mismo squad servir a varios clientes sin perder foco, y roadmaps a medida ajustados a cada contrato.",
-      "outcomes": "Sin métricas exactas por cliente. Aprendizaje principal: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog — el trade-off no es solo qué construir, es a quién decir que no esta semana."
+      "outcomes": "Sin métricas exactas por cliente: en consultoría esos números vivían en el reporting de cada cuenta, no en el mío. Lo que aprendí ahí lo sigo usando: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog. El trade-off real no es solo qué construir, es a quién le dices que no esta semana."
     },
     "kokoro-kids": {
       "title": "Llevando Scrum en un equipo pequeño de edtech en un mercado cambiante",
       "summary": "Gestión de sprints y fases de roadmap para un equipo pequeño y muy competente, adaptando un producto edtech a un mercado exigente en fase temprana.",
       "context": "Kokoro Kids operaba en un mercado edtech joven y de movimiento rápido, donde las necesidades de los usuarios y la presión competitiva cambiaban deprisa. El equipo era pequeño y muy bueno, pero necesitaba un ritmo de planificación claro para seguir lanzando sin perder el rumbo.",
       "role": "Product Manager responsable de la planificación del proyecto: llevar Scrum, organizar sprints y tareas, y dar forma a las próximas fases del producto.",
-      "discovery": "El contacto constante y cercano con un equipo pequeño hacía que el discovery ocurriera sobre todo en conversaciones diarias e iteración rápida, más que en procesos de research formales — el equipo podía probar una idea y tener una lectura en pocos días.",
-      "decisionFramework": "Prioricé lo que mantenía el producto creíble en un mercado que podía cambiar rápido, por encima de pulir features que fuera del equipo todavía nadie estaba pidiendo.",
-      "whatIBuilt": "Una cadencia de sprints predecible y un plan vivo para las próximas fases, dando a un equipo pequeño la estructura suficiente para moverse rápido sin replanificar constantemente.",
-      "outcomes": "Sin métricas exactas de esa etapa. Aprendizaje principal: en un equipo pequeño y competente, el trabajo del PM es menos controlar el proceso y más proteger el foco."
+      "discovery": "El contacto constante y cercano con un equipo pequeño hacía que el discovery pasara sobre todo en conversaciones diarias e iteración rápida, más que en procesos de research formales: el equipo podía probar una idea y tener una lectura en pocos días.",
+      "decisionFramework": "Prioricé lo que mantenía el producto creíble en un mercado que podía cambiar de golpe, por encima de pulir features que fuera del equipo todavía nadie pedía.",
+      "whatIBuilt": "Una cadencia de sprints predecible y un plan vivo para las próximas fases, dando a un equipo pequeño la estructura justa para moverse rápido sin estar replanificando todo el rato.",
+      "outcomes": "Sin métricas exactas de esa etapa. Lo que sí me llevo: en un equipo pequeño y competente, el trabajo del PM es menos controlar el proceso y más proteger el foco. La estructura estorba en cuanto deja de servir a eso."
     },
     "playjoy": {
       "title": "App de juegos tradicionales multijugador con comunidad",
       "summary": "Producto B2C de juegos tradicionales pensado para jugarse en grupo, con la comunidad como motor de crecimiento.",
-      "context": "Los juegos tradicionales (cartas, mesa, patio) tienen una ventaja que muchos juegos digitales no: ya existe una comunidad que los juega offline. El reto era llevar esa dinámica social a un producto digital sin perder lo que la hacía divertida.",
+      "context": "Los juegos tradicionales (cartas, mesa, patio) tienen una ventaja que muchos juegos digitales no tienen: ya existe una comunidad que los juega offline. El reto era llevar esa dinámica social a un producto digital sin cargarse lo que la hacía divertida.",
       "role": "Product Manager del producto B2C, con foco en las dinámicas multijugador y de comunidad.",
-      "discovery": "Observación directa de cómo la gente juega estos juegos offline — quién invita, quién organiza, qué hace que un grupo vuelva a jugar la semana siguiente.",
-      "decisionFramework": "Prioricé features que reforzaran el efecto de red (invitar, volver a jugar con el mismo grupo) por encima de añadir más juegos al catálogo. Descarté funcionalidad que optimizaba para el jugador individual en vez de para el grupo.",
+      "discovery": "Observación directa de cómo la gente juega estos juegos offline: quién invita, quién organiza, qué hace que un grupo vuelva a jugar la semana siguiente.",
+      "decisionFramework": "Fui a por las features que reforzaban el efecto red (invitar, repetir partida con el mismo grupo) antes que meter más juegos al catálogo. Lo que optimizaba para el jugador individual en vez del grupo, fuera.",
       "whatIBuilt": "Flujos multiplataforma para crear y unirse a partidas en grupo, pensados para que organizar una partida fuera tan fácil como proponerla en un chat.",
-      "outcomes": "Sin cifras exactas para compartir. Aprendizaje: en producto con efecto de red, el usuario que importa de verdad no es el que juega, es el que organiza — diseñar para el organizador multiplica el alcance."
+      "outcomes": "Sin cifras exactas para compartir. Lo que aprendí ahí lo uso todavía: en un producto con efecto red, el usuario que de verdad importa no es quien juega, es quien organiza. Diseñas para el organizador y multiplicas el alcance."
     }
   },
   "Community": {
     "metaTitle": "Community — Valencia Product Beers",
     "eyebrow": "community · el diferenciador más potente",
-    "framing": "Construí la comunidad de producto más activa de Valencia desde cero — porque creía que la comunidad ya existía, solo necesitaba un lugar real donde encontrarse.",
+    "framing": "Construí la comunidad de producto más activa de Valencia desde cero, porque creía que la comunidad ya existía y solo necesitaba un lugar real donde encontrarse.",
     "storyLabel": "// story",
-    "story": "Fundé Valencia Product Beers para validar una hipótesis simple: que existía una comunidad de producto en Valencia que quería juntarse y compartir de verdad — harto de eventos donde siempre hay alguien vendiendo algo. El objetivo era traspasar las conexiones de LinkedIn y volverlas reales. La cerveza es solo el icebreaker. Tampoco es mi primera comunidad: antes coorganicé FreemoteHouse, Reset Weekend y NOSOLOENLARED, creando espacios para que emprendedores y teletrabajadores se conocieran de verdad.",
+    "story": "Fundé Valencia Product Beers para validar una hipótesis simple: que en Valencia había gente de producto con ganas de juntarse y compartir de verdad, harta de eventos donde siempre hay alguien vendiendo algo. La idea era sacar las conexiones de LinkedIn de la pantalla y hacerlas reales. La cerveza es solo la excusa. Tampoco es mi primera comunidad: antes coorganicé FreemoteHouse, Reset Weekend y NOSOLOENLARED, creando espacios para que emprendedores y teletrabajadores se conocieran de verdad.",
     "statTelegram": "miembros en telegram",
     "statLinkedin": "miembros en linkedin",
     "statEvents": "eventos/año",
@@ -143,26 +143,26 @@
     "metaTitle": "Side Projects — Carlos Miguel Corada",
     "eyebrow": "ls ./side-projects",
     "title": "Fuera del día a día",
-    "description": "Experiencia como founder, artículos publicados, y experimentos con herramientas nuevas.",
+    "description": "Experiencia como founder (incluido el fracaso que más me ha enseñado), artículos publicados, y experimentos con herramientas nuevas, para ver qué se puede construir cuando nadie te lo está pidiendo.",
     "founderExperienceLabel": "// founder experience",
     "remsoulRole": "Co-fundador",
-    "remsoulDescription": "Remsoul construía tecnología para grandes eventos — para ampliar el alcance de las campañas de marketing, entender el comportamiento de los asistentes, y detectar situaciones de riesgo a tiempo para reaccionar. Es también la historia detrás de mi mayor aprendizaje: el equipo se enamoró del producto y no supimos matarlo a tiempo.",
+    "remsoulDescription": "Remsoul construía tecnología para grandes eventos: ampliar el alcance de las campañas de marketing, entender el comportamiento de los asistentes, y detectar situaciones de riesgo a tiempo para reaccionar. Es también la historia detrás de mi mayor aprendizaje: nos enamoramos del producto y no supimos matarlo a tiempo.",
     "toolsBuiltLabel": "// tools I've built",
-    "compruebaHipotecaDescription": "Una herramienta para saber si te puedes permitir una hipoteca en España — simula tus ingresos, deudas y el precio de la vivienda para ver los números que calcularía un banco, y controla tú mismo las variables.",
+    "compruebaHipotecaDescription": "Una herramienta para saber si te puedes permitir una hipoteca en España: simula tus ingresos, deudas y el precio de la vivienda para ver los números que calcularía un banco, y toca tú mismo las variables.",
     "articlesLabel": "// articles",
     "articlesPending": "títulos y enlaces de los artículos publicados en {publication}.",
     "experimentsLabel": "// experiments",
     "experimentAiName": "Prototipado rápido con IA",
-    "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con mis propias manos — no solo para escribir specs."
+    "experimentAiDescription": "Uso diario de Claude, Cursor, GitHub Copilot, Replit y Lovable para prototipar, debuggear y lanzar automatizaciones con mis propias manos. No es una afición de fin de semana: es la misma caja de herramientas que uso en mi trabajo de PM para validar dirección antes de pedirle tiempo a ingeniería."
   },
   "About": {
     "metaTitle": "About — Carlos Miguel Corada",
     "eyebrow": "cat ./about.md",
-    "bio1": "Senior Technical Product Manager con 5+ años construyendo y escalando productos SaaS B2B y B2C en entornos con muchas integraciones y de cara a partners. Lidero integraciones basadas en API de principio a fin — traduciendo requisitos técnicos y de negocio en specs claras, y orquestando ingeniería, datos, operaciones y partners externos para lanzarlas.",
-    "bio2": "Uso herramientas de IA a diario — Claude, Cursor, GitHub Copilot — para prototipar, debuggear y lanzar automatizaciones con mis propias manos, no solo para escribir specs y pasarlas a otro equipo. El discovery no es una fase, es un hábito, y el mejor roadmap es el que mata las malas ideas antes.",
-    "bio3": "Fuera del trabajo, dirijo Valencia Product Beers — una comunidad que construí porque estaba harto de los eventos de networking falsos. Nos juntamos, hablamos de producto, bebemos cerveza. Así de simple.",
-    "experienceAmadeusDescription": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de una estrategia a nivel de compañía para unificar los productos orientados a datos. Gestiono partnerships para traducir necesidades de cliente en requisitos, usando Claude y Cursor a diario para prototipar y automatizar workflows.",
-    "experienceKokoroDescription": "Gestioné la planificación del proyecto con metodología Scrum — sprints, tareas y las próximas fases de producto — con una plantilla pequeña pero muy competente, adaptando el producto a un mercado exigente en fase temprana.",
+    "bio1": "Senior Technical Product Manager con 5+ años construyendo y escalando productos SaaS B2B y B2C en entornos con muchas integraciones y de cara a partners. Lidero integraciones basadas en API de principio a fin: traduzco requisitos técnicos y de negocio en specs claras, y coordino ingeniería, datos, operaciones y partners externos para lanzarlas.",
+    "bio2": "Uso herramientas de IA a diario (Claude, Cursor, GitHub Copilot) para prototipar, debuggear y lanzar automatizaciones con mis propias manos, no solo para escribir specs y pasarlas a otro equipo. El discovery no es una fase, es un hábito, y el mejor roadmap es el que mata las malas ideas antes de que cuesten tiempo de ingeniería.",
+    "bio3": "Fuera del trabajo dirijo Valencia Product Beers, una comunidad que monté porque estaba harto de los eventos de networking de mentira. Nos juntamos, hablamos de producto, bebemos cerveza. Así de simple.",
+    "experienceAmadeusDescription": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de compañía para unificar los productos orientados a datos. Gestiono partnerships para traducir necesidades de cliente en requisitos, usando Claude y Cursor a diario para prototipar y automatizar workflows.",
+    "experienceKokoroDescription": "Gestioné la planificación del proyecto con metodología Scrum (sprints, tareas y las próximas fases de producto) con una plantilla pequeña pero muy competente, adaptando el producto a un mercado exigente en fase temprana.",
     "experienceLabel": "// experience",
     "skillsLabel": "// skills",
     "toolsLabel": "// tools",
@@ -177,11 +177,11 @@
   "Ask": {
     "metaTitle": "Ask Me Anything — Carlos Miguel Corada",
     "eyebrow": "// ⭐ ask me anything",
-    "title": "Chatea conmigo — literalmente",
-    "description": "Este chat responde como yo: honesto, directo, sin corporate speak. Si activas \"modo mamá\", responde mi madre — con todo el cariño y la confusión encantadora que eso implica."
+    "title": "Chatea conmigo, literalmente",
+    "description": "Este chat responde como yo: honesto, directo, sin corporate speak. Si activas \"modo mamá\", responde mi madre, con todo el cariño y la confusión encantadora que eso implica."
   },
   "Chat": {
-    "welcomeCarlos": "Hey. Pregúntame lo que sea — sobre producto, marketplaces, la comunidad, mis fracasos, o lo que te dé curiosidad. Te lo diré tal cual.",
+    "welcomeCarlos": "Hey. Pregúntame lo que sea: sobre producto, marketplaces, la comunidad, mis fracasos, o lo que te dé curiosidad. Te lo digo tal cual.",
     "welcomeMom": "Hola cariño! Bueno, hola a ti que estás preguntando cosas de mi hijo. Pregunta lo que quieras, que de Carlos sé mucho, aunque a veces no entiendo muy bien todo lo que hace...",
     "modoMamaLabel": "modo mamá",
     "toggleAria": "Activar modo mamá",
@@ -199,7 +199,9 @@
       "¿Por qué Valencia Product Beers?",
       "Hot take sobre marketplaces",
       "¿Qué tipo de PM eres?",
-      "¿Qué herramientas usas a diario?"
+      "¿Qué herramientas usas a diario?",
+      "Cuéntame algo random de ti",
+      "¿Qué haces fuera del trabajo?"
     ]
   },
   "LanguageSwitch": {
