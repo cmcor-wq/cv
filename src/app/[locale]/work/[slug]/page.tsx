@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
-import { Container, Tag, PendingNote } from "@/components/ui";
+import { Container, Tag } from "@/components/ui";
 import { caseStudies } from "@/lib/content";
 import { routing } from "@/i18n/routing";
 
@@ -54,11 +54,6 @@ export default async function CaseStudyPage(props: PageProps<"/[locale]/work/[sl
             </div>
           </section>
         ))}
-
-        <section>
-          <p className="mb-3 font-mono text-xs text-text-faint">{t("artifactsLabel")}</p>
-          <PendingNote>{t("artifactsPending")}</PendingNote>
-        </section>
       </div>
 
       <div className="mt-16 border-t border-border pt-8">

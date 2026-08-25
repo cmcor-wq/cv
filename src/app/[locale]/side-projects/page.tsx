@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { Container, SectionHeading, PendingNote } from "@/components/ui";
+import { Container, SectionHeading } from "@/components/ui";
 import { sideProjects } from "@/lib/content";
 
 export async function generateMetadata(props: PageProps<"/[locale]/side-projects">): Promise<Metadata> {
@@ -40,21 +40,19 @@ export default async function SideProjectsPage() {
         </a>
       </section>
 
-      <section className="mb-14">
-        <div className="mb-4 flex items-center gap-3">
-          <p className="font-mono text-[11px] text-accent-600">{t("articlesLabel")}</p>
-          <a
-            href={articlesPublicationUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="font-mono text-[11px] text-text-faint hover:text-accent-600"
-          >
-            {articlesPublication} ↗
-          </a>
-        </div>
-        {articles.length === 0 ? (
-          <PendingNote>{t("articlesPending", { publication: articlesPublication })}</PendingNote>
-        ) : (
+      {articles.length > 0 && (
+        <section className="mb-14">
+          <div className="mb-4 flex items-center gap-3">
+            <p className="font-mono text-[11px] text-accent-600">{t("articlesLabel")}</p>
+            <a
+              href={articlesPublicationUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="font-mono text-[11px] text-text-faint hover:text-accent-600"
+            >
+              {articlesPublication} ↗
+            </a>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {articles.map((a) => (
               <a
@@ -69,8 +67,8 @@ export default async function SideProjectsPage() {
               </a>
             ))}
           </div>
-        )}
-      </section>
+        </section>
+      )}
 
       <section>
         <p className="mb-4 font-mono text-[11px] text-accent-600">{t("experimentsLabel")}</p>
@@ -78,6 +76,17 @@ export default async function SideProjectsPage() {
           <div className="rounded-lg border border-border bg-bg-surface p-5">
             <h3 className="font-mono text-base font-semibold text-text">{t("experimentAiName")}</h3>
             <p className="mt-2 text-sm leading-relaxed text-text-muted">{t("experimentAiDescription")}</p>
+          </div>
+          <div className="rounded-lg border border-border bg-bg-surface p-5">
+            <h3 className="font-mono text-base font-semibold text-text">{t("experimentBrainstormName")}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-text-muted">{t("experimentBrainstormDescription")}</p>
+            <a
+              href="/side-projects/brainstorm-skill.md"
+              download
+              className="mt-3 inline-block font-mono text-xs text-accent-600 hover:underline"
+            >
+              {t("experimentBrainstormDownload")} →
+            </a>
           </div>
         </div>
       </section>
