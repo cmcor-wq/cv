@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Carlos Miguel Corada, Senior Technical PM",
+    "title": "Carlos Miguel Corada — Senior Technical PM",
     "description": "Senior Technical Product Manager. API integrations, partner platforms, data products. Also building communities and writing on the side. Valencia."
   },
   "Nav": {
@@ -18,7 +18,7 @@
     "ask": "./ask"
   },
   "Home": {
-    "metaTitle": "Carlos Miguel Corada, Senior Technical PM",
+    "metaTitle": "Carlos Miguel Corada — Senior Technical PM",
     "whoamiPrompt": "whoami --role=senior-technical-pm --based=valencia",
     "headline": "Senior Technical PM <sep>|</sep> MVP Lover <sep>|</sep> Discovery to Delivery",
     "subheadline": "API integrations, partner platforms & data products · 0→1 and scale · 5+ years · Valencia",
@@ -36,7 +36,7 @@
     "cardAskDescription": "A chat that's actually me. Includes 'mom mode'."
   },
   "Work": {
-    "metaTitle": "Work, Carlos Miguel Corada",
+    "metaTitle": "Work — Carlos Miguel Corada",
     "eyebrow": "ls ./work",
     "title": "Work",
     "description": "Six projects, six contexts: SaaS, B2B2C, edtech, consultancy, gaming, and my own startup. The numbers won't impress you, I don't have all of them, and the ones I do don't tell the full story. What I can show you is the reasoning: what the problem was, how I read it, what I decided to leave out and why. That's what you're actually hiring when you hire a senior PM.",
@@ -120,7 +120,7 @@
     }
   },
   "Community": {
-    "metaTitle": "Community, Valencia Product Beers",
+    "metaTitle": "Community — Valencia Product Beers",
     "eyebrow": "community · the strongest differentiator",
     "framing": "Built Valencia's most active product community from zero, because I believed the community already existed, it just needed a real place to meet.",
     "storyLabel": "// story",
@@ -140,7 +140,7 @@
     "linkInstagram": "instagram"
   },
   "SideProjects": {
-    "metaTitle": "Side Projects, Carlos Miguel Corada",
+    "metaTitle": "Side Projects — Carlos Miguel Corada",
     "eyebrow": "ls ./side-projects",
     "title": "Outside the day job",
     "description": "Founder experience (including the failure that taught me the most), published articles, and experiments with new tools, to see what's worth building when nobody's asking for it.",
@@ -156,7 +156,7 @@
     "experimentAiDescription": "Daily use of Claude, Cursor, GitHub Copilot, Replit and Lovable to prototype, debug and ship automations hands-on. It's not a weekend hobby, it's the same toolkit I use in my PM work to validate direction before asking engineering for time."
   },
   "About": {
-    "metaTitle": "About, Carlos Miguel Corada",
+    "metaTitle": "About — Carlos Miguel Corada",
     "eyebrow": "cat ./about.md",
     "bio1": "Senior Technical Product Manager with 5+ years building and scaling B2B and B2C SaaS products in integration-heavy, partner-facing environments. I lead API-based integrations end to end, translating technical and business requirements into clear specs, then coordinating engineering, data, operations and external partners to ship them.",
     "bio2": "I'm a daily user of AI tooling, Claude, Cursor, GitHub Copilot, to prototype, debug and ship automations myself, not just write specs and hand them off. Discovery isn't a phase, it's a habit, and the best roadmap is the one that kills bad ideas before they cost engineering time.",
@@ -175,7 +175,7 @@
     "cvPending": "downloadable CV in PDF."
   },
   "Ask": {
-    "metaTitle": "Ask Me Anything, Carlos Miguel Corada",
+    "metaTitle": "Ask Me Anything — Carlos Miguel Corada",
     "eyebrow": "// ⭐ ask me anything",
     "title": "Chat with me, literally",
     "description": "This chat responds as me: honest, direct, no corporate speak. If you flip on \"mom mode\", my mom answers instead, with all the warmth and charming confusion that implies."
