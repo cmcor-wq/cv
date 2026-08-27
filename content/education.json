@@ -1,0 +1,9 @@
+{
+  "entries": [
+    { "program": "Product Analytics", "school": "Hero Camp", "location": "Madrid", "period": "Feb 2023 – Jun 2023" },
+    { "program": "Digital Product Manager", "school": "Hero Camp", "location": "Madrid", "period": "Oct 2021 – Dec 2021" },
+    { "program": "Agile Project Manager", "school": "GeeksHubs Academy", "location": "Valencia", "period": "2020 – 2021" },
+    { "program": "Business Expert", "school": "ThePowerMBA", "location": "", "period": "2018 – 2019" },
+    { "program": "Industrial Design & Product Development Engineer", "school": "Universitat Jaume I", "location": "Castellón", "period": "2005 – 2010" }
+  ]
+}

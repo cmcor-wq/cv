@@ -57,68 +57,6 @@
       "outcomes": "Outcomes & learnings"
     }
   },
-  "CaseStudies": {
-    "amadeus": {
-      "title": "Unifying data products through a new transformation platform",
-      "summary": "Leading a new product for dataset transformation and management, part of Amadeus's push to unify its data products.",
-      "context": "Amadeus runs several data products that grew up independently, each with its own logic and its own technical debt. Leadership wants them under one strategy now, so this product has to fit into a much bigger technical and organizational picture from day one.",
-      "role": "Senior Product Manager owning the new dataset transformation and management product, strategy, roadmap and day-to-day execution. Working closely with partnership teams to turn client needs into concrete requirements, and with data and engineering teams to turn those requirements into something buildable.",
-      "discovery": "Still early days in this role, so most of the work has been pure discovery: mapping how client and partner needs translate into what the product actually needs to cover, and figuring out where it fits alongside the other data products in the unification effort.",
-      "decisionFramework": "I prioritize direct partner input over internal assumptions, and use AI daily (Claude, Cursor) to prototype and validate direction before committing engineering time. That's still unusual in a corporate environment this size, which is exactly why I do it.",
-      "whatIBuilt": "Early prototypes and workflow automations, built hands-on with Claude and Cursor, used to test ideas with partners before a single formal spec gets written.",
-      "outcomes": "Too early to talk results: the role started in February 2026 and is very much in motion. What I can say already: in an org this size, the first real win isn't shipping fast, it's getting partnerships, data and engineering pointed the same direction. I'll update this as the product matures."
-    },
-    "fourvenues": {
-      "title": "Launching a new vertical SaaS product from scratch",
-      "summary": "Leading the 0→1 of a vertical SaaS product, from the first discovery conversation to production.",
-      "context": "Fourvenues spotted a gap in its vertical that no existing product covered well. There was no product yet, just a business hypothesis and a market moving fast. The real challenge wasn't speed, it was building the right thing with zero internal data history to lean on.",
-      "role": "Product Manager leading the 0→1: from framing the problem to prioritizing the roadmap, coordinating day to day with design, engineering and the commercial team.",
-      "discovery": "Interviews with current clients and prospects, sitting in on sales calls to catch the real objections, and looking at how people were solving the problem today with improvised tools (spreadsheets, manual processes). The idea was to find the job people were already trying to do, not invent a new one.",
-      "decisionFramework": "I prioritized on two axes: how much it hurt and what not solving it cost. Out went the features that sounded good on a call but that no client asked for twice. Every line on the roadmap had to earn its place by answering one question: what business decision does this unlock that can't be made today?",
-      "whatIBuilt": "The initial product roadmap, the core flows of the first version, and a continuous discovery system with the commercial team so customer feedback reached product without friction.",
-      "outcomes": "No exact metrics to share yet, the product is still early in its life. What's clear after two years there: in 0→1, the best roadmap is the one brave enough to leave things out. Saying no early, to features, to clients, to your own ideas, saves you months later. That discipline is what I bring to any product that starts from zero."
-    },
-    "nailted": {
-      "title": "Redesigning onboarding and lifting weekly engagement",
-      "summary": "Redesigned the onboarding flow and the weekly engagement cycle so teams would adopt the product beyond week one.",
-      "context": "The product sold well, but real adoption within each team, weekly usage, not just the first login, was uneven. Some teams turned it into a habit; others dropped it once the novelty wore off.",
-      "role": "Owned onboarding and engagement: research, flow design, and coordination with design and engineering on the redesign.",
-      "discovery": "In-product behavioral analysis to see where people dropped off, combined with interviews with HR managers (the buyers) and employees (the actual users), because in B2B2C the person who buys and the person who uses it don't always want the same thing.",
-      "decisionFramework": "I prioritized changes that shrank the gap between 'I signed up' and 'I understand why this matters every week', over adding new functionality. I dropped visual redesigns that didn't attack the real cause of churn.",
-      "whatIBuilt": "A step-by-step onboarding tailored to the role (HR manager vs. employee) and a redesign of the weekly cycle so the interaction felt like part of the team's rhythm, not one more task.",
-      "outcomes": "Observable improvement in weekly adoption across several teams, no exact figure I can put here without access to the original data. The lesson I still carry: in B2B2C you design for two audiences with different motivations at once. Solving for the buyer doesn't mean you've solved for the user, and it works both ways."
-    },
-    "cuatroochenta": {
-      "title": "Managing multiple product lines in a consultancy environment",
-      "summary": "Led several tailor-made product lines for different clients at once, each with its own context and constraints.",
-      "context": "A consultancy environment: every client brought their own problem, their own stakeholder and their own definition of success. There wasn't a single product to optimize, there were several running in parallel, each competing for the same team.",
-      "role": "Led full product lifecycle for several accounts at the same time.",
-      "discovery": "Discovery adapted to each client, in consultancy there's no single process that fits everyone. It was about quickly figuring out what information was signal and what was noise in each new context.",
-      "decisionFramework": "I prioritized across product lines with the same criterion every time: real impact on the client's business versus the opportunity cost of the shared team. I dropped requests that solved a one-off symptom for a client without fitting the rest of the portfolio.",
-      "whatIBuilt": "Prioritization systems and processes that let the same squad serve several clients without losing focus, and tailor-made roadmaps fitted to each contract.",
-      "outcomes": "No exact metrics per client, in consultancy those numbers lived in each account's reporting, not mine. What I learned there I still use: managing product in consultancy is as much about managing expectations as managing a backlog. The real trade-off isn't just what to build, it's who to say no to this week."
-    },
-    "kokoro-kids": {
-      "title": "Running Scrum for a small edtech team in a fast-changing market",
-      "summary": "Managed sprint planning and roadmap phases for a small, highly competent team adapting an edtech product to a demanding early-stage market.",
-      "context": "Kokoro Kids operated in a young, fast-moving edtech market where user needs and competitive pressure shifted quickly. The team was small and skilled, but needed a clear planning rhythm to keep shipping without losing direction.",
-      "role": "Product Manager responsible for project planning: running Scrum, organizing sprints and tasks, and shaping upcoming product phases.",
-      "discovery": "Close, constant contact with a small team meant discovery happened mostly through daily conversations and fast iteration rather than formal research, the team could test an idea and get a read on it within days.",
-      "decisionFramework": "I prioritized whatever kept the product credible in a market that could shift under us quickly, over polishing features nobody outside the team was asking for yet.",
-      "whatIBuilt": "A predictable sprint cadence and a rolling plan for upcoming phases, giving a small team enough structure to move fast without constant re-planning.",
-      "outcomes": "No exact metrics from this period. What I still carry: in a small, capable team, the PM's job is less about controlling process and more about protecting focus. Structure gets in the way the moment it stops serving that."
-    },
-    "playjoy": {
-      "title": "A multiplayer traditional-games app with community at its core",
-      "summary": "A B2C product for traditional games, built to be played in groups, with community as the growth engine.",
-      "context": "Traditional games (cards, board, playground) have an advantage most digital games don't: a community that already plays them offline. The challenge was bringing that social dynamic into a digital product without losing what made it fun.",
-      "role": "Product Manager for the B2C product, focused on multiplayer and community dynamics.",
-      "discovery": "Direct observation of how people play these games offline, who invites, who organizes, what makes a group come back to play the following week.",
-      "decisionFramework": "I prioritized features that reinforced the network effect (inviting, replaying with the same group) over adding more games to the catalog. I dropped functionality that optimized for the individual player instead of the group.",
-      "whatIBuilt": "Cross-platform flows to create and join group games, designed so that organizing a match was as easy as proposing it in a chat.",
-      "outcomes": "No exact figures to share. What I learned there I still use: in a product with network effects, the user who really matters isn't the one playing, it's the one organizing. Design for the organizer and you multiply reach."
-    }
-  },
   "Community": {
     "metaTitle": "Community — Valencia Product Beers",
     "eyebrow": "community · the strongest differentiator",
@@ -164,8 +102,6 @@
     "bio1": "Senior Technical Product Manager with 5+ years building and scaling B2B and B2C SaaS products in integration-heavy, partner-facing environments. I lead API-based integrations end to end, translating technical and business requirements into clear specs, then coordinating engineering, data, operations and external partners to ship them.",
     "bio2": "I'm a daily user of AI tooling, Claude, Cursor, GitHub Copilot, to prototype, debug and ship automations myself, not just write specs and hand them off. Discovery isn't a phase, it's a habit, and the best roadmap is the one that kills bad ideas before they cost engineering time.",
     "bio3": "Outside work, I run Valencia Product Beers, a community I built because I was tired of fake networking events. We meet, we talk product, we drink beer. Simple.",
-    "experienceAmadeusDescription": "Leading a new product for dataset transformation and management, part of a company-wide strategy to unify data-oriented products. Managing partnerships to translate client needs into requirements, and using Claude and Cursor daily to prototype and automate workflows.",
-    "experienceKokoroDescription": "Managed project planning with Scrum, sprints, tasks and upcoming product phases, for a small, highly competent team adapting the product to a demanding early-stage market.",
     "experienceLabel": "// experience",
     "skillsLabel": "// skills",
     "toolsLabel": "// tools",

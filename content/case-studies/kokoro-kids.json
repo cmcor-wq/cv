@@ -1,0 +1,36 @@
+{
+  "company": "Kokoro Kids",
+  "tags": ["EdTech", "Scrum", "Small team", "Early-stage"],
+  "title": {
+    "en": "Running Scrum for a small edtech team in a fast-changing market",
+    "es": "Llevando Scrum en un equipo pequeño de edtech en un mercado cambiante"
+  },
+  "summary": {
+    "en": "Managed sprint planning and roadmap phases for a small, highly competent team adapting an edtech product to a demanding early-stage market.",
+    "es": "Gestión de sprints y fases de roadmap para un equipo pequeño y muy competente, adaptando un producto edtech a un mercado exigente en fase temprana."
+  },
+  "context": {
+    "en": "Kokoro Kids operated in a young, fast-moving edtech market where user needs and competitive pressure shifted quickly. The team was small and skilled, but needed a clear planning rhythm to keep shipping without losing direction.",
+    "es": "Kokoro Kids operaba en un mercado edtech joven y de movimiento rápido, donde las necesidades de los usuarios y la presión competitiva cambiaban deprisa. El equipo era pequeño y muy bueno, pero necesitaba un ritmo de planificación claro para seguir lanzando sin perder el rumbo."
+  },
+  "role": {
+    "en": "Product Manager responsible for project planning: running Scrum, organizing sprints and tasks, and shaping upcoming product phases.",
+    "es": "Product Manager responsable de la planificación del proyecto: llevar Scrum, organizar sprints y tareas, y dar forma a las próximas fases del producto."
+  },
+  "discovery": {
+    "en": "Close, constant contact with a small team meant discovery happened mostly through daily conversations and fast iteration rather than formal research, the team could test an idea and get a read on it within days.",
+    "es": "El contacto constante y cercano con un equipo pequeño hacía que el discovery pasara sobre todo en conversaciones diarias e iteración rápida, más que en procesos de research formales: el equipo podía probar una idea y tener una lectura en pocos días."
+  },
+  "decisionFramework": {
+    "en": "I prioritized whatever kept the product credible in a market that could shift under us quickly, over polishing features nobody outside the team was asking for yet.",
+    "es": "Prioricé lo que mantenía el producto creíble en un mercado que podía cambiar de golpe, por encima de pulir features que fuera del equipo todavía nadie pedía."
+  },
+  "whatIBuilt": {
+    "en": "A predictable sprint cadence and a rolling plan for upcoming phases, giving a small team enough structure to move fast without constant re-planning.",
+    "es": "Una cadencia de sprints predecible y un plan vivo para las próximas fases, dando a un equipo pequeño la estructura justa para moverse rápido sin estar replanificando todo el rato."
+  },
+  "outcomes": {
+    "en": "No exact metrics from this period. What I still carry: in a small, capable team, the PM's job is less about controlling process and more about protecting focus. Structure gets in the way the moment it stops serving that.",
+    "es": "Sin métricas exactas de esa etapa. Lo que sí me llevo: en un equipo pequeño y competente, el trabajo del PM es menos controlar el proceso y más proteger el foco. La estructura estorba en cuanto deja de servir a eso."
+  }
+}

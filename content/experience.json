@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "company": "Amadeus",
+      "role": "Senior Product Manager",
+      "period": "Feb 2026 – Present",
+      "location": "Valencia",
+      "description": {
+        "en": "Leading a new product for dataset transformation and management, part of a company-wide strategy to unify data-oriented products. Managing partnerships to translate client needs into requirements, and using Claude and Cursor daily to prototype and automate workflows.",
+        "es": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de compañía para unificar los productos orientados a datos. Gestiono partnerships para traducir necesidades de cliente en requisitos, usando Claude y Cursor a diario para prototipar y automatizar workflows."
+      }
+    },
+    {
+      "company": "Fourvenues",
+      "role": "Senior Product Manager",
+      "period": "Feb 2024 – Feb 2026",
+      "location": "Valencia",
+      "description": { "en": "", "es": "" }
+    },
+    {
+      "company": "Nailted",
+      "role": "Product Manager",
+      "period": "May 2023 – Feb 2024",
+      "location": "Madrid",
+      "description": { "en": "", "es": "" }
+    },
+    {
+      "company": "Soluciones Cuatroochenta",
+      "role": "Product Development Manager",
+      "period": "Oct 2020 – Apr 2023",
+      "location": "Castellón",
+      "description": { "en": "", "es": "" }
+    },
+    {
+      "company": "Kokoro Kids",
+      "role": "Product Manager",
+      "period": "Nov 2019 – Oct 2020",
+      "location": "Valencia",
+      "description": {
+        "en": "Managed project planning with Scrum, sprints, tasks and upcoming product phases, for a small, highly competent team adapting the product to a demanding early-stage market.",
+        "es": "Gestioné la planificación del proyecto con metodología Scrum (sprints, tareas y las próximas fases de producto) con una plantilla pequeña pero muy competente, adaptando el producto a un mercado exigente en fase temprana."
+      }
+    },
+    {
+      "company": "PlayJoy",
+      "role": "Business Developer",
+      "period": "Apr 2019 – Oct 2020",
+      "location": "Valencia",
+      "description": { "en": "", "es": "" }
+    },
+    {
+      "company": "Utopic Estudios",
+      "role": "Product Manager",
+      "period": "Oct 2018 – Jan 2019",
+      "location": "Castellón",
+      "description": { "en": "", "es": "" }
+    },
+    {
+      "company": "Remsoul",
+      "role": "Co-Founder",
+      "period": "Mar 2016 – Jan 2018",
+      "location": "Castellón",
+      "description": { "en": "", "es": "" }
+    }
+  ]
+}

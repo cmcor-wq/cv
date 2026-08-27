@@ -1,0 +1,36 @@
+{
+  "company": "PlayJoy",
+  "tags": ["B2C", "Community", "Multi-platform", "Network effects"],
+  "title": {
+    "en": "A multiplayer traditional-games app with community at its core",
+    "es": "App de juegos tradicionales multijugador con comunidad"
+  },
+  "summary": {
+    "en": "A B2C product for traditional games, built to be played in groups, with community as the growth engine.",
+    "es": "Producto B2C de juegos tradicionales pensado para jugarse en grupo, con la comunidad como motor de crecimiento."
+  },
+  "context": {
+    "en": "Traditional games (cards, board, playground) have an advantage most digital games don't: a community that already plays them offline. The challenge was bringing that social dynamic into a digital product without losing what made it fun.",
+    "es": "Los juegos tradicionales (cartas, mesa, patio) tienen una ventaja que muchos juegos digitales no tienen: ya existe una comunidad que los juega offline. El reto era llevar esa dinámica social a un producto digital sin cargarse lo que la hacía divertida."
+  },
+  "role": {
+    "en": "Product Manager for the B2C product, focused on multiplayer and community dynamics.",
+    "es": "Product Manager del producto B2C, con foco en las dinámicas multijugador y de comunidad."
+  },
+  "discovery": {
+    "en": "Direct observation of how people play these games offline, who invites, who organizes, what makes a group come back to play the following week.",
+    "es": "Observación directa de cómo la gente juega estos juegos offline: quién invita, quién organiza, qué hace que un grupo vuelva a jugar la semana siguiente."
+  },
+  "decisionFramework": {
+    "en": "I prioritized features that reinforced the network effect (inviting, replaying with the same group) over adding more games to the catalog. I dropped functionality that optimized for the individual player instead of the group.",
+    "es": "Fui a por las features que reforzaban el efecto red (invitar, repetir partida con el mismo grupo) antes que meter más juegos al catálogo. Lo que optimizaba para el jugador individual en vez del grupo, fuera."
+  },
+  "whatIBuilt": {
+    "en": "Cross-platform flows to create and join group games, designed so that organizing a match was as easy as proposing it in a chat.",
+    "es": "Flujos multiplataforma para crear y unirse a partidas en grupo, pensados para que organizar una partida fuera tan fácil como proponerla en un chat."
+  },
+  "outcomes": {
+    "en": "No exact figures to share. What I learned there I still use: in a product with network effects, the user who really matters isn't the one playing, it's the one organizing. Design for the organizer and you multiply reach.",
+    "es": "Sin cifras exactas para compartir. Lo que aprendí ahí lo uso todavía: en un producto con efecto red, el usuario que de verdad importa no es quien juega, es quien organiza. Diseñas para el organizador y multiplicas el alcance."
+  }
+}

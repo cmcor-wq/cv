@@ -1,0 +1,36 @@
+{
+  "company": "Nailted",
+  "tags": ["B2B2C", "Activation", "Retention", "Discovery"],
+  "title": {
+    "en": "Redesigning onboarding and lifting weekly engagement",
+    "es": "Rediseño de onboarding y mejora del engagement semanal"
+  },
+  "summary": {
+    "en": "Redesigned the onboarding flow and the weekly engagement cycle so teams would adopt the product beyond week one.",
+    "es": "Rediseño del flujo de onboarding y del ciclo de engagement semanal para que los equipos adoptaran el producto más allá de la primera semana."
+  },
+  "context": {
+    "en": "The product sold well, but real adoption within each team, weekly usage, not just the first login, was uneven. Some teams turned it into a habit; others dropped it once the novelty wore off.",
+    "es": "El producto se vendía bien, pero la adopción real dentro de cada equipo (el uso semanal, no solo el login inicial) era desigual. Algunos equipos lo convertían en hábito; otros lo dejaban en cuanto pasaba la novedad."
+  },
+  "role": {
+    "en": "Owned onboarding and engagement: research, flow design, and coordination with design and engineering on the redesign.",
+    "es": "Responsable de onboarding y engagement: research, diseño del flujo, y coordinación con diseño e ingeniería para el rediseño."
+  },
+  "discovery": {
+    "en": "In-product behavioral analysis to see where people dropped off, combined with interviews with HR managers (the buyers) and employees (the actual users), because in B2B2C the person who buys and the person who uses it don't always want the same thing.",
+    "es": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales), porque en B2B2C el que compra y el que usa no siempre quieren lo mismo."
+  },
+  "decisionFramework": {
+    "en": "I prioritized changes that shrank the gap between 'I signed up' and 'I understand why this matters every week', over adding new functionality. I dropped visual redesigns that didn't attack the real cause of churn.",
+    "es": "Prioricé los cambios que acortaban la distancia entre 'me registro' y 'entiendo por qué esto me importa cada semana', antes que meter funcionalidad nueva. Dejé fuera los rediseños visuales que no atacaban la causa real del abandono."
+  },
+  "whatIBuilt": {
+    "en": "A step-by-step onboarding tailored to the role (HR manager vs. employee) and a redesign of the weekly cycle so the interaction felt like part of the team's rhythm, not one more task.",
+    "es": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera parte del ritmo del equipo, no una tarea más."
+  },
+  "outcomes": {
+    "en": "Observable improvement in weekly adoption across several teams, no exact figure I can put here without access to the original data. The lesson I still carry: in B2B2C you design for two audiences with different motivations at once. Solving for the buyer doesn't mean you've solved for the user, and it works both ways.",
+    "es": "Mejora observable en la adopción semanal en varios equipos, sin una cifra exacta que pueda poner aquí sin acceso a los datos originales. El aprendizaje que sí me llevo: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez. Resolver para quien compra no significa que hayas resuelto para quien usa, y al revés."
+  }
+}

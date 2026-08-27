@@ -57,68 +57,6 @@
       "outcomes": "Resultados y aprendizajes"
     }
   },
-  "CaseStudies": {
-    "amadeus": {
-      "title": "Unificando productos de datos con una nueva plataforma de transformación",
-      "summary": "Al frente de un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de Amadeus para unificar sus productos de datos.",
-      "context": "Amadeus tiene varios productos de datos que crecieron cada uno por su lado, con su propia lógica y su propia deuda técnica. Ahora la dirección quiere unificarlos bajo una sola estrategia, así que este producto tiene que encajar desde el día uno en un contexto técnico y organizativo mucho más grande que él.",
-      "role": "Senior Product Manager al frente del nuevo producto de transformación y gestión de datasets: estrategia, roadmap y ejecución día a día. Trabajo codo con codo con partnerships para traducir necesidades de cliente en requisitos concretos, y con los equipos de datos e ingeniería para que esos requisitos se conviertan en algo construible.",
-      "discovery": "Estoy en los primeros meses del rol, así que el grueso ha sido discovery puro: mapear cómo las necesidades reales de clientes y partners se traducen en lo que el producto tiene que cubrir, y entender dónde encaja frente al resto de productos de datos dentro de la unificación.",
-      "decisionFramework": "Priorizo el input directo de partners por encima de lo que se asume puertas adentro, y uso IA a diario (Claude, Cursor) para prototipar y validar dirección de producto antes de comprometer tiempo de ingeniería. Es poco habitual en un entorno corporate de este tamaño, y es exactamente por eso que lo hago.",
-      "whatIBuilt": "Prototipos tempranos y automatizaciones de workflow, hechos a mano con Claude y Cursor, para validar ideas con partners antes de escribir una sola spec formal.",
-      "outcomes": "Es pronto para hablar de resultados: el rol empezó en febrero de 2026 y sigue en marcha. Lo que sí puedo decir ya: en una organización de este tamaño, la primera victoria no es lanzar rápido, es conseguir que partnerships, datos e ingeniería miren en la misma dirección. Iré actualizando esto a medida que el producto madure."
-    },
-    "fourvenues": {
-      "title": "Lanzando un nuevo producto SaaS vertical desde cero",
-      "summary": "Al frente del 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta que llegó a producción.",
-      "context": "Fourvenues vio un hueco en su vertical que ningún producto cubría bien. No había producto todavía, solo una hipótesis de negocio y un mercado que se movía rápido. El reto de verdad no era ir rápido, era acertar con qué construir sin un histórico de datos internos en el que apoyarse.",
-      "role": "Product Manager al frente del 0→1: desde la definición del problema hasta la priorización del roadmap, coordinando día a día con diseño, ingeniería y el equipo comercial.",
-      "discovery": "Entrevistas con clientes actuales y prospects, escuchando llamadas comerciales para pillar las objeciones reales, y viendo cómo la gente resolvía el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). La idea era encontrar el trabajo que la gente ya intentaba hacer, no inventarme uno nuevo.",
-      "decisionFramework": "Prioricé por dos ejes: cuánto dolía y qué costaba no resolverlo. Fuera las features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que justificar una cosa: qué decisión de negocio permite tomar que hoy no se puede tomar.",
-      "whatIBuilt": "El roadmap inicial del producto, los flujos core de la primera versión, y un sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción.",
-      "outcomes": "Todavía no tengo métricas exactas que compartir: el producto sigue en fase temprana de vida. Lo que sí tengo claro después de dos años ahí: en 0→1 el mejor roadmap es el que se atreve a dejar cosas fuera. Decir que no pronto, a features, a clientes, a tus propias ideas, te ahorra meses de trabajo después. Esa disciplina me la llevo a cualquier producto nuevo que empiece desde cero."
-    },
-    "nailted": {
-      "title": "Rediseño de onboarding y mejora del engagement semanal",
-      "summary": "Rediseño del flujo de onboarding y del ciclo de engagement semanal para que los equipos adoptaran el producto más allá de la primera semana.",
-      "context": "El producto se vendía bien, pero la adopción real dentro de cada equipo (el uso semanal, no solo el login inicial) era desigual. Algunos equipos lo convertían en hábito; otros lo dejaban en cuanto pasaba la novedad.",
-      "role": "Responsable de onboarding y engagement: research, diseño del flujo, y coordinación con diseño e ingeniería para el rediseño.",
-      "discovery": "Análisis de comportamiento en producto para ver dónde se caía la gente, combinado con entrevistas a HR managers (los compradores) y a empleados (los usuarios reales), porque en B2B2C el que compra y el que usa no siempre quieren lo mismo.",
-      "decisionFramework": "Prioricé los cambios que acortaban la distancia entre 'me registro' y 'entiendo por qué esto me importa cada semana', antes que meter funcionalidad nueva. Dejé fuera los rediseños visuales que no atacaban la causa real del abandono.",
-      "whatIBuilt": "Un onboarding por pasos ajustado al rol (HR manager vs. empleado) y un rediseño del ciclo semanal para que la interacción se sintiera parte del ritmo del equipo, no una tarea más.",
-      "outcomes": "Mejora observable en la adopción semanal en varios equipos, sin una cifra exacta que pueda poner aquí sin acceso a los datos originales. El aprendizaje que sí me llevo: en B2B2C hay que diseñar para dos audiencias con motivaciones distintas a la vez. Resolver para quien compra no significa que hayas resuelto para quien usa, y al revés."
-    },
-    "cuatroochenta": {
-      "title": "Gestión de múltiples líneas de producto en un entorno de consultoría",
-      "summary": "Liderazgo de varias líneas de producto a medida para distintos clientes, cada uno con su propio contexto y restricciones.",
-      "context": "Entorno de consultoría: cada cliente traía su propio problema, su propio stakeholder y su propia definición de éxito. No había un único producto que optimizar: había varios en paralelo, todos compitiendo por el mismo equipo.",
-      "role": "Full lifecycle de producto para varias cuentas a la vez.",
-      "discovery": "Discovery adaptado a cada cliente: en consultoría no hay un proceso único que valga para todos. Se trataba de pillar rápido qué información era señal y qué era ruido en cada contexto nuevo.",
-      "decisionFramework": "Usé siempre el mismo criterio para priorizar entre líneas de producto: impacto real en el negocio del cliente frente al coste de oportunidad del equipo compartido. Fuera las peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera.",
-      "whatIBuilt": "Sistemas y procesos de priorización que permitían al mismo squad servir a varios clientes sin perder foco, y roadmaps a medida ajustados a cada contrato.",
-      "outcomes": "Sin métricas exactas por cliente: en consultoría esos números vivían en el reporting de cada cuenta, no en el mío. Lo que aprendí ahí lo sigo usando: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog. El trade-off real no es solo qué construir, es a quién le dices que no esta semana."
-    },
-    "kokoro-kids": {
-      "title": "Llevando Scrum en un equipo pequeño de edtech en un mercado cambiante",
-      "summary": "Gestión de sprints y fases de roadmap para un equipo pequeño y muy competente, adaptando un producto edtech a un mercado exigente en fase temprana.",
-      "context": "Kokoro Kids operaba en un mercado edtech joven y de movimiento rápido, donde las necesidades de los usuarios y la presión competitiva cambiaban deprisa. El equipo era pequeño y muy bueno, pero necesitaba un ritmo de planificación claro para seguir lanzando sin perder el rumbo.",
-      "role": "Product Manager responsable de la planificación del proyecto: llevar Scrum, organizar sprints y tareas, y dar forma a las próximas fases del producto.",
-      "discovery": "El contacto constante y cercano con un equipo pequeño hacía que el discovery pasara sobre todo en conversaciones diarias e iteración rápida, más que en procesos de research formales: el equipo podía probar una idea y tener una lectura en pocos días.",
-      "decisionFramework": "Prioricé lo que mantenía el producto creíble en un mercado que podía cambiar de golpe, por encima de pulir features que fuera del equipo todavía nadie pedía.",
-      "whatIBuilt": "Una cadencia de sprints predecible y un plan vivo para las próximas fases, dando a un equipo pequeño la estructura justa para moverse rápido sin estar replanificando todo el rato.",
-      "outcomes": "Sin métricas exactas de esa etapa. Lo que sí me llevo: en un equipo pequeño y competente, el trabajo del PM es menos controlar el proceso y más proteger el foco. La estructura estorba en cuanto deja de servir a eso."
-    },
-    "playjoy": {
-      "title": "App de juegos tradicionales multijugador con comunidad",
-      "summary": "Producto B2C de juegos tradicionales pensado para jugarse en grupo, con la comunidad como motor de crecimiento.",
-      "context": "Los juegos tradicionales (cartas, mesa, patio) tienen una ventaja que muchos juegos digitales no tienen: ya existe una comunidad que los juega offline. El reto era llevar esa dinámica social a un producto digital sin cargarse lo que la hacía divertida.",
-      "role": "Product Manager del producto B2C, con foco en las dinámicas multijugador y de comunidad.",
-      "discovery": "Observación directa de cómo la gente juega estos juegos offline: quién invita, quién organiza, qué hace que un grupo vuelva a jugar la semana siguiente.",
-      "decisionFramework": "Fui a por las features que reforzaban el efecto red (invitar, repetir partida con el mismo grupo) antes que meter más juegos al catálogo. Lo que optimizaba para el jugador individual en vez del grupo, fuera.",
-      "whatIBuilt": "Flujos multiplataforma para crear y unirse a partidas en grupo, pensados para que organizar una partida fuera tan fácil como proponerla en un chat.",
-      "outcomes": "Sin cifras exactas para compartir. Lo que aprendí ahí lo uso todavía: en un producto con efecto red, el usuario que de verdad importa no es quien juega, es quien organiza. Diseñas para el organizador y multiplicas el alcance."
-    }
-  },
   "Community": {
     "metaTitle": "Community — Valencia Product Beers",
     "eyebrow": "community · el diferenciador más potente",
@@ -164,8 +102,6 @@
     "bio1": "Senior Technical Product Manager con 5+ años construyendo y escalando productos SaaS B2B y B2C en entornos con muchas integraciones y de cara a partners. Lidero integraciones basadas en API de principio a fin: traduzco requisitos técnicos y de negocio en specs claras, y coordino ingeniería, datos, operaciones y partners externos para lanzarlas.",
     "bio2": "Uso herramientas de IA a diario (Claude, Cursor, GitHub Copilot) para prototipar, debuggear y lanzar automatizaciones con mis propias manos, no solo para escribir specs y pasarlas a otro equipo. El discovery no es una fase, es un hábito, y el mejor roadmap es el que mata las malas ideas antes de que cuesten tiempo de ingeniería.",
     "bio3": "Fuera del trabajo dirijo Valencia Product Beers, una comunidad que monté porque estaba harto de los eventos de networking de mentira. Nos juntamos, hablamos de producto, bebemos cerveza. Así de simple.",
-    "experienceAmadeusDescription": "Liderando un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de compañía para unificar los productos orientados a datos. Gestiono partnerships para traducir necesidades de cliente en requisitos, usando Claude y Cursor a diario para prototipar y automatizar workflows.",
-    "experienceKokoroDescription": "Gestioné la planificación del proyecto con metodología Scrum (sprints, tareas y las próximas fases de producto) con una plantilla pequeña pero muy competente, adaptando el producto a un mercado exigente en fase temprana.",
     "experienceLabel": "// experience",
     "skillsLabel": "// skills",
     "toolsLabel": "// tools",

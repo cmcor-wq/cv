@@ -1,0 +1,36 @@
+{
+  "company": "Fourvenues",
+  "tags": ["B2B SaaS", "0→1", "Discovery to delivery", "Roadmap", "Cross-functional"],
+  "title": {
+    "en": "Launching a new vertical SaaS product from scratch",
+    "es": "Lanzando un nuevo producto SaaS vertical desde cero"
+  },
+  "summary": {
+    "en": "Leading the 0→1 of a vertical SaaS product, from the first discovery conversation to production.",
+    "es": "Al frente del 0→1 de un producto SaaS vertical, desde la primera conversación de discovery hasta que llegó a producción."
+  },
+  "context": {
+    "en": "Fourvenues spotted a gap in its vertical that no existing product covered well. There was no product yet, just a business hypothesis and a market moving fast. The real challenge wasn't speed, it was building the right thing with zero internal data history to lean on.",
+    "es": "Fourvenues vio un hueco en su vertical que ningún producto cubría bien. No había producto todavía, solo una hipótesis de negocio y un mercado que se movía rápido. El reto de verdad no era ir rápido, era acertar con qué construir sin un histórico de datos internos en el que apoyarse."
+  },
+  "role": {
+    "en": "Product Manager leading the 0→1: from framing the problem to prioritizing the roadmap, coordinating day to day with design, engineering and the commercial team.",
+    "es": "Product Manager al frente del 0→1: desde la definición del problema hasta la priorización del roadmap, coordinando día a día con diseño, ingeniería y el equipo comercial."
+  },
+  "discovery": {
+    "en": "Interviews with current clients and prospects, sitting in on sales calls to catch the real objections, and looking at how people were solving the problem today with improvised tools (spreadsheets, manual processes). The idea was to find the job people were already trying to do, not invent a new one.",
+    "es": "Entrevistas con clientes actuales y prospects, escuchando llamadas comerciales para pillar las objeciones reales, y viendo cómo la gente resolvía el problema hoy con herramientas improvisadas (spreadsheets, procesos manuales). La idea era encontrar el trabajo que la gente ya intentaba hacer, no inventarme uno nuevo."
+  },
+  "decisionFramework": {
+    "en": "I prioritized on two axes: how much it hurt and what not solving it cost. Out went the features that sounded good on a call but that no client asked for twice. Every line on the roadmap had to earn its place by answering one question: what business decision does this unlock that can't be made today?",
+    "es": "Prioricé por dos ejes: cuánto dolía y qué costaba no resolverlo. Fuera las features que sonaban bien en una llamada pero que ningún cliente pedía dos veces. Cada línea del roadmap tenía que justificar una cosa: qué decisión de negocio permite tomar que hoy no se puede tomar."
+  },
+  "whatIBuilt": {
+    "en": "The initial product roadmap, the core flows of the first version, and a continuous discovery system with the commercial team so customer feedback reached product without friction.",
+    "es": "El roadmap inicial del producto, los flujos core de la primera versión, y un sistema de discovery continuo con el equipo comercial para que el feedback de cliente llegara a producto sin fricción."
+  },
+  "outcomes": {
+    "en": "No exact metrics to share yet, the product is still early in its life. What's clear after two years there: in 0→1, the best roadmap is the one brave enough to leave things out. Saying no early, to features, to clients, to your own ideas, saves you months later. That discipline is what I bring to any product that starts from zero.",
+    "es": "Todavía no tengo métricas exactas que compartir: el producto sigue en fase temprana de vida. Lo que sí tengo claro después de dos años ahí: en 0→1 el mejor roadmap es el que se atreve a dejar cosas fuera. Decir que no pronto, a features, a clientes, a tus propias ideas, te ahorra meses de trabajo después. Esa disciplina me la llevo a cualquier producto nuevo que empiece desde cero."
+  }
+}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Container, SectionHeading, Tag } from "@/components/ui";
 import { about } from "@/lib/content";
+import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata(props: PageProps<"/[locale]/about">): Promise<Metadata> {
   const { locale } = await props.params;
@@ -11,6 +12,7 @@ export async function generateMetadata(props: PageProps<"/[locale]/about">): Pro
 
 export default async function AboutPage() {
   const t = await getTranslations("About");
+  const locale = (await getLocale()) as Locale;
 
   return (
     <Container className="py-16">
@@ -28,12 +30,7 @@ export default async function AboutPage() {
             <p className="mb-4 font-mono text-[11px] text-accent-600">{t("experienceLabel")}</p>
             <div className="flex flex-col divide-y divide-border rounded-lg border border-border bg-bg-surface">
               {about.experience.map((e) => {
-                const description =
-                  e.company === "Amadeus"
-                    ? t("experienceAmadeusDescription")
-                    : e.company === "Kokoro Kids"
-                      ? t("experienceKokoroDescription")
-                      : null;
+                const description = e.description[locale] || null;
 
                 return (
                   <div key={e.company} className="flex flex-col gap-2 px-5 py-3.5">

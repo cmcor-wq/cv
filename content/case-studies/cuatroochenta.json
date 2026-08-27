@@ -1,0 +1,36 @@
+{
+  "company": "Soluciones Cuatroochenta",
+  "tags": ["B2B", "Full lifecycle", "Product Development Manager", "Tailor-made solutions"],
+  "title": {
+    "en": "Managing multiple product lines in a consultancy environment",
+    "es": "Gestión de múltiples líneas de producto en un entorno de consultoría"
+  },
+  "summary": {
+    "en": "Led several tailor-made product lines for different clients at once, each with its own context and constraints.",
+    "es": "Liderazgo de varias líneas de producto a medida para distintos clientes, cada uno con su propio contexto y restricciones."
+  },
+  "context": {
+    "en": "A consultancy environment: every client brought their own problem, their own stakeholder and their own definition of success. There wasn't a single product to optimize, there were several running in parallel, each competing for the same team.",
+    "es": "Entorno de consultoría: cada cliente traía su propio problema, su propio stakeholder y su propia definición de éxito. No había un único producto que optimizar: había varios en paralelo, todos compitiendo por el mismo equipo."
+  },
+  "role": {
+    "en": "Led full product lifecycle for several accounts at the same time.",
+    "es": "Full lifecycle de producto para varias cuentas a la vez."
+  },
+  "discovery": {
+    "en": "Discovery adapted to each client, in consultancy there's no single process that fits everyone. It was about quickly figuring out what information was signal and what was noise in each new context.",
+    "es": "Discovery adaptado a cada cliente: en consultoría no hay un proceso único que valga para todos. Se trataba de pillar rápido qué información era señal y qué era ruido en cada contexto nuevo."
+  },
+  "decisionFramework": {
+    "en": "I prioritized across product lines with the same criterion every time: real impact on the client's business versus the opportunity cost of the shared team. I dropped requests that solved a one-off symptom for a client without fitting the rest of the portfolio.",
+    "es": "Usé siempre el mismo criterio para priorizar entre líneas de producto: impacto real en el negocio del cliente frente al coste de oportunidad del equipo compartido. Fuera las peticiones que resolvían un síntoma puntual de un cliente sin encajar con el resto de la cartera."
+  },
+  "whatIBuilt": {
+    "en": "Prioritization systems and processes that let the same squad serve several clients without losing focus, and tailor-made roadmaps fitted to each contract.",
+    "es": "Sistemas y procesos de priorización que permitían al mismo squad servir a varios clientes sin perder foco, y roadmaps a medida ajustados a cada contrato."
+  },
+  "outcomes": {
+    "en": "No exact metrics per client, in consultancy those numbers lived in each account's reporting, not mine. What I learned there I still use: managing product in consultancy is as much about managing expectations as managing a backlog. The real trade-off isn't just what to build, it's who to say no to this week.",
+    "es": "Sin métricas exactas por cliente: en consultoría esos números vivían en el reporting de cada cuenta, no en el mío. Lo que aprendí ahí lo sigo usando: gestionar producto en consultoría es tanto gestionar expectativas como gestionar backlog. El trade-off real no es solo qué construir, es a quién le dices que no esta semana."
+  }
+}

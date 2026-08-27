@@ -1,0 +1,36 @@
+{
+  "company": "Amadeus",
+  "tags": ["B2B SaaS", "Data products", "Partnerships", "0→1"],
+  "title": {
+    "en": "Unifying data products through a new transformation platform",
+    "es": "Unificando productos de datos con una nueva plataforma de transformación"
+  },
+  "summary": {
+    "en": "Leading a new product for dataset transformation and management, part of Amadeus's push to unify its data products.",
+    "es": "Al frente de un nuevo producto de transformación y gestión de datasets, dentro de la estrategia de Amadeus para unificar sus productos de datos."
+  },
+  "context": {
+    "en": "Amadeus runs several data products that grew up independently, each with its own logic and its own technical debt. Leadership wants them under one strategy now, so this product has to fit into a much bigger technical and organizational picture from day one.",
+    "es": "Amadeus tiene varios productos de datos que crecieron cada uno por su lado, con su propia lógica y su propia deuda técnica. Ahora la dirección quiere unificarlos bajo una sola estrategia, así que este producto tiene que encajar desde el día uno en un contexto técnico y organizativo mucho más grande que él."
+  },
+  "role": {
+    "en": "Senior Product Manager owning the new dataset transformation and management product, strategy, roadmap and day-to-day execution. Working closely with partnership teams to turn client needs into concrete requirements, and with data and engineering teams to turn those requirements into something buildable.",
+    "es": "Senior Product Manager al frente del nuevo producto de transformación y gestión de datasets: estrategia, roadmap y ejecución día a día. Trabajo codo con codo con partnerships para traducir necesidades de cliente en requisitos concretos, y con los equipos de datos e ingeniería para que esos requisitos se conviertan en algo construible."
+  },
+  "discovery": {
+    "en": "Still early days in this role, so most of the work has been pure discovery: mapping how client and partner needs translate into what the product actually needs to cover, and figuring out where it fits alongside the other data products in the unification effort.",
+    "es": "Estoy en los primeros meses del rol, así que el grueso ha sido discovery puro: mapear cómo las necesidades reales de clientes y partners se traducen en lo que el producto tiene que cubrir, y entender dónde encaja frente al resto de productos de datos dentro de la unificación."
+  },
+  "decisionFramework": {
+    "en": "I prioritize direct partner input over internal assumptions, and use AI daily (Claude, Cursor) to prototype and validate direction before committing engineering time. That's still unusual in a corporate environment this size, which is exactly why I do it.",
+    "es": "Priorizo el input directo de partners por encima de lo que se asume puertas adentro, y uso IA a diario (Claude, Cursor) para prototipar y validar dirección de producto antes de comprometer tiempo de ingeniería. Es poco habitual en un entorno corporate de este tamaño, y es exactamente por eso que lo hago."
+  },
+  "whatIBuilt": {
+    "en": "Early prototypes and workflow automations, built hands-on with Claude and Cursor, used to test ideas with partners before a single formal spec gets written.",
+    "es": "Prototipos tempranos y automatizaciones de workflow, hechos a mano con Claude y Cursor, para validar ideas con partners antes de escribir una sola spec formal."
+  },
+  "outcomes": {
+    "en": "Too early to talk results: the role started in February 2026 and is very much in motion. What I can say already: in an org this size, the first real win isn't shipping fast, it's getting partnerships, data and engineering pointed the same direction. I'll update this as the product matures.",
+    "es": "Es pronto para hablar de resultados: el rol empezó en febrero de 2026 y sigue en marcha. Lo que sí puedo decir ya: en una organización de este tamaño, la primera victoria no es lanzar rápido, es conseguir que partnerships, datos e ingeniería miren en la misma dirección. Iré actualizando esto a medida que el producto madure."
+  }
+}
