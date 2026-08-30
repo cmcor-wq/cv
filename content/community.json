@@ -9,9 +9,16 @@
   },
   "links": {
     "website": "https://productbeers.es",
-    "meetup": "",
-    "linkedin": "",
-    "instagram": ""
+    "linkedin": "https://es.linkedin.com/company/product-beers"
   },
-  "gallery": []
+  "gallery": [
+    {
+      "image": "/images/community/gallery/0/image.jpg",
+      "alt": "Product Beers con Fran Chaves"
+    },
+    {
+      "image": "/images/community/gallery/1/image.jpg",
+      "alt": "Product Beers con José Tomás"
+    }
+  ]
 }
