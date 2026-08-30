@@ -2,25 +2,56 @@ import experienceData from "../../content/experience.json";
 import educationData from "../../content/education.json";
 import skillsToolsData from "../../content/skills-tools.json";
 import articlesData from "../../content/articles.json";
+import communityDataRaw from "../../content/community.json";
+import profileDataRaw from "../../content/profile.json";
 
 export type LocalizedText = { en: string; es: string };
 
-export const community = {
-  name: "Valencia Product Beers",
-  founded: "2023" as string | null,
+// Keystatic omits text/image fields entirely from the JSON when they're left
+// empty, so the shape TypeScript infers from the file on disk can't be
+// trusted to have every key present — cast to a shape that allows for that.
+type CommunityJson = {
+  name: string;
+  founded?: string;
   stats: {
-    telegramMembers: 425 as number | null,
-    linkedinMembers: 1500 as number | null,
-    events: 10 as number | null,
-    seasonAttendance: 340 as number | null,
+    telegramMembers?: number;
+    linkedinMembers?: number;
+    events?: number;
+    seasonAttendance?: number;
+  };
+  links: {
+    website?: string;
+    meetup?: string;
+    linkedin?: string;
+    instagram?: string;
+  };
+  gallery: { image: string; alt: string }[];
+};
+type ProfileJson = { photo?: string | null };
+
+const communityData = communityDataRaw as CommunityJson;
+const profileData = profileDataRaw as ProfileJson;
+
+export const community = {
+  name: communityData.name,
+  founded: communityData.founded || null,
+  stats: {
+    telegramMembers: communityData.stats.telegramMembers ?? null,
+    linkedinMembers: communityData.stats.linkedinMembers ?? null,
+    events: communityData.stats.events ?? null,
+    seasonAttendance: communityData.stats.seasonAttendance ?? null,
   },
   links: {
-    website: "https://productbeers.es" as string | null,
-    meetup: null as string | null,
-    linkedin: null as string | null,
-    instagram: null as string | null,
+    website: communityData.links.website || null,
+    meetup: communityData.links.meetup || null,
+    linkedin: communityData.links.linkedin || null,
+    instagram: communityData.links.instagram || null,
   },
-  gallery: [] as { src: string; alt: string }[],
+  gallery: communityData.gallery.map((g) => ({ src: g.image, alt: g.alt })),
+};
+
+export const profile = {
+  photo: profileData.photo || null,
 };
 
 export const sideProjects = {

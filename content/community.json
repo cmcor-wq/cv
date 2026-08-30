@@ -1,0 +1,17 @@
+{
+  "name": "Valencia Product Beers",
+  "founded": "2023",
+  "stats": {
+    "telegramMembers": 425,
+    "linkedinMembers": 1500,
+    "events": 10,
+    "seasonAttendance": 340
+  },
+  "links": {
+    "website": "https://productbeers.es",
+    "meetup": "",
+    "linkedin": "",
+    "instagram": ""
+  },
+  "gallery": []
+}

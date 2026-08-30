@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Container, SectionHeading, Tag } from "@/components/ui";
-import { about } from "@/lib/content";
+import { about, profile } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata(props: PageProps<"/[locale]/about">): Promise<Metadata> {
@@ -63,6 +63,15 @@ export default async function AboutPage() {
         </div>
 
         <aside className="flex flex-col gap-8">
+          {profile.photo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={profile.photo}
+              alt="Carlos Miguel Corada"
+              className="aspect-square w-full rounded-lg border border-border object-cover"
+            />
+          )}
+
           <div>
             <p className="mb-3 font-mono text-[11px] text-accent-600">{t("toolsLabel")}</p>
             <div className="flex flex-wrap gap-2">

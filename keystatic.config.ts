@@ -131,5 +131,61 @@ export default config({
         ),
       },
     }),
+
+    community: singleton({
+      label: "Community (/community)",
+      path: "content/community",
+      format: { data: "json" },
+      schema: {
+        name: fields.text({ label: "Community name" }),
+        founded: fields.text({ label: "Founded (year)" }),
+        stats: fields.object(
+          {
+            telegramMembers: fields.integer({ label: "Telegram members" }),
+            linkedinMembers: fields.integer({ label: "LinkedIn members" }),
+            events: fields.integer({ label: "Events per year" }),
+            seasonAttendance: fields.integer({ label: "Attendees per season" }),
+          },
+          { label: "Stats" },
+        ),
+        links: fields.object(
+          {
+            website: fields.text({ label: "Website" }),
+            meetup: fields.text({ label: "Meetup URL", description: "Leave empty to hide" }),
+            linkedin: fields.text({ label: "LinkedIn group URL", description: "Leave empty to hide" }),
+            instagram: fields.text({ label: "Instagram URL", description: "Leave empty to hide" }),
+          },
+          { label: "Links" },
+        ),
+        gallery: fields.array(
+          fields.object({
+            image: fields.image({
+              label: "Photo",
+              directory: "public/images/community",
+              publicPath: "/images/community/",
+            }),
+            alt: fields.text({ label: "Alt text (short description of the photo)" }),
+          }),
+          {
+            label: "Gallery photos",
+            itemLabel: (props) => props.fields.alt.value || "New photo",
+          },
+        ),
+      },
+    }),
+
+    profile: singleton({
+      label: "Profile photo (/about)",
+      path: "content/profile",
+      format: { data: "json" },
+      schema: {
+        photo: fields.image({
+          label: "Headshot",
+          directory: "public/images/profile",
+          publicPath: "/images/profile/",
+          validation: { isRequired: false },
+        }),
+      },
+    }),
   },
 });
