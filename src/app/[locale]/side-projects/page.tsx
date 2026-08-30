@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Container, SectionHeading } from "@/components/ui";
 import { sideProjects } from "@/lib/content";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata(props: PageProps<"/[locale]/side-projects">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "SideProjects" });
-  return { title: t("metaTitle") };
+  return buildMetadata({ locale, path: "/side-projects", title: t("metaTitle"), description: t("description") });
 }
 
 export default async function SideProjectsPage() {

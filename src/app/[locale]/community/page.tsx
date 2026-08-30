@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Container, SectionHeading } from "@/components/ui";
 import { community } from "@/lib/content";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata(props: PageProps<"/[locale]/community">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "Community" });
-  return { title: t("metaTitle") };
+  return buildMetadata({ locale, path: "/community", title: t("metaTitle"), description: t("framing") });
 }
 
 export default async function CommunityPage() {

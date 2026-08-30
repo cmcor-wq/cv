@@ -3,11 +3,12 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Container, SectionHeading, Tag } from "@/components/ui";
 import { about, profile } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata(props: PageProps<"/[locale]/about">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "About" });
-  return { title: t("metaTitle") };
+  return buildMetadata({ locale, path: "/about", title: t("metaTitle"), description: t("bio1") });
 }
 
 export default async function AboutPage() {

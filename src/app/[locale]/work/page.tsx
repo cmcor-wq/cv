@@ -4,11 +4,12 @@ import { Link } from "@/i18n/navigation";
 import { Container, SectionHeading, Tag } from "@/components/ui";
 import { caseStudyContents } from "@/lib/case-studies";
 import type { Locale } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata(props: PageProps<"/[locale]/work">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "Work" });
-  return { title: t("metaTitle") };
+  return buildMetadata({ locale, path: "/work", title: t("metaTitle"), description: t("description") });
 }
 
 export default async function WorkPage() {

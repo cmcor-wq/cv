@@ -5,15 +5,22 @@ import { Link } from "@/i18n/navigation";
 import { Container, Tag } from "@/components/ui";
 import { caseStudyContents, getCaseStudy, CASE_STUDY_SECTIONS } from "@/lib/case-studies";
 import { routing, type Locale } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateStaticParams() {
   return routing.locales.flatMap((locale) => caseStudyContents.map((cs) => ({ locale, slug: cs.slug })));
 }
 
 export async function generateMetadata(props: PageProps<"/[locale]/work/[slug]">): Promise<Metadata> {
-  const { slug } = await props.params;
+  const { locale, slug } = await props.params;
   const cs = getCaseStudy(slug);
-  return { title: cs ? `${cs.company} — Carlos Miguel Corada` : "Work" };
+  if (!cs) return { title: "Work" };
+  return buildMetadata({
+    locale,
+    path: `/work/${slug}`,
+    title: `${cs.title[locale as Locale]} — Carlos Miguel Corada`,
+    description: cs.summary[locale as Locale],
+  });
 }
 
 export default async function CaseStudyPage(props: PageProps<"/[locale]/work/[slug]">) {

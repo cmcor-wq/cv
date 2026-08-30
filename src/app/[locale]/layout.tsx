@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
+import { SITE_URL, buildMetadata } from "@/lib/site";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -27,7 +28,10 @@ export function generateStaticParams() {
 export async function generateMetadata(props: LayoutProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
-  return { title: t("title"), description: t("description") };
+  return {
+    metadataBase: new URL(SITE_URL),
+    ...buildMetadata({ locale, path: "", title: t("title"), description: t("description") }),
+  };
 }
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[locale]">) {

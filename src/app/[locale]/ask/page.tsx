@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui";
 import AskChat from "@/components/AskChat";
+import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata(props: PageProps<"/[locale]/ask">): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "Ask" });
-  return { title: t("metaTitle") };
+  return buildMetadata({ locale, path: "/ask", title: t("metaTitle"), description: t("description") });
 }
 
 export default async function AskPage() {
