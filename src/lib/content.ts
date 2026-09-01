@@ -29,7 +29,7 @@ type CommunityJson = {
   gallery: { image: string; alt: string }[];
 };
 type ProfileJson = { photo?: string | null };
-type CompanyEntryJson = { name?: string; url?: string | null; logo?: string | null };
+type CompanyEntryJson = { name?: string; url?: string | null };
 type CompaniesJson = { entries: CompanyEntryJson[] };
 
 const communityData = communityDataRaw as CommunityJson;
@@ -88,12 +88,11 @@ export const about = {
   },
 };
 
-export type Company = { name: string; url: string | null; logo: string | null };
+export type Company = { name: string; url: string | null };
 
 export const credibility: Company[] = companiesData.entries
   .filter((c) => c.name)
   .map((c) => ({
     name: c.name as string,
     url: c.url || null,
-    logo: c.logo || null,
   }));
