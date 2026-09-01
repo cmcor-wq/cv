@@ -1,10 +1,25 @@
 {
   "entries": [
-    { "name": "Amadeus", "url": "", "logo": null },
-    { "name": "Fourvenues", "url": "", "logo": null },
-    { "name": "Nailted", "url": "", "logo": null },
-    { "name": "Cuatroochenta", "url": "", "logo": null },
-    { "name": "Valencia Product Beers", "url": "https://productbeers.es", "logo": null },
-    { "name": "Remsoul", "url": "", "logo": null }
+    {
+      "name": "Amadeus",
+      "url": "https://www.linkedin.com/company/amadeus/",
+      "logo": "/images/companies/entries/0/logo.jpg"
+    },
+    {
+      "name": "Fourvenues"
+    },
+    {
+      "name": "Nailted"
+    },
+    {
+      "name": "Cuatroochenta"
+    },
+    {
+      "name": "Valencia Product Beers",
+      "url": "https://productbeers.es"
+    },
+    {
+      "name": "Remsoul"
+    }
   ]
 }
