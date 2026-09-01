@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { JetBrains_Mono, IBM_Plex_Sans } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -42,9 +43,13 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
   return (
     <html
       lang={locale}
+      suppressHydrationWarning
       className={`${jetbrainsMono.variable} ${plexSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-text">
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function(){try{var p=localStorage.getItem("theme-preference");if(p==="light"||p==="dark"){document.documentElement.setAttribute("data-theme",p);}}catch(e){}})();`}
+        </Script>
         <NextIntlClientProvider>
           <Nav />
           <main className="flex-1">{children}</main>

@@ -6,27 +6,89 @@
   --bg-raised: #DBD5C1;
   --text: #16302A;
   --text-muted: #4F6358;
-  --text-faint: #8B968C;
+  --text-faint: #5A665C;
   --border: rgba(22, 48, 42, 0.14);
   --border-md: rgba(22, 48, 42, 0.26);
 
   --accent-50: rgba(0, 150, 136, 0.08);
   --accent-100: #B7DFDA;
   --accent-200: #6DBDB2;
-  --accent-600: #009688;
+  --accent-600: #007066;
   --accent-800: #00695C;
 
   --green-50: rgba(92, 138, 82, 0.08);
   --green-100: #C9DCC1;
   --green-200: #9CC08D;
-  --green-600: #5C8A52;
+  --green-600: #4A6E42;
   --green-800: #3F6238;
 
   --coral-50: rgba(193, 85, 44, 0.08);
   --coral-100: #F0C7B4;
   --coral-200: #E19A72;
-  --coral-600: #C1552C;
+  --coral-600: #8B3D20;
   --coral-800: #8F3D1E;
+}
+
+/* Dark palette: follows the OS preference by default, overridden by the
+   explicit toggle either way via [data-theme] on <html>. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141F1A;
+    --bg-surface: #1C2A23;
+    --bg-raised: #25362C;
+    --text: #EDEEE8;
+    --text-muted: #A7B3A9;
+    --text-faint: #94A395;
+    --border: rgba(255, 255, 255, 0.10);
+    --border-md: rgba(255, 255, 255, 0.20);
+
+    --accent-50: rgba(79, 195, 183, 0.10);
+    --accent-100: #1D3B37;
+    --accent-200: #2E5852;
+    --accent-600: #4FC3B7;
+    --accent-800: #6DD3C8;
+
+    --green-50: rgba(147, 194, 132, 0.10);
+    --green-100: #2A3924;
+    --green-200: #3E5535;
+    --green-600: #93C284;
+    --green-800: #A9D19C;
+
+    --coral-50: rgba(232, 145, 106, 0.10);
+    --coral-100: #3E2A1F;
+    --coral-200: #5C3D2A;
+    --coral-600: #E8916A;
+    --coral-800: #EFAA8B;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #141F1A;
+  --bg-surface: #1C2A23;
+  --bg-raised: #25362C;
+  --text: #EDEEE8;
+  --text-muted: #A7B3A9;
+  --text-faint: #94A395;
+  --border: rgba(255, 255, 255, 0.10);
+  --border-md: rgba(255, 255, 255, 0.20);
+
+  --accent-50: rgba(79, 195, 183, 0.10);
+  --accent-100: #1D3B37;
+  --accent-200: #2E5852;
+  --accent-600: #4FC3B7;
+  --accent-800: #6DD3C8;
+
+  --green-50: rgba(147, 194, 132, 0.10);
+  --green-100: #2A3924;
+  --green-200: #3E5535;
+  --green-600: #93C284;
+  --green-800: #A9D19C;
+
+  --coral-50: rgba(232, 145, 106, 0.10);
+  --coral-100: #3E2A1F;
+  --coral-200: #5C3D2A;
+  --coral-600: #E8916A;
+  --coral-800: #EFAA8B;
 }
 
 @theme inline {
@@ -61,10 +123,23 @@
   --font-sans: var(--font-plex-sans), sans-serif;
 }
 
+html {
+  color-scheme: light dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-plex-sans), sans-serif;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 ::selection {

@@ -3,6 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Nav() {
   const t = useTranslations("Nav");
@@ -71,6 +72,8 @@ export default function Nav() {
               ES
             </Link>
           </div>
+
+          <ThemeToggle />
 
           <button
             className="flex h-9 w-9 items-center justify-center rounded border border-border-md md:hidden"
