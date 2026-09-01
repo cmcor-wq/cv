@@ -187,5 +187,30 @@ export default config({
         }),
       },
     }),
+
+    companies: singleton({
+      label: "Company logos (Home)",
+      path: "content/companies",
+      format: { data: "json" },
+      schema: {
+        entries: fields.array(
+          fields.object({
+            name: fields.text({ label: "Company name" }),
+            url: fields.text({ label: "Website URL", description: "Leave empty to show as plain text" }),
+            logo: fields.image({
+              label: "Logo",
+              description: "PNG/SVG with transparent background works best. Leave empty to show the name as text.",
+              directory: "public/images/companies",
+              publicPath: "/images/companies/",
+              validation: { isRequired: false },
+            }),
+          }),
+          {
+            label: "Companies",
+            itemLabel: (props) => props.fields.name.value || "New company",
+          },
+        ),
+      },
+    }),
   },
 });

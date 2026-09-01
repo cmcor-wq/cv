@@ -34,10 +34,29 @@ export default async function Home() {
       <section className="py-10">
         <Container>
           <p className="mb-5 font-mono text-[11px] text-text-faint">{t("whereBuilt")}</p>
-          <div className="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm text-text-muted">
-            {credibility.map((name) => (
-              <span key={name}>{name}</span>
-            ))}
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-sm text-text-muted">
+            {credibility.map((company) => {
+              const content = company.logo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={company.logo} alt={company.name} className="h-7 max-w-[140px] object-contain" />
+              ) : (
+                <span>{company.name}</span>
+              );
+
+              return company.url ? (
+                <a
+                  key={company.name}
+                  href={company.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0"
+                >
+                  {content}
+                </a>
+              ) : (
+                <span key={company.name}>{content}</span>
+              );
+            })}
           </div>
         </Container>
       </section>

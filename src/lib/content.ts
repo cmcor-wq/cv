@@ -4,6 +4,7 @@ import skillsToolsData from "../../content/skills-tools.json";
 import articlesData from "../../content/articles.json";
 import communityDataRaw from "../../content/community.json";
 import profileDataRaw from "../../content/profile.json";
+import companiesDataRaw from "../../content/companies.json";
 
 export type LocalizedText = { en: string; es: string };
 
@@ -28,9 +29,12 @@ type CommunityJson = {
   gallery: { image: string; alt: string }[];
 };
 type ProfileJson = { photo?: string | null };
+type CompanyEntryJson = { name?: string; url?: string | null; logo?: string | null };
+type CompaniesJson = { entries: CompanyEntryJson[] };
 
 const communityData = communityDataRaw as CommunityJson;
 const profileData = profileDataRaw as ProfileJson;
+const companiesData = companiesDataRaw as CompaniesJson;
 
 export const community = {
   name: communityData.name,
@@ -84,4 +88,12 @@ export const about = {
   },
 };
 
-export const credibility = ["Amadeus", "Fourvenues", "Nailted", "Cuatroochenta", "Valencia Product Beers", "Remsoul"];
+export type Company = { name: string; url: string | null; logo: string | null };
+
+export const credibility: Company[] = companiesData.entries
+  .filter((c) => c.name)
+  .map((c) => ({
+    name: c.name as string,
+    url: c.url || null,
+    logo: c.logo || null,
+  }));
