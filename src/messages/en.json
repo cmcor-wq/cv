@@ -33,7 +33,12 @@
     "cardCommunityDescription": "The most active product community in Valencia. Built from zero, with nobody trying to sell you anything.",
     "cardAskEyebrow": "⭐ the fun part",
     "cardAskTitle": "Ask me anything",
-    "cardAskDescription": "A chat that's actually me. Includes 'mom mode'."
+    "cardAskDescription": "A chat that's actually me. Includes 'mom mode'.",
+    "contactEyebrow": "// contact",
+    "contactTitle": "Let's talk",
+    "contactDescription": "Hiring, partnering, or just want to compare notes on product? Reach out directly, no contact form.",
+    "contactLinkedinLabel": "linkedin",
+    "contactCvLabel": "download-cv.pdf"
   },
   "Work": {
     "metaTitle": "Work — Carlos Miguel Corada",

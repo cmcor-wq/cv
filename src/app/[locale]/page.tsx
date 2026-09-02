@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Container, ButtonLink } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
-import { credibility } from "@/lib/content";
+import { credibility, about } from "@/lib/content";
 
 export default async function Home() {
   const t = await getTranslations("Home");
@@ -77,6 +77,47 @@ export default async function Home() {
               description={t("cardAskDescription")}
               accent="coral"
             />
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-border py-16">
+        <Container>
+          <p className="mb-3 font-mono text-[11px] text-accent-600">{t("contactEyebrow")}</p>
+          <h2 className="font-mono text-2xl font-bold leading-tight text-text sm:text-3xl">{t("contactTitle")}</h2>
+          <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-text-muted">{t("contactDescription")}</p>
+          <div className="mt-6 flex flex-wrap gap-3 font-mono text-sm">
+            <a
+              href={`mailto:${about.contact.email}`}
+              className="rounded bg-accent-600 px-5 py-2.5 font-medium text-bg transition-opacity hover:opacity-85"
+            >
+              {about.contact.email}
+            </a>
+            <a
+              href={`tel:${about.contact.phone.replace(/\s/g, "")}`}
+              className="rounded border border-border-md px-5 py-2.5 text-text transition-opacity hover:opacity-85"
+            >
+              {about.contact.phone}
+            </a>
+            {about.contact.linkedin && (
+              <a
+                href={about.contact.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded border border-border-md px-5 py-2.5 text-text transition-opacity hover:opacity-85"
+              >
+                {t("contactLinkedinLabel")}
+              </a>
+            )}
+            {about.contact.cvUrl && (
+              <a
+                href={about.contact.cvUrl}
+                download
+                className="rounded border border-border-md px-5 py-2.5 text-text transition-opacity hover:opacity-85"
+              >
+                {t("contactCvLabel")}
+              </a>
+            )}
           </div>
         </Container>
       </section>
